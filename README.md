@@ -3,7 +3,7 @@ Yamaha-YXC-nodejs
 [![NPM version](http://img.shields.io/npm/v/iobroker.yamaha-yxc-nodejs.svg)](https://npmjs.org/package/yamaha-yxc-nodejs)
 [![NPM Downloads](https://img.shields.io/npm/dm/yamaha-yxc-nodejs.svg?style=flat)](https://npmjs.org/package/yamaha-yxc-nodejs)
 
-[![NPM](https://nodei.co/npm/iobroker.milight.png?downloads=true)](https://npmjs.org/package/yamaha-yxc-nodejs)
+[![NPM](https://nodei.co/npm/iobroker.yamaha-yxc-nodejs.png?downloads=true)](https://npmjs.org/package/yamaha-yxc-nodejs)
 
 
 A node module to control your yamaha MusicCast devices (inspired by yamaha-nodejs).
@@ -20,7 +20,7 @@ npm install yamaha-yxc-nodejs
 
 ## Methods
 ```javascript
-var yamaha = new YamahaYXC("192.168.0.100")
+var yamaha = new YamahaYXC("192.168.xxx.yyy")
 var yamaha = new YamahaYXC() // Auto-Discovery
 
 //-------------Zone related comands----------
