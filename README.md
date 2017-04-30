@@ -14,22 +14,6 @@ Tested with WX-010 and YSP-1600.
 ### Install
 npm install yamaha-yxc-nodejs
 
-## Example
-```javascript
-var YamahaYXC = require("yamaha-yxc-nodejs");
-var yamaha = new YamahaYXC("192.168.0.100");
-yamaha.powerOn().then(function(){
-	console.log("powerOn");
-	yamaha.setMainInputTo("NET RADIO").then( function(){
-		console.log("Switched to Net Radio");
-		yamaha.selectWebRadioListItem(1).then(function(){
-			console.log("Selected Favorites");
-			yamaha.selectWebRadioListItem(1).then(function(){});
-		});
-
-	});
-});
-```
 ## Prerequisites
 * To power on the yamaha, network standby has to be enabled
 
