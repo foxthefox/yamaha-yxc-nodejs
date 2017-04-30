@@ -1,12 +1,12 @@
 Yamaha-YXC-nodejs
 ==================
-[![NPM version](http://img.shields.io/npm/v/iobroker.milight.svg)](https://npmjs.org/package/yamaha-yxc-nodejs)
+[![NPM version](http://img.shields.io/npm/v/iobroker.yamaha-yxc-nodejs.svg)](https://npmjs.org/package/yamaha-yxc-nodejs)
 [![NPM Downloads](https://img.shields.io/npm/dm/yamaha-yxc-nodejs.svg?style=flat)](https://npmjs.org/package/yamaha-yxc-nodejs)
 
 [![NPM](https://nodei.co/npm/iobroker.milight.png?downloads=true)](https://npmjs.org/package/yamaha-yxc-nodejs)
 
 
-A node module to control your yamaha MusicCast devices (heavily inspired by yamaha-nodejs).
+A node module to control your yamaha MusicCast devices (inspired by yamaha-nodejs).
 This module uses the Yamaha Extended Control protocol.
 It should be passible to control loudspeakers, soundbars etc.
 Tested with WX-010 and YSP-1600. 
@@ -127,7 +127,7 @@ var yamaha = new YamahaYXC() // Auto-Discovery
 ```
 
 #### Parameter, 
-Some Parameter have to be detrmined first by calling a "get" method first.
+Some Parameter have to be determined first by calling a "get" method first.
 JSON array has to be formed before calling the method.
 
 #### Zones
