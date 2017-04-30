@@ -48,8 +48,8 @@ var yamaha = new YamahaYXC() // Auto-Discovery
 
     //get commands
     yamaha.getSignalInfo(zone)
-    yamaha.getSignalInfo(zone)
-    yamaha.getSignalInfo(zone)
+    yamaha.getStatus(zone)
+    yamaha.getSoundProgramList(zone)
 
 
 //------------ NetUSB commands --------------
