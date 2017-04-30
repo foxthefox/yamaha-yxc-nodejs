@@ -210,12 +210,12 @@ YamahaYXC.prototype.discover = function(timeout) {
     };
 
 
-    YamahaYXC.prototype.getSignalInfo = function(zone) {
+    YamahaYXC.prototype.getStatus = function(zone) {
         var command = '/' + getZone(zone) + '/getStatus' ;
         return this.SendGetToDevice(command);
     };
 
-    YamahaYXC.prototype.getSignalInfo = function(zone) {
+    YamahaYXC.prototype.getSoundProgramList = function(zone) {
         var command = '/' + getZone(zone) + '/getSoundProgramList' ;
         return this.SendGetToDevice(command);
     };    
