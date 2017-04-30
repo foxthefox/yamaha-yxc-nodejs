@@ -121,7 +121,7 @@ The zone parameter is optional, you can pass a number or a string
 All these methods return a promise:
 ```javascript
 yamaha.powerOff().then(function(result){
-	console.log("Respones is" + result);
+	console.log("Response is" + result);
 });
 ```
 
