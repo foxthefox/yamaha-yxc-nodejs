@@ -133,7 +133,7 @@ YamahaYXC.prototype.discover = function(timeout) {
         return this.SendGetToDevice(command);
     };
     YamahaYXC.prototype.setVolumeTo = function(to, zone) {
-        var command = '/' + getZone(zone) + '/setVolume?volume' + to;
+        var command = '/' + getZone(zone) + '/setVolume?volume=' + to;
         return this.SendGetToDevice(command);
     };
     YamahaYXC.prototype.muteOn = function(zone) {
