@@ -11,8 +11,8 @@ This module uses the Yamaha Extended Control protocol.
 It should be possible to control loudspeakers, soundbars etc.
 Tested with WX-010 and YSP-1600. 
 
-### Install
-npm install yamaha-yxc-nodejs
+## Install
+* npm install yamaha-yxc-nodejs
 
 ## Prerequisites
 * To power on the yamaha, network standby has to be enabled
