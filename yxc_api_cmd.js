@@ -54,6 +54,9 @@ YamahaYXC.prototype.getOrDiscoverIP = function() {
     return this.discoverPromise
 }
 
+
+var reYamahaModelYSP = /<modelDescription>*.Peripheral.*<\/modelDescription>/i; //YSP soundbar is not returning MusicCast! it is "TV Peripheral"
+
 var reManufacturer = /<manufacturer>*.yamaha.*<\/manufacturer>/i;
 var reYamahaModelDesc = /<modelDescription>*.MusicCast.*<\/modelDescription>/i;
 var reFriendlyName = /<friendlyName>([^<]*)<\/friendlyName>/;
