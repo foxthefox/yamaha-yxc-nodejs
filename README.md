@@ -1,6 +1,6 @@
 Yamaha-YXC-nodejs
 ==================
-[![NPM version](http://img.shields.io/npm/v/iobroker.yamaha-yxc-nodejs.svg)](https://npmjs.org/package/yamaha-yxc-nodejs)
+[![NPM version](http://img.shields.io/npm/v/yamaha-yxc-nodejs.svg)](https://npmjs.org/package/yamaha-yxc-nodejs)
 [![NPM Downloads](https://img.shields.io/npm/dm/yamaha-yxc-nodejs.svg?style=flat)](https://npmjs.org/package/yamaha-yxc-nodejs)
 
 [![NPM](https://nodei.co/npm/iobroker.yamaha-yxc-nodejs.png?downloads=true)](https://npmjs.org/package/yamaha-yxc-nodejs)
