@@ -6,9 +6,9 @@ Yamaha-YXC-nodejs
 [![NPM](https://nodei.co/npm/iobroker.yamaha-yxc-nodejs.png?downloads=true)](https://npmjs.org/package/yamaha-yxc-nodejs)
 
 
-A node module to control your yamaha MusicCast devices (inspired by yamaha-nodejs).
+A node module to control your Yamaha MusicCast devices (inspired by yamaha-nodejs).
 This module uses the Yamaha Extended Control protocol.
-It should be passible to control loudspeakers, soundbars etc.
+It should be possible to control loudspeakers, soundbars etc.
 Tested with WX-010 and YSP-1600. 
 
 ### Install
@@ -129,7 +129,8 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
-
+### 0.0.2
+* bugfixes to getcommands for zones, readme etc.
 ### 0.0.1
 * intitial version
 
