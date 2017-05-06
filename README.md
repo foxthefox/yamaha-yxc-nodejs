@@ -25,10 +25,12 @@ var yamaha = new YamahaYXC() // Auto-Discovery
 
 //-------------Zone related comands----------
 
+    yamaha.power(on, zone)
     yamaha.powerOn(zone)
     yamaha.powerOff(zone)
     yamaha.sleep(val, zone)
     yamaha.setVolumeTo(to, zone)
+    yamaha.mute(on, zone)
     yamaha.muteOn(zone)
     yamaha.muteOff(zone)
     yamaha.setInput(input, zone)
@@ -129,6 +131,8 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
+### 0.0.3
+* new method power, mute 
 ### 0.0.2
 * bugfixes to getcommands for zones, readme etc.
 ### 0.0.1
