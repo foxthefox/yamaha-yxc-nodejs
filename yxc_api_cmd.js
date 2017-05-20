@@ -55,10 +55,8 @@ YamahaYXC.prototype.getOrDiscoverIP = function() {
 }
 
 
-var reYamahaModelYSP = /<modelDescription>*.Peripheral.*<\/modelDescription>/i; //YSP soundbar is not returning MusicCast! it is "TV Peripheral"
-
-var reManufacturer = /<manufacturer>*.yamaha.*<\/manufacturer>/i;
-var reYamahaModelDesc = /<modelDescription>*.MusicCast.*<\/modelDescription>/i;
+var reyxcControl = /<yamaha:X_yxcControlURL>*.YamahaExtendedControl.*<\/yamaha:X_yxcControlURL>/i; // instead query to MusicCast, because YSP soundbar is not returning MusicCast! it is "TV Peripheral"
+// var reYamahaModelDesc = /<modelDescription>*.MusicCast.*<\/modelDescription>/i;
 var reFriendlyName = /<friendlyName>([^<]*)<\/friendlyName>/;
 var reModelName = /<modelName>([^<]*)<\/modelName>/i;
 var reUniqueID = /<serialNumber>([^<]*)<\/serialNumber>/i; //same as getDeviceInfo:system_id
@@ -81,7 +79,7 @@ YamahaYXC.prototype.discover = function(timeout) {
         }).on("found", function(headers, address) {
             if (headers.LOCATION) {
                 request(headers.LOCATION, function(error, response, body) {
-                    if (!error && response.statusCode == 200 && reManufacturer.test(body)) {
+                    if (!error && response.statusCode == 200 && reyxcControl.test(body)) {
                         var model = reModelName.exec(body);
                         var name = reFriendlyName.exec(body);
                         var uid = reUniqueID.exec(body);
