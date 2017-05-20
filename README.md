@@ -131,6 +131,8 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
+### 0.0.4
+* discovery on YamahaExtendedControl instead Manufacturer=Yamaha, because not all devices respond to MusicCast
 ### 0.0.3
 * new method power, mute 
 ### 0.0.2
