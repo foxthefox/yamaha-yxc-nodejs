@@ -57,7 +57,6 @@ var yamaha = new YamahaYXC() // Auto-Discovery
 //------------ NetUSB commands --------------
 
     yamaha.getPresetInfo()
-    yamaha.getPlayInfo()
     yamaha.getSettings()
     yamaha.getRecentInfo()
     yamaha.clearRecentInfo()
@@ -70,22 +69,25 @@ var yamaha = new YamahaYXC() // Auto-Discovery
     yamaha.playNet()
     yamaha.nextNet()
     yamaha.prevNet()
-    yamaha.frwNet(state, zone)
-    yamaha.ffwNet(state, zone)
+    yamaha.frwNet(state)
+    yamaha.ffwNet(state)
+
+//------------ NetUSB + CD commands --------------
+    yamaha.getPlayInfo(val) //if empty the netusb is called, otherwise val must be set to "cd"
 
 //------------ CD commands ------------
 
-    yamaha.setCDPlayback(val, zone)
-    yamaha.toggleTray(on)
-    yamaha.toggleCDRepeat(on)
-    yamaha.toggleCDShuffle(on)
-    yamaha.stopCD(zone)
-    yamaha.pauseCD(zone)
-    yamaha.playCD(zone)
-    yamaha.nextCD(zone)
-    yamaha.prevCD(zone)
-    yamaha.frwCD(state, zone)
-    yamaha.ffwCD(state, zone)
+    yamaha.setCDPlayback(val)
+    yamaha.toggleTray()
+    yamaha.toggleCDRepeat()
+    yamaha.toggleCDShuffle()
+    yamaha.stopCD()
+    yamaha.pauseCD()
+    yamaha.playCD()
+    yamaha.nextCD()
+    yamaha.prevCD()
+    yamaha.frwCD(state)
+    yamaha.ffwCD(state)
 
 
 //-------------System commands------
@@ -131,6 +133,9 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
+### 0.0.5
+* getPlayInfo extended for getting CD-values
+* deleted parameter Zone in some functions, hence not necessary
 ### 0.0.4
 * discovery on YamahaExtendedControl instead Manufacturer=Yamaha, because not all devices respond to MusicCast
 ### 0.0.3
