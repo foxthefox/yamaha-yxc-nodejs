@@ -235,10 +235,6 @@ YamahaYXC.prototype.discover = function(timeout) {
         var command = '/netusb/getPresetInfo' ;
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.getPlayInfo = function() {
-        var command = '/netusb/getPlayInfo' ;
-        return this.SendGetToDevice(command);
-    };
     YamahaYXC.prototype.getSettings = function() {
         var command = '/netusb/getSettings' ;
         return this.SendGetToDevice(command);
@@ -298,7 +294,7 @@ YamahaYXC.prototype.discover = function(timeout) {
         var command = '/netusb/setPlayback?playback=previous';
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.frwNet = function(state, zone) {
+    YamahaYXC.prototype.frwNet = function(state) {
         var on;
         if (state === '1' || state === true || state === 1 || state === 'true'){
            on = 1;}
@@ -306,7 +302,7 @@ YamahaYXC.prototype.discover = function(timeout) {
         var command = '/netusb/setDirect?playback='+ (on ? 'fast_reverse_start' : 'fast_reverse_end') ;
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.ffwNet = function(state, zone) {
+    YamahaYXC.prototype.ffwNet = function(state) {
         var on;
         if (state === '1' || state === true || state === 1 || state === 'true'){
            on = 1;}
@@ -316,10 +312,19 @@ YamahaYXC.prototype.discover = function(timeout) {
     };
 
 
+//------------ NETUSB + CD commands ------------
+    YamahaYXC.prototype.getPlayInfo = function(val) {
+        if (val ==='cd' ){
+            var command = '/cd/getPlayInfo' ;
+        } else {
+            var command = '/netusb/getPlayInfo' ;
+        }
+        return this.SendGetToDevice(command);
+    };
 
 //------------ CD commands ------------
 
-    YamahaYXC.prototype.setCDPlayback = function(val, zone) {
+    YamahaYXC.prototype.setCDPlayback = function(val) {
         if (!val || val == 'play') val = 'play';
         else if (val == 'stop') val = 'stop';
         else if (val == 'pause') val = 'pause';
@@ -333,39 +338,39 @@ YamahaYXC.prototype.discover = function(timeout) {
         var command = '/cd/setPlayback?playback='+ val ;
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.toggleTray = function(on) {
+    YamahaYXC.prototype.toggleTray = function() {
         var command = '/cd/toggleTray' ;
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.toggleCDRepeat = function(on) {
+    YamahaYXC.prototype.toggleCDRepeat = function() {
         var command = '/cd/toggleRepeat' ;
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.toggleCDShuffle = function(on) {
+    YamahaYXC.prototype.toggleCDShuffle = function() {
         var command = '/cd/toggleShuffle' ;
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.stopCD = function(zone) {
+    YamahaYXC.prototype.stopCD = function() {
         var command = '/cd/setPlayback?playback=stop';
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.pauseCD = function(zone) {
+    YamahaYXC.prototype.pauseCD = function() {
         var command = '/cd/setPlayback?playback=stop';
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.playCD = function(zone) {
+    YamahaYXC.prototype.playCD = function() {
         var command = '/cd/setPlayback?playback=play';
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.nextCD = function(zone) {
+    YamahaYXC.prototype.nextCD = function() {
         var command = '/cd/setPlayback?playback=next';
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.prevCD = function(zone) {
+    YamahaYXC.prototype.prevCD = function() {
         var command = '/cd/setPlayback?playback=previous';
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.frwCD = function(state, zone) {
+    YamahaYXC.prototype.frwCD = function(state) {
         var on;
         if (state === '1' || state === true || state === 1 || state === 'true'){
            on = 1;}
@@ -373,7 +378,7 @@ YamahaYXC.prototype.discover = function(timeout) {
         var command = '/cd/setDirect?playback='+ (on ? 'fast_reverse_start' : 'fast_reverse_end') ;
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.ffwCD = function(state, zone) {
+    YamahaYXC.prototype.ffwCD = function(state) {
         var on;
         if (state === '1' || state === true || state === 1 || state === 'true'){
            on = 1;}
