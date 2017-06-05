@@ -12,6 +12,10 @@ YamahaYXC.prototype.SendGetToDevice = function(cmd) {
         var req = {
             method: 'GET',
             uri: 'http://' + ip + '/YamahaExtendedControl/v1' + cmd,
+            headers: {
+                'X-AppName': 'MusicCast/1.0',
+                'X-AppPort': '41100',
+            }
         };
         if (this.requestTimeout) req.timeout = this.requestTimeout;
 
