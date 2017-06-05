@@ -162,6 +162,10 @@ YamahaYXC.prototype.discover = function(timeout) {
         var command = '/' + getZone(zone) + '/setSoundProgram?program=' + input;
         return this.SendGetToDevice(command);
     };
+    YamahaYXC.prototype.surround = function(on, zone) {
+        var command = '/' + getZone(zone) + '/set3dSurround?enable='+ (on ? 'true' : 'false');
+        return this.SendGetToDevice(command);
+    };
     YamahaYXC.prototype.surroundOn = function(zone) {
         var command = '/' + getZone(zone) + '/set3dSurround?enable=true';
         return this.SendGetToDevice(command);
