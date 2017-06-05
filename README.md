@@ -35,6 +35,7 @@ var yamaha = new YamahaYXC() // Auto-Discovery
     yamaha.muteOff(zone)
     yamaha.setInput(input, zone)
     yamaha.setSound(input, zone)
+    yamaha.surround(on, zone)
     yamaha.surroundOn(zone)
     yamaha.surroundOff(zone)
     yamaha.setDirect(on, zone)
@@ -135,6 +136,7 @@ If the IP is omitted in the constructor, the module will try to discover the yam
 ## Changelog
 ### 0.0.5
 * getPlayInfo extended for getting CD-values
+* new surround(on)
 * deleted parameter Zone in some functions, hence not necessary
 ### 0.0.4
 * discovery on YamahaExtendedControl instead Manufacturer=Yamaha, because not all devices respond to MusicCast
