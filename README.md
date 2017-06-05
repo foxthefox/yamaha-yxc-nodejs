@@ -134,6 +134,8 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
+### 0.0.6
+* subscribe for update when GET send
 ### 0.0.5
 * getPlayInfo extended for getting CD-values
 * new surround(on)
