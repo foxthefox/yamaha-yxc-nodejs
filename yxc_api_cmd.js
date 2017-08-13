@@ -481,4 +481,56 @@ YamahaYXC.prototype.discover = function(timeout) {
         return this.SendPostToDevice(command, name);
     };
 
+//-----------  Tuner ------------
+    YamahaYXC.prototype.getTunerPresetInfo = function(band) {
+        var command = '/tuner/getPresetInfo?band='+band;
+        return this.SendGetToDevice(command);
+    };
+    YamahaYXC.prototype.getTunerPlayInfo = function() {
+        var command = '/tuner/getPlayInfo';
+        return this.SendGetToDevice(command);
+    };
+    YamahaYXC.prototype.setBand = function(band) {
+        var command = '/tuner/setBand?band='+band;
+        return this.SendGetToDevice(command);
+    };
+    YamahaYXC.prototype.setFreqDirect = function(band, freq) {
+        var command = '/tuner/setFreq?band='+band+'&tuning=direct&num='+freq;
+        return this.SendGetToDevice(command);
+    };
+    YamahaYXC.prototype.switchPresetTuner = function(direction) {
+        var command = '/tuner/switchPreset?dir='+direction;
+        return this.SendGetToDevice(command);
+    };    
+    YamahaYXC.prototype.setDabService = function(direction) {
+        var command = '/tuner/setDabService?dir='+direction;
+        return this.SendGetToDevice(command);
+    };
+
+//-----------  Clock ------------    
+    YamahaYXC.prototype.getClockSettings = function() {
+        var command = '/clock/getSettings';
+        return this.SendGetToDevice(command);
+    };
+    YamahaYXC.prototype.setClockAutoSync= function(state) {
+        var on;
+        if (state === '1' || state === true || state === 1 || state === 'true'){
+           on = 1;}
+        else{on = 0;}
+        var command = '/clock/setAutoSync?enable='+ (on ? 'true' : 'false') ;
+        return this.SendGetToDevice(command);
+    };
+    YamahaYXC.prototype.setClockDateTime = function(datetime) {
+        var command = '/clock/setDateAndTime?date_time='+datetime;
+        return this.SendGetToDevice(command);
+    };
+    YamahaYXC.prototype.setClockFormat = function(format) {
+        var command = '/clock/setClockFormat?format='+format;
+        return this.SendGetToDevice(command);
+    }
+    YamahaYXC.prototype.setAlarmSettings= function(data) {
+        var command = '/clock/SetAlarmSettings';
+        return this.SendPostToDevice(command, data );
+    };
+
 module.exports =YamahaYXC;
