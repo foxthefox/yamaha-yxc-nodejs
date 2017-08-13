@@ -113,6 +113,21 @@ var yamaha = new YamahaYXC() // Auto-Discovery
     yamaha.stopDistribution()
     yamaha.setGroupName(name)
 
+//-----------  Tuner ------------
+    yamaha.getTunerPresetInfo(band)
+    yamaha.getTunerPlayInfo()
+    yamaha.setBand(band)
+    yamaha.setFreqDirect(band,freq)
+    yamaha.switchPresetTuner(direction)    
+    yamaha.setDabService(direction)
+
+//-----------  Clock ------------    
+    yamaha.getClockSettings()
+    yamaha.setClockAutoSync(state)
+    yamaha.setClockDateTime(YYMMDDhhmmss)
+    yamaha.setClockFormat(format)
+    yamaha.setAlarmSettings(data)
+
 ```
 
 #### Parameter, 
@@ -134,18 +149,28 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
+
+### 0.0.7
+* tuner commands added
+* clock commands added
+
 ### 0.0.6
 * subscribe for update when GET send
+
 ### 0.0.5
 * getPlayInfo extended for getting CD-values
 * new surround(on)
 * deleted parameter Zone in some functions, hence not necessary
+
 ### 0.0.4
 * discovery on YamahaExtendedControl instead Manufacturer=Yamaha, because not all devices respond to MusicCast
+
 ### 0.0.3
-* new method power, mute 
+* new method power, mute
+
 ### 0.0.2
 * bugfixes to getcommands for zones, readme etc.
+
 ### 0.0.1
 * intitial version
 
