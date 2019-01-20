@@ -120,7 +120,7 @@ YamahaYXC.prototype.discover = function(timeout) {
 //-------------Zone related comands----------
 
     YamahaYXC.prototype.power = function(on, zone) {
-        var command = '/' + getZone(zone) + '/setPower?power=' + (on ? 'on' : 'standby') ;
+        var command = '/' + getZone(zone) + '/setPower?power=' + (on === 'on' ? 'on' : 'standby') ;
         return this.SendGetToDevice(command);
     };
     YamahaYXC.prototype.powerOn = function(zone) {
@@ -145,7 +145,7 @@ YamahaYXC.prototype.discover = function(timeout) {
         return this.SendGetToDevice(command);
     };
     YamahaYXC.prototype.mute = function(on, zone) {
-        var command = '/' + getZone(zone) + '/setMute?enable='+ (on ? 'true' : 'false');
+        var command = '/' + getZone(zone) + '/setMute?enable='+ (on === 'true' ? 'true' : 'false');
         return this.SendGetToDevice(command);
     };
     YamahaYXC.prototype.muteOn = function(zone) {
