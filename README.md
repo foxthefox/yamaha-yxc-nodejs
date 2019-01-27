@@ -33,7 +33,7 @@ var yamaha = new YamahaYXC() // Auto-Discovery
     yamaha.mute(on, zone)
     yamaha.muteOn(zone)
     yamaha.muteOff(zone)
-    yamaha.setInput(input, zone)
+    yamaha.setInput(input, zone, mode)
     yamaha.setSound(input, zone)
     yamaha.surround(on, zone)
     yamaha.surroundOn(zone)
@@ -72,6 +72,9 @@ var yamaha = new YamahaYXC() // Auto-Discovery
     yamaha.prevNet()
     yamaha.frwNet(state)
     yamaha.ffwNet(state)
+    
+    yamaha.getListInfo(input, index, size, lang)
+    yamaha.setListControl(listId, type, index, zone)
 
 //------------ NetUSB + CD commands --------------
     yamaha.getPlayInfo(val) //if empty the netusb is called, otherwise val must be set to "cd"
@@ -149,6 +152,10 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
+### 0.0.9
+* added mode to setInput
+* added getListInfo, setListControl
+
 ### 0.0.8
 * improvement in power/standby
 
