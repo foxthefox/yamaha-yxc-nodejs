@@ -156,9 +156,10 @@ YamahaYXC.prototype.discover = function(timeout) {
         var command = '/' + getZone(zone) + '/setMute?enable=false';
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.setInput = function(input, zone) {
+    YamahaYXC.prototype.setInput = function(input, zone, mode) {
+        if(mode){mode ='&mode='+mode}
         //check for correct input in calling program
-        var command = '/' + getZone(zone) + '/setInput?input=' + input;
+        var command = '/' + getZone(zone) + '/setInput?input=' + input + mode;
         return this.SendGetToDevice(command);
     };
     YamahaYXC.prototype.setSound = function(input, zone) {
