@@ -152,6 +152,9 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
+### 0.0.10
+* improvement for setInput, getListInfo, setListControl
+
 ### 0.0.9
 * added mode to setInput
 * added getListInfo, setListControl
