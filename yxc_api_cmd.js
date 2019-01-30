@@ -157,7 +157,7 @@ YamahaYXC.prototype.discover = function(timeout) {
         return this.SendGetToDevice(command);
     };
     YamahaYXC.prototype.setInput = function(input, zone, mode) {
-        if(mode){mode ='&mode='+mode}
+        if(mode == null || mode == 'undefined' ) {mode =''} else {mode='&mode='+mode}
         //check for correct input in calling program
         var command = '/' + getZone(zone) + '/setInput?input=' + input + mode;
         return this.SendGetToDevice(command);
@@ -321,11 +321,15 @@ YamahaYXC.prototype.discover = function(timeout) {
     };
 //----------- NETUSB list info -------------
     YamahaYXC.prototype.getListInfo = function(input,index,size,lang) {
-        var command = '/netusb/getListInfo?input='+input+'&index='+index+'&size='+size+'&lang='+lang;
+        if(size == null || size == 'undefined' ) {size = '8'}
+        if(lang == null || lang == 'undefined' ) {lang =''} else {lang='&lang='+lang;}
+        var command = '/netusb/getListInfo?input='+input+'&index='+index+'&size='+size+lang;
         return this.SendGetToDevice(command);
     };
-    YamahaYXC.prototype.setListControl = function(listId, type,index,zone) {
-        var command = '/netusb/setListControl?list_id='+listId+'&type='+type+'&index='+index+'&zone='+zone;
+    YamahaYXC.prototype.setListControl = function(listId, type, index,zone) {
+        if(index == null || index == 'undefined' ) {index =''} else {index='&index='+index;}
+        if(zone == null || zone == 'undefined' ) {zone =''} else {zone='&zone='+zone;}
+        var command = '/netusb/setListControl?list_id='+listId+'&type='+type+index+zone;
         return this.SendGetToDevice(command);
     };
 //------------ NETUSB + CD commands ------------
