@@ -468,6 +468,10 @@ YamahaYXC.prototype.discover = function(timeout) {
         var command = '/' + getZone(zone) + '/setLinkAudioDelay?delay=' + delay;
         return this.SendGetToDevice(command);
     };
+    YamahaYXC.prototype.setLinkAudioQuality = function(mode, zone) {
+        var command = '/' + getZone(zone) + '/setLinkAudioQuality?delay=' + mode;
+        return this.SendGetToDevice(command);
+    };
     YamahaYXC.prototype.getDistributionInfo = function() {
         var command = '/dist/getDistributionInfo';
         return this.SendGetToDevice(command);
