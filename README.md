@@ -109,6 +109,7 @@ var yamaha = new YamahaYXC() // Auto-Discovery
 
     yamaha.setLinkControl(control, zone)
     yamaha.setLinkAudioDelay(delay, zone)
+    yamaha.setLinkAudioQuality(mode, zone)
     yamaha.getDistributionInfo()
     yamaha.setServerInfo(data)
     yamaha.setClientInfo(data)
@@ -152,6 +153,9 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
+### 0.0.11
+* add advanced setLinkAudioQuality
+
 ### 0.0.10
 * improvement for setInput, getListInfo, setListControl
 
