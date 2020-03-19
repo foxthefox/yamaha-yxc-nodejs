@@ -1,11 +1,11 @@
 {
   "name": "yamaha-yxc-nodejs",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "NodeJS API to control your YAMAHA Musiccast devices",
   "main": "yamahayxc.js",
   "dependencies": {
-    "bluebird": "^3.3.4",
-    "request": "^2.69.0",
+    "bluebird": "^3.7.2",
+    "@root/request": "^1.5.0",
     "peer-ssdp": "0.0.5"
   },
   "devDependencies": {
