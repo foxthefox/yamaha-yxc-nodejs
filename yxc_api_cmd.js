@@ -1,5 +1,5 @@
 var Promise = require("bluebird");
-var request = Promise.promisify(require("request"));
+var request = Promise.promisify(require("@root/request"));
 Promise.promisifyAll(request);
 
 
