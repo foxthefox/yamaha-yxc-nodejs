@@ -20,6 +20,10 @@ Tested with WX-010 and YSP-1600.
 
 ## Methods
 ```javascript
+var YamahaYXC = require('yamaha-yxc-nodejs')
+
+//------------Instantiate -------------------
+
 var yamaha = new YamahaYXC("192.168.xxx.yyy")
 var yamaha = new YamahaYXC() // Auto-Discovery
 
@@ -64,7 +68,9 @@ var yamaha = new YamahaYXC() // Auto-Discovery
     yamaha.setNetPlayback(val)
     yamaha.toggleNetRepeat()
     yamaha.toggleNetShuffle()
-    yamaha.recallPreset(val, zone)
+    yamaha.storePreset(num)
+    yamaha.clearPreset(num)
+    yamaha.recallPreset(num, zone)
     yamaha.stopNet()
     yamaha.pauseNet()
     yamaha.playNet()
@@ -104,6 +110,7 @@ var yamaha = new YamahaYXC() // Auto-Discovery
     yamaha.setAutoPowerStandby(state, zone)   
     yamaha.setHdmiOut1(state, zone)
     yamaha.setHdmiOut2(state, zone)
+    yamaha.setPartyMode(on)
 
 //-----------  advanced ------------
 
