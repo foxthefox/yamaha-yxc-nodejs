@@ -344,7 +344,7 @@ YamahaYXC.prototype.discover = function(timeout) {
      };
 
      YamahaYXC.prototype.startMCPlaylistEn = function(bank, index, zone) {
-        let command = 'netusb/manageMcPlaylist?bank=' + bank + '&type=play&index=' + index + '&zone=' + getZone(zone);
+        let command = '/netusb/manageMcPlaylist?bank=' + bank + '&type=play&index=' + index + '&zone=' + getZone(zone);
         return this.SendGetToDevice(command);
      };
 //------------ NETUSB + CD commands ------------
