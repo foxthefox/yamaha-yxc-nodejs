@@ -143,6 +143,7 @@ The zone parameter is optional, you can pass a number or a string
 
 #### Promises
 All these methods return a promise:
+The resolved promise result will have been parsed from JSON into an object if the response `content-type` was `application/json`.
 ```javascript
 yamaha.powerOff().then(function(result){
 	console.log("Response is" + result);
