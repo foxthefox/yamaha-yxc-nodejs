@@ -342,6 +342,21 @@ YamahaYXC.prototype.discover = function(timeout) {
         var command = '/netusb/setListControl?list_id='+listId+'&type='+type+index+zone;
         return this.SendGetToDevice(command);
     };
+//-----------  NETUSB music cast playlists ------------
+     YamahaYXC.prototype.getMCPlaylists = function() {
+        let command = '/netusb/getMcPlaylistName'; 
+        return this.SendGetToDevice(command);
+     };
+
+     YamahaYXC.prototype.getMCPlaylistContent = function(bank, index) {
+        let command = '/netusb/getMcPlaylist?bank=' + bank + '&index=' + index;
+        return this.SendGetToDevice(command);
+     };
+
+     YamahaYXC.prototype.startMCPlaylistEn = function(bank, index, zone) {
+        let command = '/netusb/manageMcPlaylist?bank=' + bank + '&type=play&index=' + index + '&zone=' + getZone(zone);
+        return this.SendGetToDevice(command);
+     };
 //------------ NETUSB + CD commands ------------
     YamahaYXC.prototype.getPlayInfo = function(val) {
         if (val ==='cd' ){

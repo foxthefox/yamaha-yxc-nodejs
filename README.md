@@ -52,11 +52,14 @@ var yamaha = new YamahaYXC() // Auto-Discovery
     yamaha.setBalance(val, zone)
     yamaha.setSubwooferVolumeTo(val, zone)
     yamaha.setBassExtension(on, zone)
-
+    yamaha.startMCPlaylistEn
+    
     //get commands
     yamaha.getSignalInfo(zone)
     yamaha.getStatus(zone)
     yamaha.getSoundProgramList(zone)
+    yamaha.getMCPlaylists
+    yamaha.getMCPlaylistContent
 
 
 //------------ NetUSB commands --------------
@@ -160,8 +163,12 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
+### 0.0.13
+* (danie1kr) zone playlist
+
 ### 0.0.12
 * change deprecated request to @root/request
+
 ### 0.0.11
 * add advanced setLinkAudioQuality
 
