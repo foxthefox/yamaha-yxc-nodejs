@@ -278,6 +278,16 @@ YamahaYXC.prototype.discover = function(timeout) {
         var command = '/netusb/toggleShuffle' ;
         return this.SendGetToDevice(command);
     };
+    YamahaYXC.prototype.storePreset = function(val) {
+        if (!val) throw new Error('preset val must be specified');
+        var command = '/netusb/storePreset?num='+ val;
+        return this.SendGetToDevice(command);
+    };
+    YamahaYXC.prototype.clearPreset = function(val) {
+        if (!val) throw new Error('preset val must be specified');
+        var command = '/netusb/clearPreset?num='+ val;
+        return this.SendGetToDevice(command);
+    };
     YamahaYXC.prototype.recallPreset = function(val, zone) {
         if (!val) val ='1';
         var command = '/netusb/recallPreset?zone=' + getZone(zone) + '&num='+ val;
@@ -470,6 +480,10 @@ YamahaYXC.prototype.discover = function(timeout) {
            on = 1;}
         else{on = 0;}
         var command = '/system/setHdmiOut2?enable='+ (on ? 'true' : 'false') ;
+        return this.SendGetToDevice(command);
+    };
+    YamahaYXC.prototype.setPartyMode = function(on) {
+        var command = '/system/setPartyMode?enable='+ (on ? 'true' : 'false') ;
         return this.SendGetToDevice(command);
     };
 

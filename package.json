@@ -1,6 +1,6 @@
 {
   "name": "yamaha-yxc-nodejs",
-  "version": "0.0.13",
+  "version": "0.0.14", 
   "description": "NodeJS API to control your YAMAHA Musiccast devices",
   "main": "yamahayxc.js",
   "dependencies": {
@@ -32,5 +32,5 @@
   "bugs": {
     "url": "https://github.com/foxthefox/yamaha-yxc-nodejs/issues"
   },
-   "readmeFilename": "README.md"
+  "readmeFilename": "README.md"
 }
