@@ -163,6 +163,11 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
+### 0.0.14
+* (alanbacon) setPartyMode
+* (alanbacon) storePreset
+* (alanbacon) clearPreset
+
 ### 0.0.13
 * (danie1kr) zone playlist
 
