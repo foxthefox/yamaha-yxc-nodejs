@@ -5,47 +5,32 @@ Promise.promisifyAll(request);
 
 function YamahaYXC() {}
 
-YamahaYXC.prototype.SendGetToDevice = function(cmd) {
-    var self = this;
-    return this.getOrDiscoverIP().then(ip => {
-        var delay = 0;
-        var req = {
-            method: 'GET',
-            uri: 'http://' + ip + '/YamahaExtendedControl/v1' + cmd,
-            headers: {
-                'X-AppName': 'MusicCast/1.0',
-                'X-AppPort': '41100',
-            }
-        };
-        if (this.requestTimeout) req.timeout = this.requestTimeout;
-
-        var prom = request.getAsync(req).delay(delay).then(response => response.body)
-        if (self.catchRequestErrors === true) prom.catch(console.log.bind(console));
-
-        return prom
-
-    })
-
+YamahaYXC.prototype.SendReqToDevice = async function(cmd, method, body) {
+    const ip = await this.getOrDiscoverIP();
+    const req = {
+        method,
+        body,
+        uri: 'http://' + ip + '/YamahaExtendedControl/v1' + cmd,
+        headers: {
+            'X-AppName': 'MusicCast/1.0',
+            'X-AppPort': '41100',
+        }
+    };
+    if (this.requestTimeout) req.timeout = this.requestTimeout;
+    const resp = await request.getAsync(req);
+    if (resp.headers['content-type'] === 'application/json') {
+        return JSON.parse(resp.body);
+    } else {
+        return resp.body;
+    }
 };
 
-YamahaYXC.prototype.SendPostToDevice = function(cmd, data) {
-    var self = this;
-    return this.getOrDiscoverIP().then(ip => {
-        var delay = this.responseDelay * 1000;
-        var req = {
-            method: 'POST',
-            uri: 'http://' + ip + '/YamahaExtendedControl/v1' + cmd,
-            body: data
-        };
-        if (this.requestTimeout) req.timeout = this.requestTimeout;
+YamahaYXC.prototype.SendGetToDevice = async function(cmd) {
+    return await this.SendReqToDevice(cmd, 'GET');
+};
 
-        var prom = request.postAsync(req).delay(delay).then(response => response.body)
-        if (self.catchRequestErrors === true) prom.catch(console.log.bind(console));
-
-        return prom
-
-    })
-
+YamahaYXC.prototype.SendPostToDevice = async function(cmd, data) {
+    return await this.SendReqToDevice(cmd, 'POST', data);
 };
 
 YamahaYXC.prototype.getOrDiscoverIP = function() {
