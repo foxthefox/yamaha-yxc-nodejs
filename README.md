@@ -164,6 +164,9 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
+# 1.0.0 BREAKING CHANGE
+* (alanbacon) returning json instead xml 
+
 ### 0.0.14
 * (alanbacon) setPartyMode
 * (alanbacon) storePreset
@@ -212,4 +215,8 @@ If the IP is omitted in the constructor, the module will try to discover the yam
 ### 0.0.1
 * intitial version
 
+## License
 
+The MIT License (MIT)
+
+Copyright (c) 2017 - 2022 foxthefox <foxthefox@wysiwis.net>
