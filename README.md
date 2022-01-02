@@ -20,6 +20,10 @@ Tested with WX-010 and YSP-1600.
 
 ## Methods
 ```javascript
+var YamahaYXC = require('yamaha-yxc-nodejs')
+
+//------------Instantiate -------------------
+
 var yamaha = new YamahaYXC("192.168.xxx.yyy")
 var yamaha = new YamahaYXC() // Auto-Discovery
 
@@ -48,11 +52,14 @@ var yamaha = new YamahaYXC() // Auto-Discovery
     yamaha.setBalance(val, zone)
     yamaha.setSubwooferVolumeTo(val, zone)
     yamaha.setBassExtension(on, zone)
-
+    yamaha.startMCPlaylistEn
+    
     //get commands
     yamaha.getSignalInfo(zone)
     yamaha.getStatus(zone)
     yamaha.getSoundProgramList(zone)
+    yamaha.getMCPlaylists
+    yamaha.getMCPlaylistContent
 
 
 //------------ NetUSB commands --------------
@@ -64,7 +71,9 @@ var yamaha = new YamahaYXC() // Auto-Discovery
     yamaha.setNetPlayback(val)
     yamaha.toggleNetRepeat()
     yamaha.toggleNetShuffle()
-    yamaha.recallPreset(val, zone)
+    yamaha.storePreset(num)
+    yamaha.clearPreset(num)
+    yamaha.recallPreset(num, zone)
     yamaha.stopNet()
     yamaha.pauseNet()
     yamaha.playNet()
@@ -104,6 +113,7 @@ var yamaha = new YamahaYXC() // Auto-Discovery
     yamaha.setAutoPowerStandby(state, zone)   
     yamaha.setHdmiOut1(state, zone)
     yamaha.setHdmiOut2(state, zone)
+    yamaha.setPartyMode(on)
 
 //-----------  advanced ------------
 
@@ -154,8 +164,17 @@ yamaha.powerOff().then(function(result){
 If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
 
 ## Changelog
+### 0.0.14
+* (alanbacon) setPartyMode
+* (alanbacon) storePreset
+* (alanbacon) clearPreset
+
+### 0.0.13
+* (danie1kr) zone playlist
+
 ### 0.0.12
 * change deprecated request to @root/request
+
 ### 0.0.11
 * add advanced setLinkAudioQuality
 

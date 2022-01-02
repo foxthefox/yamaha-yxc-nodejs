@@ -263,6 +263,16 @@ YamahaYXC.prototype.discover = function(timeout) {
         var command = '/netusb/toggleShuffle' ;
         return this.SendGetToDevice(command);
     };
+    YamahaYXC.prototype.storePreset = function(val) {
+        if (!val) throw new Error('preset val must be specified');
+        var command = '/netusb/storePreset?num='+ val;
+        return this.SendGetToDevice(command);
+    };
+    YamahaYXC.prototype.clearPreset = function(val) {
+        if (!val) throw new Error('preset val must be specified');
+        var command = '/netusb/clearPreset?num='+ val;
+        return this.SendGetToDevice(command);
+    };
     YamahaYXC.prototype.recallPreset = function(val, zone) {
         if (!val) val ='1';
         var command = '/netusb/recallPreset?zone=' + getZone(zone) + '&num='+ val;
@@ -317,6 +327,21 @@ YamahaYXC.prototype.discover = function(timeout) {
         var command = '/netusb/setListControl?list_id='+listId+'&type='+type+index+zone;
         return this.SendGetToDevice(command);
     };
+//-----------  NETUSB music cast playlists ------------
+     YamahaYXC.prototype.getMCPlaylists = function() {
+        let command = '/netusb/getMcPlaylistName'; 
+        return this.SendGetToDevice(command);
+     };
+
+     YamahaYXC.prototype.getMCPlaylistContent = function(bank, index) {
+        let command = '/netusb/getMcPlaylist?bank=' + bank + '&index=' + index;
+        return this.SendGetToDevice(command);
+     };
+
+     YamahaYXC.prototype.startMCPlaylistEn = function(bank, index, zone) {
+        let command = '/netusb/manageMcPlaylist?bank=' + bank + '&type=play&index=' + index + '&zone=' + getZone(zone);
+        return this.SendGetToDevice(command);
+     };
 //------------ NETUSB + CD commands ------------
     YamahaYXC.prototype.getPlayInfo = function(val) {
         if (val ==='cd' ){
@@ -440,6 +465,10 @@ YamahaYXC.prototype.discover = function(timeout) {
            on = 1;}
         else{on = 0;}
         var command = '/system/setHdmiOut2?enable='+ (on ? 'true' : 'false') ;
+        return this.SendGetToDevice(command);
+    };
+    YamahaYXC.prototype.setPartyMode = function(on) {
+        var command = '/system/setPartyMode?enable='+ (on ? 'true' : 'false') ;
         return this.SendGetToDevice(command);
     };
 
