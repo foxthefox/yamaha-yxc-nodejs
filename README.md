@@ -221,4 +221,4 @@ GNU Lesser General Public License v3.0, for more details please refer to the LIC
 
 Copyright (c) 2017 - 2022 foxthefox <foxthefox@wysiwis.net>
 
-This library is using the peer-ssdp package from Fraunhofer FOKUS.
+This library is using the peer-ssdp package from Fraunhofer FOKUS in the versions 0.0.1 up to 1.0.0, therfore LGPL v3.0 applies also here.
