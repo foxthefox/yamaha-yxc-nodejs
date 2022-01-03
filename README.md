@@ -165,7 +165,7 @@ If the IP is omitted in the constructor, the module will try to discover the yam
 
 ## Changelog
 # 1.0.0 BREAKING CHANGE
-* (alanbacon) returning json instead xml 
+* (alanbacon) returning parsed json instead of raw 
 
 ### 0.0.14
 * (alanbacon) setPartyMode
