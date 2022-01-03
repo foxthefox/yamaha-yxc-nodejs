@@ -217,6 +217,8 @@ If the IP is omitted in the constructor, the module will try to discover the yam
 
 ## License
 
-The MIT License (MIT)
+GNU Lesser General Public License v3.0, for more details please refer to the LICENSE file.
 
 Copyright (c) 2017 - 2022 foxthefox <foxthefox@wysiwis.net>
+
+This library is using the peer-ssdp package from Fraunhofer FOKUS.
