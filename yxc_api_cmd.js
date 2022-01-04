@@ -14,7 +14,13 @@ var reDevId = /<UDN>uuid:([^-]+-){4}([^<]*)<\/UDN>/i; //same as getDeviceInfo:sy
 
 class YamahaYXC {
 	constructor(ip) {
-		this.ip = null || ip;
+		//for testing
+		let ipparts = [];
+		if (ip) {
+			ipparts = ip.split(':');
+		}
+		this.ip = null || ipparts[0];
+		this.port = null || ipparts[1];
 		this.catchRequestErrors = true;
 	}
 
@@ -23,7 +29,7 @@ class YamahaYXC {
 		if (this.ip && cmd && method) {
 			try {
 				const ip = this.ip;
-				const https = require('http');
+				const http = require('http');
 				const data = JSON.stringify(body);
 				const options = {
 					hostname: ip,
@@ -35,13 +41,19 @@ class YamahaYXC {
 						'X-AppPort': '41100'
 					}
 				};
-
+				if (this.port) {
+					Object.assign(options, { port: this.port });
+				}
 				let p = new Promise((resolve, reject) => {
-					const req = https.request(options, (res) => {
+					const req = http.request(options, (res) => {
 						res.setEncoding('utf8');
 						if (res.statusCode !== 200) {
 							throw Error(`HTTP request Failed. Status Code: ${res.statusCode}`);
 						}
+						// reject on request error
+						res.on('error', (err) => {
+							reject(err);
+						});
 						// cumulate data
 						let responseBody = ''; // let body = []
 						res.on('data', (chunk) => {
@@ -57,11 +69,13 @@ class YamahaYXC {
 							resolve(responseBody); //resolve(body);
 						});
 					});
+					/*
 					// reject on request error
 					req.on('error', (err) => {
 						// This is not a "Second reject", just a different sort of failure
 						reject(err);
 					});
+					*/
 					if (method == 'POST') {
 						req.write(data);
 					}
@@ -613,13 +627,13 @@ class YamahaYXC {
 		}
 	}
 	async frwNet(state) {
-		let on;
-		if (state === '1' || state === true || state === 1 || state === 'true') {
-			on = 1;
-		} else {
-			on = 0;
-		}
 		try {
+			let on;
+			if (state === '1' || state === true || state === 1 || state === 'true') {
+				on = 1;
+			} else {
+				on = 0;
+			}
 			const command = '/netusb/setDirect?playback=' + (on ? 'fast_reverse_start' : 'fast_reverse_end');
 			const result = await this.SendGetToDevice(command);
 			return Promise.resolve(result);
@@ -682,7 +696,7 @@ class YamahaYXC {
 	//-----------  NETUSB music cast playlists ------------
 	async getMCPlaylists() {
 		try {
-			let command = '/netusb/getMcPlaylistName';
+			const command = '/netusb/getMcPlaylistName';
 			const result = await this.SendGetToDevice(command);
 			return Promise.resolve(result);
 		} catch (error) {
@@ -691,7 +705,7 @@ class YamahaYXC {
 	}
 	async getMCPlaylistContent(bank, index) {
 		try {
-			let command = '/netusb/getMcPlaylist?bank=' + bank + '&index=' + index;
+			const command = '/netusb/getMcPlaylist?bank=' + bank + '&index=' + index;
 			const result = await this.SendGetToDevice(command);
 			return Promise.resolve(result);
 		} catch (error) {
@@ -700,7 +714,7 @@ class YamahaYXC {
 	}
 	async startMCPlaylistEn(bank, index, zone) {
 		try {
-			let command =
+			const command =
 				'/netusb/manageMcPlaylist?bank=' + bank + '&type=play&index=' + index + '&zone=' + this.getZone(zone);
 			const result = await this.SendGetToDevice(command);
 			return Promise.resolve(result);
@@ -710,12 +724,13 @@ class YamahaYXC {
 	}
 	//------------ NETUSB + CD commands ------------
 	async getPlayInfo(val) {
-		if (val === 'cd') {
-			let command = '/cd/getPlayInfo';
-		} else {
-			let command = '/netusb/getPlayInfo';
-		}
 		try {
+			let command;
+			if (val === 'cd') {
+				command = '/cd/getPlayInfo';
+			} else {
+				command = '/netusb/getPlayInfo';
+			}
 			const result = await this.SendGetToDevice(command);
 			return Promise.resolve(result);
 		} catch (error) {

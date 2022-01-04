@@ -166,6 +166,10 @@ It returns an object for each device { ip, model, name, systemId, deviceId } in 
 It is not ensured that all devices are detected in this period, in the applicatian a merge of a second run might be necessary.
 
 ## Changelog
+## 2.0.1
+* for testing purpose the ip could also defined with a port e.g. localhost:3333
+* changed error rejection in SendReqToDevice
+
 ## 2.0.0 BREAKING CHANGE
 * different library for ssdp
 * remove library root/request
