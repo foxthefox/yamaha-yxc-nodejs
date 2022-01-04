@@ -227,7 +227,7 @@ It is not ensured that all devices are detected in this period, in the applicati
 ## License
 Copyright (c) 2017 - 2022 foxthefox <foxthefox@wysiwis.net>
 
-## for versions >= 2.0.0 
+### for versions >= 2.0.0 
 The MIT License (MIT)
 This library is using the simple-ssdp package (MIT License).
 
