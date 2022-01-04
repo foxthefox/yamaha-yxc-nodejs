@@ -1,36 +1,34 @@
 {
-  "name": "yamaha-yxc-nodejs",
-  "version": "1.0.0",
-  "description": "NodeJS API to control your YAMAHA Musiccast devices",
-  "main": "yamahayxc.js",
-  "dependencies": {
-    "bluebird": "^3.7.2",
-    "@root/request": "^1.5.0",
-    "peer-ssdp": "0.0.5"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-as-promised": "^5.2.0"
-  },
-  "scripts": {
-    "test": "mocha mochatest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/foxthefox/yamaha-yxc-nodejs.git"
-  },
-  "keywords": [
-    "yamaha",
-    "api",
-    "nodejs",
-    "musiccast"
-  ],
-  "author": {
-    "name": "foxthefox"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/foxthefox/yamaha-yxc-nodejs/issues"
-  },
-  "readmeFilename": "README.md"
+	"name": "yamaha-yxc-nodejs",
+	"version": "2.0.0",
+	"description": "NodeJS API to control your YAMAHA Musiccast devices",
+	"main": "yxc_api_cmd.js",
+	"dependencies": {
+		"simple-ssdp": "^1.0.2"
+	},
+	"devDependencies": {
+		"chai": "^3.5.0",
+		"chai-as-promised": "^5.2.0"
+	},
+	"scripts": {
+		"test": "mocha mochatest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/foxthefox/yamaha-yxc-nodejs.git"
+	},
+	"keywords": [
+		"yamaha",
+		"api",
+		"nodejs",
+		"musiccast"
+	],
+	"author": {
+		"name": "foxthefox"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/foxthefox/yamaha-yxc-nodejs/issues"
+	},
+	"readmeFilename": "README.md"
 }

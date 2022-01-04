@@ -25,7 +25,6 @@ var YamahaYXC = require('yamaha-yxc-nodejs')
 //------------Instantiate -------------------
 
 var yamaha = new YamahaYXC("192.168.xxx.yyy")
-var yamaha = new YamahaYXC() // Auto-Discovery
 
 //-------------Zone related comands----------
 
@@ -161,11 +160,21 @@ yamaha.powerOff().then(function(result){
 ```
 
 #### Discovery
-If the IP is omitted in the constructor, the module will try to discover the yamaha ip via a SSDP call.
+There is an explicit function for discovery yamaha.discover(time).
+If the function is called without time, then the discovery is running for 5s.
+It returns an object for each device { ip, model, name, systemId, deviceId } in an array.
+It is not ensured that all devices are detected in this period, in the applicatian a merge of a second run might be necessary.
 
 ## Changelog
-# 1.0.0 BREAKING CHANGE
-* (alanbacon) returning json instead xml 
+## 2.0.0 BREAKING CHANGE
+* different library for ssdp
+* remove library root/request
+* async/await functions
+* no more instantiating with autodiscovery
+* discovery responds with an array of found devices (not only the 1st appeering)
+
+## 1.0.0 BREAKING CHANGE
+* (alanbacon) returning paresed json instead raw 
 
 ### 0.0.14
 * (alanbacon) setPartyMode
@@ -216,7 +225,8 @@ If the IP is omitted in the constructor, the module will try to discover the yam
 * intitial version
 
 ## License
-
-The MIT License (MIT)
-
 Copyright (c) 2017 - 2022 foxthefox <foxthefox@wysiwis.net>
+
+## for versions >= 2.0.0 
+The MIT License (MIT)
+This library is using the simple-ssdp package (MIT License).
