@@ -5,6 +5,8 @@
  *
  */
 
+var request = require('@root/request');
+
 var reyxcControl = /<yamaha:X_yxcControlURL>*.YamahaExtendedControl.*<\/yamaha:X_yxcControlURL>/i; // instead query to MusicCast, because YSP soundbar is not returning MusicCast! it is "TV Peripheral"
 // var reYamahaModelDesc = /<modelDescription>*.MusicCast.*<\/modelDescription>/i;
 var reFriendlyName = /<friendlyName>([^<]*)<\/friendlyName>/;
@@ -13,7 +15,7 @@ var reUniqueID = /<serialNumber>([^<]*)<\/serialNumber>/i; //same as getDeviceIn
 var reDevId = /<UDN>uuid:([^-]+-){4}([^<]*)<\/UDN>/i; //same as getDeviceInfo:system_id
 
 class YamahaYXC {
-	constructor(ip) {
+	constructor(ip, requestTimeout) {
 		//for testing
 		let ipparts = [];
 		if (ip) {
@@ -21,78 +23,34 @@ class YamahaYXC {
 		}
 		this.ip = null || ipparts[0];
 		this.port = null || ipparts[1];
+		this.requestTimeout = requestTimeout;
 		this.catchRequestErrors = true;
 	}
 
 	//-------------- general Communication
 	async SendReqToDevice(cmd, method, body) {
-		if (this.ip && cmd && method) {
-			try {
-				const ip = this.ip;
-				const http = require('http');
-				const data = JSON.stringify(body);
-				const options = {
-					hostname: ip,
-					//port: 41100,
-					path: '/YamahaExtendedControl/v1' + cmd,
-					method: method,
-					headers: {
-						'X-AppName': 'MusicCast/1.0',
-						'X-AppPort': '41100'
-					}
-				};
-				if (this.port) {
-					Object.assign(options, { port: this.port });
-				}
-				let p = new Promise((resolve, reject) => {
-					const req = http.request(options, (res) => {
-						res.setEncoding('utf8');
-						if (res.statusCode !== 200) {
-							throw Error(`HTTP request Failed. Status Code: ${res.statusCode}`);
-						}
-						// reject on request error
-						res.on('error', (err) => {
-							reject(err);
-						});
-						// cumulate data
-						let responseBody = ''; // let body = []
-						res.on('data', (chunk) => {
-							responseBody += chunk; //body.push(chunk)
-						});
-						// resolve on end
-						res.on('end', () => {
-							try {
-								responseBody = JSON.parse(responseBody); //body = JSON.parse(Buffer.concat(body).toString());
-							} catch (error) {
-								reject(error);
-							}
-							resolve(responseBody); //resolve(body);
-						});
-					});
-					/*
-					// reject on request error
-					req.on('error', (err) => {
-						// This is not a "Second reject", just a different sort of failure
-						reject(err);
-					});
-					*/
-					if (method == 'POST') {
-						req.write(data);
-					}
-					//always necessary
-					req.end();
-				});
-				return await p;
-			} catch (error) {
-				return Promise.reject(error);
+		const ip = this.ip;
+		const req = {
+			method,
+			body,
+			uri: 'http://' + ip + '/YamahaExtendedControl/v1' + cmd,
+			headers: {
+				'X-AppName': 'MusicCast/1.0',
+				'X-AppPort': '41100'
 			}
-		} else {
-			if (!cmd) console.warning('Please provide command to be requested.');
-			else if (!method) console.warning('Please provide a valid API End Point.');
-			console.warning('Please provide the user session token.');
+		};
+		if (this.requestTimeout) req.timeout = this.requestTimeout;
+		try {
+			const resp = await request(req);
+			if (resp.headers['content-type'] === 'application/json') {
+				return Promise.resolve(JSON.parse(resp.body));
+			} else {
+				return Promise.resolve(resp.body);
+			}
+		} catch (error) {
+			return Promise.reject(error);
 		}
 	}
-
 	async SendGetToDevice(cmd) {
 		return await this.SendReqToDevice(cmd, 'GET');
 	}
