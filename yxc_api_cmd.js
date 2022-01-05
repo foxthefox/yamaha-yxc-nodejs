@@ -27,9 +27,10 @@ class YamahaYXC {
 		this.catchRequestErrors = true;
 	}
 
-	//-------------- general Communication
+	//-------------- general Communication ---------------------------
 	async SendReqToDevice(cmd, method, body) {
-		const ip = this.ip;
+		let ip = this.ip;
+		if (this.port) ip = ip + ':' + this.port;
 		const req = {
 			method,
 			body,
@@ -76,7 +77,7 @@ class YamahaYXC {
 			// Event: service discovered
 			ssdp.on('discover', (data) => {
 				if (data['st'] == 'urn:schemas-upnp-org:device:MediaRenderer:1') {
-					// console.log('got data', data['address']);
+					//console.log('got data', data['address']);
 					var isFound = false;
 					if (devices.length == 0) devices.push(data);
 					for (let i = 0; i < devices.length; i++) {
@@ -651,7 +652,7 @@ class YamahaYXC {
 			return Promise.reject(error);
 		}
 	}
-	//-----------  NETUSB music cast playlists ------------
+	//-----------  NETUSB musiccast playlists ------------
 	async getMCPlaylists() {
 		try {
 			const command = '/netusb/getMcPlaylistName';
@@ -680,12 +681,14 @@ class YamahaYXC {
 			return Promise.reject(error);
 		}
 	}
-	//------------ NETUSB + CD commands ------------
+	//------------ NETUSB + CD + Tuner commands ------------
 	async getPlayInfo(val) {
 		try {
 			let command;
 			if (val === 'cd') {
 				command = '/cd/getPlayInfo';
+			} else if (val === 'tuner') {
+				command = '/tuner/getPlayInfo';
 			} else {
 				command = '/netusb/getPlayInfo';
 			}
@@ -695,6 +698,60 @@ class YamahaYXC {
 			return Promise.reject(error);
 		}
 	}
+	//------------ NETUSB + CD commands ------------
+	async toggleRepeat(val) {
+		try {
+			let command;
+			if (val === 'cd') {
+				command = '/cd/toggleRepeat';
+			} else {
+				command = '/netusb/toggleRepeat';
+			}
+			const result = await this.SendGetToDevice(command);
+			return Promise.resolve(result);
+		} catch (error) {
+			return Promise.reject(error);
+		}
+	}
+	async toggleShuffle(val) {
+		try {
+			let command;
+			if (val === 'cd') {
+				command = '/cd/toggleShuffle';
+			} else {
+				command = '/netusb/toggleShuffle';
+			}
+			const result = await this.SendGetToDevice(command);
+			return Promise.resolve(result);
+		} catch (error) {
+			return Promise.reject(error);
+		}
+	}
+	async setPlayback(val, where) {
+		if (!val || val == 'play') val = 'play';
+		else if (val == 'stop') val = 'stop';
+		else if (val == 'pause') val = 'pause';
+		else if (val == 'play_pause') val = 'play_pause';
+		else if (val == 'previous') val = 'previous';
+		else if (val == 'next') val = 'next';
+		else if (val == 'frw_start') val = 'fast_reverse_start';
+		else if (val == 'frw_end') val = 'fast_reverse_end';
+		else if (val == 'ffw_start') val = 'fast_forward_start';
+		else if (val == 'ffw_end') val = 'fast_forward_end';
+		try {
+			let command;
+			if (where === 'cd') {
+				command = '/cd/setPlayback?playback=' + val;
+			} else {
+				command = '/netusb/setPlayback?playback=' + val;
+			}
+			const result = await this.SendGetToDevice(command);
+			return Promise.resolve(result);
+		} catch (error) {
+			return Promise.reject(error);
+		}
+	}
+
 	//------------ CD commands ------------
 	async setCDPlayback(val) {
 		if (!val || val == 'play') val = 'play';

@@ -51,18 +51,17 @@ var yamaha = new YamahaYXC("192.168.xxx.yyy")
     yamaha.setBalance(val, zone)
     yamaha.setSubwooferVolumeTo(val, zone)
     yamaha.setBassExtension(on, zone)
-    yamaha.startMCPlaylistEn
+    yamaha.startMCPlaylistEn()
     
     //get commands
     yamaha.getSignalInfo(zone)
     yamaha.getStatus(zone)
     yamaha.getSoundProgramList(zone)
-    yamaha.getMCPlaylists
-    yamaha.getMCPlaylistContent
+    yamaha.getMCPlaylists()
+    yamaha.getMCPlaylistContent()
 
 
 //------------ NetUSB commands --------------
-
     yamaha.getPresetInfo()
     yamaha.getSettings()
     yamaha.getRecentInfo()
@@ -84,8 +83,13 @@ var yamaha = new YamahaYXC("192.168.xxx.yyy")
     yamaha.getListInfo(input, index, size, lang)
     yamaha.setListControl(listId, type, index, zone)
 
+//------------ NetUSB + CD + Tuner commands --------------
+    yamaha.getPlayInfo(val) //if empty the netusb is called, otherwise val must be set to "cd" or "tuner"
+
 //------------ NetUSB + CD commands --------------
-    yamaha.getPlayInfo(val) //if empty the netusb is called, otherwise val must be set to "cd"
+    yamaha.toggleRepeat(val) //if empty the netusb is called, otherwise val must be set to "cd"
+    yamaha.toggleShuffle(val) //if empty the netusb is called, otherwise val must be set to "cd"
+    yamaha.setPlayback(where, val) //if where is empty the netusb is called, otherwise val must be set to "cd". val is for commands e.g. 'next'
 
 //------------ CD commands ------------
 
@@ -168,6 +172,7 @@ It is not ensured that all devices are detected in this period, in the applicati
 ## Changelog
 ### 2.0.2
 * add library root/request, http.request alone not working
+* new API calls implemented
 
 ### 2.0.1
 * for testing purpose the ip could also defined with a port e.g. localhost:3333
