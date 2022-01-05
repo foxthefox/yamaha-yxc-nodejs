@@ -187,7 +187,7 @@ class YamahaYXC {
 		try {
 			const command =
 				'/' +
-				getZone(zone) +
+				this.getZone(zone) +
 				'/setPower?power=' +
 				(on === 'on' || on === true || on === 'true' ? 'on' : 'standby');
 			const result = await this.SendGetToDevice(command);
