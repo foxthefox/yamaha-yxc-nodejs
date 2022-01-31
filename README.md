@@ -170,6 +170,9 @@ It returns an object for each device { ip, model, name, systemId, deviceId } in 
 It is not ensured that all devices are detected in this period, in the applicatian a merge of a second run might be necessary.
 
 ## Changelog
+# 2.0.3
+* added testing
+
 # 2.0.2
 * add library root/request, http.request alone not working
 * new API calls implemented
