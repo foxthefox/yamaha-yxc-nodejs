@@ -1,0 +1,539 @@
+{
+	"YSP-1600": {
+		"system": {
+			"getDeviceInfo": {
+				"response_code": 0,
+				"model_name": "YSP-1600",
+				"destination": "BG",
+				"device_id": "00A0DED15025",
+				"system_id": "0B587073",
+				"system_version": 3.12,
+				"api_version": 2.08,
+				"netmodule_generation": 1,
+				"netmodule_version": "1924    ",
+				"netmodule_checksum": "EAD51507",
+				"operation_mode": "normal",
+				"update_error_code": "00000000"
+			},
+			"getNetworkStatus": {
+				"response_code": 0,
+				"network_name": "YSP-1600 D15025",
+				"connection": "wireless_lan",
+				"dhcp": true,
+				"ip_address": "192.168.178.22",
+				"subnet_mask": "255.255.255.0",
+				"default_gateway": "192.168.178.1",
+				"dns_server_1": "192.168.178.2",
+				"dns_server_2": "0.0.0.0",
+				"wireless_lan": {
+					"ssid": "shootingrange 4",
+					"type": "wpa2-psk(aes)",
+					"key": "",
+					"ch": 6,
+					"strength": 100
+				},
+				"wireless_direct": { "ssid": "YSP-1600 D15025", "type": "none", "key": "" },
+				"musiccast_network": {
+					"ready": true,
+					"device_type": "standard",
+					"child_num": 0,
+					"ch": 0,
+					"initial_join_running": false
+				},
+				"mac_address": {
+					"wired_lan": "00A0DED15025",
+					"wireless_lan": "F4B85E43EB3D",
+					"wireless_direct": "F4B85E43EB3E"
+				},
+				"airplay_pin": ""
+			},
+			"getFuncStatus": { "response_code": 0, "auto_power_standby": true },
+			"getNameText": {
+				"response_code": 0,
+				"zone_list": [ { "id": "main", "text": "Wohnzimmer" } ],
+				"input_list": [
+					{ "id": "hdmi", "text": "HDMI" },
+					{ "id": "analog", "text": "Analog" },
+					{ "id": "tv", "text": "TV" },
+					{ "id": "bluetooth", "text": "Bluetooth" },
+					{ "id": "server", "text": "Server" },
+					{ "id": "net_radio", "text": "Net Radio" },
+					{ "id": "napster", "text": "Napster" },
+					{ "id": "spotify", "text": "Spotify" },
+					{ "id": "juke", "text": "JUKE" },
+					{ "id": "airplay", "text": "AirPlay" },
+					{ "id": "mc_link", "text": "MC Link" },
+					{ "id": "tidal", "text": "TIDAL" },
+					{ "id": "deezer", "text": "Deezer" }
+				],
+				"sound_program_list": [
+					{ "id": "sports", "text": "Sports" },
+					{ "id": "game", "text": "Game" },
+					{ "id": "music", "text": "Music" },
+					{ "id": "tv_program", "text": "TV Program" },
+					{ "id": "movie", "text": "Movie" },
+					{ "id": "stereo", "text": "Stereo" }
+				]
+			},
+			"getLocationInfo": {
+				"response_code": 0,
+				"id": "22ae17939af24b0b9fd95b14ea726ba5",
+				"name": "Home1",
+				"zone_list": { "main": true }
+			},
+			"getFeatures": {
+				"response_code": 0,
+				"system": {
+					"func_list": [
+						"wired_lan",
+						"wireless_lan",
+						"wireless_direct",
+						"network_standby",
+						"auto_power_standby",
+						"bluetooth_tx_setting",
+						"airplay",
+						"speaker_settings",
+						"disklavier_settings",
+						"network_reboot"
+					],
+					"zone_num": 1,
+					"input_list": [
+						{
+							"id": "napster",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "spotify",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "juke",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "tidal",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "deezer",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "airplay",
+							"distribution_enable": false,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "mc_link",
+							"distribution_enable": false,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "server",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "net_radio",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "bluetooth",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "hdmi",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "tv",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "analog",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						}
+					],
+					"speaker_settings": {
+						"type": "beam",
+						"common": {
+							"attribute": 2,
+							"range_step": [
+								{ "id": "ysp_pos_width", "min": 300, "max": 900, "step": 1 },
+								{ "id": "ysp_pos_length", "min": 300, "max": 900, "step": 1 },
+								{ "id": "ysp_pos_position", "min": 100, "max": 800, "step": 1 },
+								{ "id": "ysp_pos_distance", "min": 250, "max": 850, "step": 1 }
+							]
+						},
+						"front_l": {
+							"attribute": 3,
+							"range_step": [ { "id": "level", "min": -10, "max": 10, "step": 1 } ]
+						},
+						"front_r": {
+							"attribute": 3,
+							"range_step": [ { "id": "level", "min": -10, "max": 10, "step": 1 } ]
+						},
+						"center": {
+							"attribute": 3,
+							"range_step": [ { "id": "level", "min": -10, "max": 10, "step": 1 } ]
+						},
+						"surr_l": {
+							"attribute": 3,
+							"range_step": [ { "id": "level", "min": -10, "max": 10, "step": 1 } ]
+						},
+						"surr_r": {
+							"attribute": 3,
+							"range_step": [ { "id": "level", "min": -10, "max": 10, "step": 1 } ]
+						},
+						"swfr": {
+							"attribute": 3,
+							"range_step": [ { "id": "level", "min": -10, "max": 10, "step": 1 } ]
+						}
+					}
+				},
+				"zone": [
+					{
+						"id": "main",
+						"func_list": [
+							"power",
+							"volume",
+							"mute",
+							"sound_program",
+							"clear_voice",
+							"subwoofer_volume",
+							"signal_info",
+							"prepare_input_change",
+							"link_control",
+							"link_audio_delay",
+							"link_audio_quality"
+						],
+						"input_list": [
+							"napster",
+							"spotify",
+							"juke",
+							"tidal",
+							"deezer",
+							"airplay",
+							"mc_link",
+							"server",
+							"net_radio",
+							"bluetooth",
+							"hdmi",
+							"tv",
+							"analog"
+						],
+						"sound_program_list": [ "sports", "game", "music", "tv_program", "movie", "stereo" ],
+						"link_control_list": [ "speed", "standard", "stability" ],
+						"link_audio_delay_list": [ "audio_sync", "lip_sync" ],
+						"link_audio_quality_list": [ "compressed", "uncompressed" ],
+						"range_step": [
+							{ "id": "volume", "min": 0, "max": 100, "step": 1 },
+							{ "id": "subwoofer_volume", "min": -10, "max": 10, "step": 1 }
+						]
+					}
+				],
+				"netusb": {
+					"func_list": [ "recent_info", "play_queue", "mc_playlist", "streaming_service_use" ],
+					"preset": { "num": 40 },
+					"recent_info": { "num": 40 },
+					"play_queue": { "size": 200 },
+					"mc_playlist": { "size": 200, "num": 5 },
+					"net_radio_type": "airable",
+					"pandora": { "sort_option_list": [ "date", "alphabet" ] },
+					"siriusxm": { "api_type": "everest" }
+				},
+				"distribution": {
+					"version": 2,
+					"compatible_client": [ 2 ],
+					"client_max": 9,
+					"server_zone_list": [ "main" ]
+				},
+				"ccs": { "supported": true }
+			}
+		},
+		"netusb": {
+			"getPlayInfo": {
+				"response_code": 0,
+				"input": "net_radio",
+				"play_queue_type": "system",
+				"playback": "stop",
+				"repeat": "off",
+				"shuffle": "off",
+				"play_time": 0,
+				"total_time": 0,
+				"artist": "Hit Radio N1 (Nuremberg/German)",
+				"album": "",
+				"track": "",
+				"albumart_url": "",
+				"albumart_id": 1807,
+				"usb_devicetype": "unknown",
+				"auto_stopped": false,
+				"attribute": 16785411,
+				"repeat_available": [],
+				"shuffle_available": []
+			},
+			"getPresetInfo": {
+				"response_code": 0,
+				"preset_info": [
+					{ "input": "net_radio", "text": "ANTENNE THÜRINGEN (Weimar/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "radioeins (Potsdam/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "1LIVE (Cologne/German)", "attribute": 0 },
+					{ "input": "unknown", "text": "" },
+					{ "input": "net_radio", "text": "Deutschlandfunk (Cologne/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "BBC Radio 2 (London/English)", "attribute": 0 },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" }
+				],
+				"func_list": [ "clear", "move" ]
+			},
+			"getSettings": { "response_code": 0 },
+			"getRecentInfo": {
+				"response_code": 0,
+				"recent_info": [
+					{
+						"input": "net_radio",
+						"text": "Hit Radio N1 (Nuremberg/German)",
+						"albumart_url": "http://static.airable.io:80/16/63/598643.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "radioeins (Potsdam/German)",
+						"albumart_url": "http://static.airable.io:80/68/90/672135.png",
+						"play_count": 4,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "BBC Radio 2 (London/English)",
+						"albumart_url": "http://static.airable.io:80/73/40/375905.png",
+						"play_count": 2,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "ANTENNE THÜRINGEN (Weimar/German)",
+						"albumart_url": "http://static.airable.io:80/66/02/552033.png",
+						"play_count": 2,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "Deutschlandfunk (Cologne/German)",
+						"albumart_url": "http://static.airable.io:80/89/44/218771.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "1LIVE (Cologne/German)",
+						"albumart_url": "http://static.airable.io:80/94/58/127685.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{ "input": "server", "text": "All Star", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{
+						"input": "net_radio",
+						"text": "rbb radioeins",
+						"albumart_url": "http://item.radio456.com:80/007452/logo/logo-4716.jpg",
+						"play_count": 21,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "1LIVE",
+						"albumart_url": "http://item.radio456.com:80/007452/logo/logo-531.jpg",
+						"play_count": 16,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "BBC Radio 2",
+						"albumart_url": "http://item.radio456.com:80/007452/logo/logo-3159.jpg",
+						"play_count": 4,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "BBC Radio 5 Live",
+						"albumart_url": "http://item.radio456.com:80/007452/logo/logo-26244.jpg",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "Antenne Thüringen 97.9 FM",
+						"albumart_url": "http://item.radio456.com:80/007452/logo/logo-6813.jpg",
+						"play_count": 11,
+						"attribute": 0
+					},
+					{
+						"input": "server",
+						"text": "   5. you and me",
+						"albumart_url": "",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "   7. making a memory",
+						"albumart_url": "",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "   6. friends don't let friends dial drunk",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "   4. hate (i really don't like you)",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "   3. come back to me",
+						"albumart_url": "",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "   2. our time now",
+						"albumart_url": "",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "   1. hey there delilah",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+					{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 }
+				]
+			}
+		},
+		"main": {
+			"getStatus": {
+				"response_code": 0,
+				"power": "standby",
+				"volume": 30,
+				"mute": false,
+				"max_volume": 100,
+				"input": "hdmi",
+				"distribution_enable": true,
+				"sound_program": "stereo",
+				"clear_voice": false,
+				"subwoofer_volume": -10,
+				"link_control": "standard",
+				"link_audio_delay": "audio_sync",
+				"link_audio_quality": "compressed",
+				"disable_flags": 3
+			},
+			"getSoundProgramList": {
+				"response_code": 0,
+				"sound_program_list": [ "sports", "game", "music", "tv_program", "movie", "stereo" ]
+			},
+			"getSignalInfo": {
+				"response_code": 0,
+				"sound_program_list": [ "sports", "game", "music", "tv_program", "movie", "stereo" ]
+			}
+		}
+	}
+}
