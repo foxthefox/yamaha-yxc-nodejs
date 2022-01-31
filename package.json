@@ -12,7 +12,7 @@
 		"chai": "^4.3.5"
 	},
 	"scripts": {
-		"test": "mocha test/integration --exit"
+		"test:integration": "mocha test/integration --exit"
 	},
 	"repository": {
 		"type": "git",

@@ -2,8 +2,7 @@ Yamaha-YXC-nodejs
 ==================
 [![NPM version](http://img.shields.io/npm/v/yamaha-yxc-nodejs.svg)](https://npmjs.org/package/yamaha-yxc-nodejs)
 [![NPM Downloads](https://img.shields.io/npm/dm/yamaha-yxc-nodejs.svg?style=flat)](https://npmjs.org/package/yamaha-yxc-nodejs)
-
-[![NPM](https://nodei.co/npm/yamaha-yxc-nodejs.png?downloads=true)](https://npmjs.org/package/yamaha-yxc-nodejs)
+![Test and Release](https://github.com/foxthefox/yamaha-yxc-nodejs/workflows/Test%20and%20Release/badge.svg)
 
 
 A node module to control your Yamaha MusicCast devices (inspired by yamaha-nodejs).
@@ -170,10 +169,10 @@ It returns an object for each device { ip, model, name, systemId, deviceId } in 
 It is not ensured that all devices are detected in this period, in the applicatian a merge of a second run might be necessary.
 
 ## Changelog
-# 2.0.3
+## 2.0.3
 * added testing
 
-# 2.0.2
+## 2.0.2
 * add library root/request, http.request alone not working
 * new API calls implemented
 
