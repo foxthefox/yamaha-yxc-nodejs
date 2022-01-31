@@ -10,7 +10,7 @@
 	"devDependencies": {
 		"mocha": "^9.2.0",
 		"chai": "^4.3.5",
-		"eslint": "^7.32.0"
+		"eslint": "^8.8.0"
 	},
 	"scripts": {
 		"test:integration": "mocha test/integration --exit",
