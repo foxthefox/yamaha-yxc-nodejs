@@ -27,7 +27,7 @@ jobs:
           # Uncomment the following line if your adapter cannot be installed using 'npm ci'
           # install-command: 'npm install'
       - name: Install Dependencies
-          run: npm ci
+        run: npm ci
       - name: Run Linter
         if: startsWith(runner.OS, 'windows') == false
         run: DEBUG=linter:* npm run lint
