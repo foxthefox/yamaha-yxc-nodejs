@@ -33,34 +33,34 @@ jobs:
         run: DEBUG=linter:* npm run lint
 
     # Runs adapter tests on all supported node versions and OSes
-    api-test:
-        if: contains(github.event.head_commit.message, '[skip ci]') == false
+  api-test:
+      if: contains(github.event.head_commit.message, '[skip ci]') == false
 
-        needs: [check-and-lint]
+      needs: [check-and-lint]
 
-        runs-on: ${{ matrix.os }}
-        strategy:
-            matrix:
-                node-version: [12.x, 14.x, 16.x]
-                os: [ubuntu-latest, windows-latest, macos-latest]
+      runs-on: ${{ matrix.os }}
+      strategy:
+          matrix:
+              node-version: [12.x, 14.x, 16.x]
+              os: [ubuntu-latest, windows-latest, macos-latest]
 
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
+      steps:
+          - name: Checkout code
+            uses: actions/checkout@v2
 
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v2
-              with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: 'npm'
+          - name: Use Node.js ${{ matrix.node-version }}
+            uses: actions/setup-node@v2
+            with:
+                node-version: ${{ matrix.node-version }}
+                cache: 'npm'
 
-            - name: Install Dependencies
-              run: npm ci
+          - name: Install Dependencies
+            run: npm ci
 
-            - name: Run integration tests (unix only)
-              if: startsWith(runner.OS, 'windows') == false
-              run: DEBUG=testing:* npm run test:integration
+          - name: Run integration tests (unix only)
+            if: startsWith(runner.OS, 'windows') == false
+            run: DEBUG=testing:* npm run test:integration
 
-            - name: Run integration tests (windows only)
-              if: startsWith(runner.OS, 'windows')
-              run: set DEBUG=testing:* & npm run test:integration
+          - name: Run integration tests (windows only)
+            if: startsWith(runner.OS, 'windows')
+            run: set DEBUG=testing:* & npm run test:integration
