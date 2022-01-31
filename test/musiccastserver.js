@@ -1,8 +1,10 @@
 //server to emulate the musiccast responses
 const http = require('http');
 const fs = require('fs');
+const path = require('path');
+console.log('PATH ist ' + path.join(__dirname, './test/'));
 
-const YSP1600_v1_responses = fs.readFileSync('./YSP1600_312_208.json');
+const YSP1600_v1_responses = fs.readFileSync(path.join(__dirname, './data/') + 'YSP1600_312_208.json');
 
 let server;
 
