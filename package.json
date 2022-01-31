@@ -9,16 +9,23 @@
 	},
 	"devDependencies": {
 		"mocha": "^9.2.0",
-		"chai": "^4.3.5"
+		"chai": "^4.3.5",
+		"eslint": "^7.32.0"
 	},
 	"scripts": {
-		"test:integration": "mocha test/integration --exit"
+		"test:integration": "mocha test/integration --exit",
+		"lint": "eslint"
 	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/foxthefox/yamaha-yxc-nodejs.git"
 	},
-	"keywords": [ "yamaha", "api", "nodejs", "musiccast" ],
+	"keywords": [
+		"yamaha",
+		"api",
+		"nodejs",
+		"musiccast"
+	],
 	"author": {
 		"name": "foxthefox"
 	},
