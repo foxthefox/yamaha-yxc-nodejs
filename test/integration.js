@@ -15,7 +15,7 @@ describe('Musiccast-API', () => {
 	});
 	it('read deviceinfo', async () => {
 		const result = await yamaha.getDeviceInfo();
-		console.log('result', result);
+		//console.log('result', result);
 		expect(result.response_code).to.equal(0);
 		expect(result.model_name).to.equal('YSP-1600');
 		expect(result.destination).to.equal('BG');
