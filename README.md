@@ -177,7 +177,7 @@ It is not ensured that all devices are detected in this period, in the applicati
 * add library root/request, http.request alone not working
 * new API calls implemented
 
-## 2.0.1
+### 2.0.1
 * for testing purpose the ip could also defined with a port e.g. localhost:3333
 * changed error rejection in SendReqToDevice
 
@@ -242,6 +242,7 @@ It is not ensured that all devices are detected in this period, in the applicati
 ## License
 Copyright (c) 2017 - 2022 foxthefox <foxthefox@wysiwis.net>
 
-## for versions >= 2.0.0 
+### for versions >= 2.0.0 
 The MIT License (MIT)
 This library is using the simple-ssdp package (MIT License).
+
