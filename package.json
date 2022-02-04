@@ -8,9 +8,11 @@
 		"simple-ssdp": "^1.0.2"
 	},
 	"devDependencies": {
-		"mocha": "^9.2.0",
 		"chai": "^4.3.5",
-		"eslint": "^7.32.0"
+		"chalk": "^4.1.2",
+		"eslint": "^7.32.0",
+		"figlet": "^1.5.2",
+		"mocha": "^9.2.0"
 	},
 	"scripts": {
 		"test:integration": "mocha test/integration --exit",
