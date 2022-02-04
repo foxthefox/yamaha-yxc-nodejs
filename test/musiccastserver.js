@@ -2,6 +2,9 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const figlet = require('figlet');
+const chalk = require('chalk');
+
 console.log('PATH ist ' + path.join(__dirname, './data/'));
 
 const YSP1600_v1_responses = fs.readFileSync(path.join(__dirname, './data/') + 'YSP1600_312_208.json');
@@ -21,6 +24,17 @@ function getObjects(Obj, where, what) {
 }
 
 function setupHttpServer(callback) {
+	console.log(
+		chalk.yellow(
+			figlet.textSync('MC YXC Emulation', {
+				font: 'Standard',
+				horizontalLayout: 'default',
+				verticalLayout: 'default',
+				width: 80,
+				whitespaceBreak: true
+			})
+		)
+	);
 	//We need a function which handles requests and send response
 	//Create a server
 	server = http.createServer(handleHttpRequest);
