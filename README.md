@@ -6,6 +6,8 @@ Yamaha-YXC-nodejs
 
 
 A node module to control your Yamaha MusicCast devices (inspired by yamaha-nodejs).
+This library is not, in any way, affiliated or related to Yamaha Inc.. Use it at your own risk.
+
 This module uses the Yamaha Extended Control protocol.
 It should be possible to control loudspeakers, soundbars etc.
 Tested with WX-010 and YSP-1600. 
