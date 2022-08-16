@@ -540,6 +540,16 @@ class YamahaYXC {
 			return Promise.reject(error);
 		}
 	}
+	async recallRecentItem(val, zone) {
+		if (!val) val = '1';
+		try {
+			const command = '/netusb/recallRecentItem?zone=' + this.getZone(zone) + '&num=' + val;
+			const result = await this.SendGetToDevice(command);
+			return Promise.resolve(result);
+		} catch (error) {
+			return Promise.reject(error);
+		}
+	}
 	async stopNet() {
 		try {
 			const command = '/netusb/setPlayback?playback=stop';
