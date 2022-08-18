@@ -1,6 +1,6 @@
 {
 	"name": "yamaha-yxc-nodejs",
-	"version": "2.0.3",
+	"version": "2.0.4",
 	"description": "NodeJS API to control your YAMAHA Musiccast devices",
 	"main": "yxc_api_cmd.js",
 	"dependencies": {
@@ -22,12 +22,7 @@
 		"type": "git",
 		"url": "https://github.com/foxthefox/yamaha-yxc-nodejs.git"
 	},
-	"keywords": [
-		"yamaha",
-		"api",
-		"nodejs",
-		"musiccast"
-	],
+	"keywords": [ "yamaha", "api", "nodejs", "musiccast" ],
 	"author": {
 		"name": "foxthefox"
 	},

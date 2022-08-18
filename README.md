@@ -80,6 +80,7 @@ var yamaha = new YamahaYXC("192.168.xxx.yyy")
     yamaha.prevNet()
     yamaha.frwNet(state)
     yamaha.ffwNet(state)
+    yamaha.recallRecentItem(val, zone)
     
     yamaha.getListInfo(input, index, size, lang)
     yamaha.setListControl(listId, type, index, zone)
@@ -171,6 +172,9 @@ It returns an object for each device { ip, model, name, systemId, deviceId } in 
 It is not ensured that all devices are detected in this period, in the applicatian a merge of a second run might be necessary.
 
 ## Changelog
+### 2.0.4
+* (scrounger) recallRecentItem added
+
 ### 2.0.3
 * added testing
 * added github actions
