@@ -4,7 +4,7 @@
 	"description": "NodeJS API to control your YAMAHA Musiccast devices",
 	"main": "yxc_api_cmd.js",
 	"dependencies": {
-		"@root/request": "^1.8.2",
+		"@root/request": "^1.8.3",
 		"simple-ssdp": "^1.0.2"
 	},
 	"devDependencies": {
