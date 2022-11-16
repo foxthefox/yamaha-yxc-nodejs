@@ -1,0 +1,681 @@
+{
+	"WX-21": {
+		"system": {
+			"getDeviceInfo": {
+				"response_code": 0,
+				"model_name": "WX-021",
+				"destination": "G",
+				"device_id": "946AB093F174",
+				"system_id": "0A196523",
+				"system_version": 1.92,
+				"api_version": 2.11,
+				"netmodule_generation": 2,
+				"netmodule_version": "1107 ",
+				"netmodule_checksum": "79DE0042",
+				"serial_number": "Z224608TV",
+				"category_code": 6,
+				"operation_mode": "normal",
+				"update_error_code": "00000000",
+				"update_data_type": 0
+			},
+			"getNetworkStatus": {
+				"response_code": 0,
+				"network_name": "Yamaha-021-Schlafzimmer",
+				"connection": "wireless_lan",
+				"dhcp": false,
+				"ip_address": "192.168.243.201",
+				"subnet_mask": "255.255.255.0",
+				"default_gateway": "192.168.243.1",
+				"dns_server_1": "192.168.243.1",
+				"dns_server_2": "0.0.0.0",
+				"wireless_lan": {
+					"enable": true,
+					"ssid": "Mueller",
+					"type": "wpa2-psk(aes)",
+					"key": "",
+					"ch": 100,
+					"strength": 72
+				},
+				"musiccast_network": {
+					"ready": true,
+					"device_type": "standard",
+					"child_num": 0,
+					"ch": 0,
+					"initial_join_running": false,
+					"wlan1_ch": 0,
+					"dfs": { "option": false, "radar_ch": 0 }
+				},
+				"mac_address": {
+					"wired_lan": "946AB093F174",
+					"wireless_lan": "946AB093F175",
+					"wireless_direct": "946AB093F175"
+				},
+				"airplay_pin": "",
+				"ipv6": { "enable": true, "address": "fe80::966a:b0ff:fe93:f175" }
+			},
+			"getFuncStatus": { "response_code": 0, "auto_power_standby": true, "dimmer": 2 },
+			"getLocationInfo": {
+				"response_code": 0,
+				"id": "d109f76962134c09bd7957dc8f07e1ea",
+				"name": "MusicCast",
+				"zone_list": { "main": true }
+			},
+			"getFeatures": {
+				"response_code": 0,
+				"system": {
+					"func_list": [
+						"wired_lan",
+						"wireless_lan",
+						"network_standby",
+						"bluetooth_tx_setting",
+						"bluetooth_tx_connectivity_type",
+						"dfs_option",
+						"auto_power_standby",
+						"dimmer",
+						"airplay",
+						"background_download",
+						"remote_info",
+						"network_reboot",
+						"system_reboot",
+						"analytics"
+					],
+					"zone_num": 1,
+					"input_list": [
+						{
+							"id": "napster",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "spotify",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "qobuz",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "tidal",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "deezer",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "amazon_music",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "alexa",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "airplay",
+							"distribution_enable": false,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "mc_link",
+							"distribution_enable": false,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "server",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "net_radio",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "bluetooth",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						}
+					],
+					"range_step": [ { "id": "dimmer", "min": 0, "max": 2, "step": 1 } ],
+					"bluetooth": { "update_cancelable": true, "tx_connectivity_type_max": 2 }
+				},
+				"zone": [
+					{
+						"id": "main",
+						"func_list": [
+							"power",
+							"sleep",
+							"volume",
+							"mute",
+							"sound_program",
+							"equalizer",
+							"signal_info",
+							"prepare_input_change",
+							"link_control",
+							"link_audio_delay"
+						],
+						"input_list": [
+							"napster",
+							"spotify",
+							"qobuz",
+							"tidal",
+							"deezer",
+							"amazon_music",
+							"alexa",
+							"airplay",
+							"mc_link",
+							"server",
+							"net_radio",
+							"bluetooth"
+						],
+						"sound_program_list": [ "standard", "bass_booster" ],
+						"equalizer_mode_list": [ "manual" ],
+						"link_control_list": [ "speed", "standard", "stability" ],
+						"link_audio_delay_list": [ "audio_sync_on", "balanced", "audio_sync_off" ],
+						"range_step": [
+							{ "id": "volume", "min": 0, "max": 60, "step": 1 },
+							{ "id": "equalizer", "min": -10, "max": 10, "step": 1 }
+						],
+						"ccs_supported": [ "connected_speaker" ]
+					}
+				],
+				"netusb": {
+					"func_list": [ "recent_info", "play_queue", "mc_playlist", "streaming_service_use" ],
+					"preset": { "num": 40 },
+					"recent_info": { "num": 40 },
+					"play_queue": { "size": 200 },
+					"mc_playlist": { "size": 200, "num": 5 },
+					"net_radio_type": "airable"
+				},
+				"distribution": {
+					"version": 2,
+					"compatible_client": [ 2 ],
+					"client_max": 19,
+					"server_zone_list": [ "main" ],
+					"mc_surround": {
+						"version": 1,
+						"func_list": [ "mcss_error_info" ],
+						"master_role": { "surround_pair": false, "stereo_pair": true, "subwoofer_pair": true },
+						"slave_role": {
+							"surround_pair_l_or_r": true,
+							"surround_pair_lr": false,
+							"subwoofer_pair": false
+						}
+					}
+				},
+				"clock": {
+					"func_list": [ "date_and_time", "alarm", "snooze" ],
+					"range_step": [
+						{ "id": "alarm_volume", "min": 5, "max": 60, "step": 1 },
+						{ "id": "alarm_fade", "min": 180, "max": 180, "step": 1 }
+					],
+					"alarm_fade_type_num": 1,
+					"alarm_mode_list": [ "oneday" ],
+					"alarm_input_list": [
+						"none",
+						"server",
+						"net_radio",
+						"napster",
+						"spotify",
+						"qobuz",
+						"tidal",
+						"deezer",
+						"amazon_music"
+					],
+					"alarm_preset_list": [ "netusb" ]
+				},
+				"ccs": { "supported": true }
+			}
+		},
+		"dist": {
+			"getFeatures": {
+				"response_code": 0,
+				"group_id": "00000000000000000000000000000000",
+				"group_name": "(Linked) Schlafzimmer",
+				"role": "none",
+				"server_zone": "main",
+				"client_list": [],
+				"build_disable": [],
+				"audio_dropout": false,
+				"mc_surround": { "id": 0, "role": "none", "status": "none", "build_disable": [] }
+			}
+		},
+		"netusb": {
+			"getPlayInfo": {
+				"response_code": 0,
+				"input": "net_radio",
+				"play_queue_type": "system",
+				"playback": "stop",
+				"repeat": "off",
+				"shuffle": "off",
+				"play_time": 0,
+				"total_time": 0,
+				"artist": "",
+				"album": "",
+				"track": "",
+				"albumart_url": "",
+				"albumart_id": 8632,
+				"usb_devicetype": "unknown",
+				"auto_stopped": false,
+				"attribute": 16777219,
+				"repeat_available": [],
+				"shuffle_available": []
+			},
+			"getPresetInfo": {
+				"response_code": 0,
+				"preset_info": [
+					{ "input": "net_radio", "text": "007 laut.fm (Germany/German)", "attribute": 0 },
+					{
+						"input": "net_radio",
+						"text": "100% Helene - von SchlagerPlanet (Munich/German)",
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "100% Schlager - von SchlagerPlanet (Munich/German)",
+						"attribute": 0
+					},
+					{ "input": "net_radio", "text": "1A 80er Hits (Magdeburg/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "1A NDW (Hof/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "ANTENNE BAYERN Chillout (Ismaning/German)", "attribute": 0 },
+					{
+						"input": "net_radio",
+						"text": "ANTENNE BAYERN Oldies but Goldies (Ismaning/German)",
+						"attribute": 0
+					},
+					{ "input": "net_radio", "text": "ANTENNE THÜRINGEN (Weimar/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "Bayern 1 - Mainfranken (Würzburg/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "BAYERN 3 (Munich/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "BR-KLASSIK (Munich/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "HIT RADIO FFH (Bad Vilbel/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "hr-iNFO (Frankfurt am Main/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "hr1 (Frankfurt am Main/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "hr3 (Frankfurt am Main/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "hr4 (Kassel/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "radio B2 Helene Fischer (Berlin/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "RADIO PSR 80er (Leipzig/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "ROCK ANTENNE (Ismaning/German)", "attribute": 0 },
+					{
+						"input": "net_radio",
+						"text": "RPR1. Neue Deutsche Welle (Ludwigshafen am Rhein/German)",
+						"attribute": 0
+					},
+					{ "input": "net_radio", "text": "SWR 1 Rheinland-Pfalz (Mainz/German)", "attribute": 0 },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" }
+				],
+				"func_list": [ "clear", "move" ]
+			},
+			"getSettings": {
+				"response_code": 0,
+				"qobuz": {
+					"quality": {
+						"value": "hr_192_24",
+						"value_list": [
+							{ "value": "mp3_320", "attribute": 1 },
+							{ "value": "cd_44_16", "attribute": 1 },
+							{ "value": "hr_96_24", "attribute": 0 },
+							{ "value": "hr_192_24", "attribute": 0 }
+						]
+					}
+				}
+			},
+			"getRecentInfo": {
+				"response_code": 0,
+				"recent_info": [
+					{
+						"input": "net_radio",
+						"text": "100% Helene von Schlagerplanet Radio (Munich/German)",
+						"albumart_url": "http://static.airable.io:80/84/15/267092.png",
+						"play_count": 3,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "007 - laut.fm (Germany/German)",
+						"albumart_url": "http://static.airable.io:80/72/64/108511.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "SWR1 Rheinland-Pfalz (Mainz/German)",
+						"albumart_url": "http://static.airable.io:80/36/20/844970.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "ANTENNE BAYERN Oldies but Goldies (Ismaning/German)",
+						"albumart_url": "http://static.airable.io:80/18/68/820107.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "1A 80er Hits (Magdeburg/German)",
+						"albumart_url": "http://static.airable.io:80/63/43/221760.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "RADIO PSR - 80er (Leipzig/German)",
+						"albumart_url": "http://static.airable.io:80/63/92/340744.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "- 1 A - NDW (Neue Deutsche Welle) von 1A Radio (Hof/German)",
+						"albumart_url": "http://static.airable.io:80/57/48/784218.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "RPR1. Neue Deutsche Welle (Ludwigshafen am Rhein/German)",
+						"albumart_url": "http://static.airable.io:80/57/01/898267.png",
+						"play_count": 3,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "100% Schlager - von SchlagerPlanet (Munich/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "HIT RADIO FFH (Bad Vilbel/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "hr1 (Frankfurt am Main/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "ANTENNE THÜRINGEN (Weimar/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "server",
+						"text": "1. FC Nürnberg - Die Legende lebt",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{
+						"input": "net_radio",
+						"text": "Bayern 1 - Mainfranken (Würzburg/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{ "input": "server", "text": "", "albumart_url": "", "play_count": 0, "attribute": 30 },
+					{
+						"input": "server",
+						"text": "You'll Be in My Heart (Phil Version)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Spanish Train",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "The Service Set: Army - Navy - Airforce - Marine Corp Hymn",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Was Wichtig Ist",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Missing You - Chris de Burgh, DeBurgh, Chris",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Spanish Train - Chris de Burgh, DeBurgh, Chris",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Opening Fanfare - Massed Pipes & Drums",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Advance Australia Fair",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "March Of The King Of Laoise",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Drummer's Call",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Solo Sword Dance",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Achterbahn (Extended Mix)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 30
+					},
+					{ "input": "server", "text": "Männer", "albumart_url": "", "play_count": 0, "attribute": 30 },
+					{ "input": "server", "text": "Bochum", "albumart_url": "", "play_count": 0, "attribute": 30 },
+					{
+						"input": "net_radio",
+						"text": "ROCK ANTENNE (Ismaning/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "radio B2 Helene Fischer (Berlin/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "hr4 (Kassel/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "hr3 (Frankfurt am Main/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "hr-iNFO (Frankfurt am Main/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "FFH DIE 80ER (Bad Vilbel/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "FFH SCHLAGERKULT (Bad Vilbel/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "FFH WEIHNACHTSRADIO (Bad Vilbel/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "BR-KLASSIK (Munich/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "BAYERN 3 (Munich/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "ANTENNE BAYERN Chillout (Ismaning/German)",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					}
+				]
+			}
+		},
+		"clock": {
+			"getSettings": {
+				"response_code": 0,
+				"auto_sync": true,
+				"alarm": {
+					"alarm_on": false,
+					"volume": 25,
+					"fade_interval": 180,
+					"fade_type": 1,
+					"mode": "oneday",
+					"repeat": false,
+					"oneday": {
+						"enable": false,
+						"time": "0800",
+						"beep": true,
+						"playback_type": "resume",
+						"resume": { "input": "none" },
+						"snooze": false
+					}
+				}
+			}
+		},
+		"main": {
+			"getStatus": {
+				"response_code": 0,
+				"power": "standby",
+				"sleep": 0,
+				"volume": 5,
+				"mute": false,
+				"max_volume": 60,
+				"input": "net_radio",
+				"input_text": "Net Radio",
+				"distribution_enable": true,
+				"sound_program": "bass_booster",
+				"equalizer": { "mode": "manual", "low": 0, "mid": 0, "high": 0 },
+				"link_control": "standard",
+				"link_audio_delay": "balanced",
+				"disable_flags": 0
+			},
+			"getSoundProgramList": { "response_code": 0, "sound_program_list": [ "bass_booster", "standard" ] },
+			"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "", "fs": "" } }
+		}
+	}
+}

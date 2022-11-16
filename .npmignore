@@ -3,6 +3,7 @@ node_modules
 .idea
 .git
 /node_modules
+test
 
 # npm package files
 package-lock.json

@@ -1,0 +1,625 @@
+{
+	"YAS_306": {
+		"system": {
+			"getDeviceInfo": {
+				"response_code": 0,
+				"model_name": "YAS-306",
+				"destination": "BG",
+				"device_id": "00A0DED8DC1E",
+				"system_id": "02AB7713",
+				"system_version": 2.1,
+				"api_version": 2.08,
+				"netmodule_generation": 1,
+				"netmodule_version": "1925 ",
+				"netmodule_checksum": "F73506B6",
+				"operation_mode": "normal",
+				"update_error_code": "00000000"
+			},
+			"getNetworkStatus": {
+				"response_code": 0,
+				"network_name": "Wohnzimmer",
+				"connection": "wired_lan",
+				"dhcp": true,
+				"ip_address": "192.168.0.130",
+				"subnet_mask": "255.255.255.0",
+				"default_gateway": "192.168.0.5",
+				"dns_server_1": "192.168.0.5",
+				"dns_server_2": "0.0.0.0",
+				"wireless_lan": { "ssid": "HZTD67Fr45d", "type": "wpa2-psk(aes)", "key": "", "ch": 0, "strength": 0 },
+				"wireless_direct": { "ssid": "YAS-306 D8DC1E", "type": "none", "key": "" },
+				"musiccast_network": {
+					"ready": true,
+					"device_type": "standard",
+					"child_num": 0,
+					"ch": 0,
+					"initial_join_running": false
+				},
+				"mac_address": {
+					"wired_lan": "00A0DED8DC1E",
+					"wireless_lan": "88C2551ACBA8",
+					"wireless_direct": "88C2551ACBA9"
+				},
+				"airplay_pin": ""
+			},
+			"getFuncStatus": { "response_code": 0, "auto_power_standby": false },
+			"getLocationInfo": {
+				"response_code": 0,
+				"id": "2591544468f34ae392ea3469c43fafb9",
+				"name": "Mondfeld",
+				"zone_list": { "main": true }
+			},
+			"getFeatures": {
+				"response_code": 0,
+				"system": {
+					"func_list": [
+						"wired_lan",
+						"wireless_lan",
+						"wireless_direct",
+						"network_standby",
+						"auto_power_standby",
+						"bluetooth_tx_setting",
+						"airplay",
+						"disklavier_settings",
+						"network_reboot"
+					],
+					"zone_num": 1,
+					"input_list": [
+						{
+							"id": "napster",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "spotify",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "juke",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "qobuz",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "tidal",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "deezer",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "airplay",
+							"distribution_enable": false,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "mc_link",
+							"distribution_enable": false,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "server",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "net_radio",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "bluetooth",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "tv",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "bd_dvd",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "analog",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						}
+					]
+				},
+				"zone": [
+					{
+						"id": "main",
+						"func_list": [
+							"power",
+							"volume",
+							"mute",
+							"sound_program",
+							"clear_voice",
+							"subwoofer_volume",
+							"bass_extension",
+							"signal_info",
+							"prepare_input_change",
+							"link_control",
+							"link_audio_delay",
+							"link_audio_quality"
+						],
+						"input_list": [
+							"napster",
+							"spotify",
+							"juke",
+							"qobuz",
+							"tidal",
+							"deezer",
+							"airplay",
+							"mc_link",
+							"server",
+							"net_radio",
+							"bluetooth",
+							"tv",
+							"bd_dvd",
+							"analog"
+						],
+						"sound_program_list": [ "sports", "game", "music", "tv_program", "movie", "stereo" ],
+						"link_control_list": [ "speed", "standard", "stability" ],
+						"link_audio_delay_list": [ "audio_sync", "lip_sync" ],
+						"link_audio_quality_list": [ "compressed", "uncompressed" ],
+						"range_step": [
+							{ "id": "volume", "min": 0, "max": 100, "step": 1 },
+							{ "id": "subwoofer_volume", "min": -4, "max": 4, "step": 1 }
+						]
+					}
+				],
+				"netusb": {
+					"func_list": [ "recent_info", "play_queue", "mc_playlist", "streaming_service_use" ],
+					"preset": { "num": 40 },
+					"recent_info": { "num": 40 },
+					"play_queue": { "size": 200 },
+					"mc_playlist": { "size": 200, "num": 5 },
+					"net_radio_type": "airable",
+					"pandora": { "sort_option_list": [ "date", "alphabet" ] },
+					"siriusxm": { "api_type": "everest" }
+				},
+				"distribution": {
+					"version": 2,
+					"compatible_client": [ 2 ],
+					"client_max": 9,
+					"server_zone_list": [ "main" ]
+				},
+				"ccs": { "supported": true }
+			}
+		},
+		"dist": {
+			"getFeatures": {
+				"response_code": 0,
+				"group_id": "00000000000000000000000000000000",
+				"group_name": "(Linked) Wohnzimmer",
+				"role": "none",
+				"server_zone": "main",
+				"client_list": []
+			}
+		},
+		"netusb": {
+			"getPlayInfo": {
+				"response_code": 0,
+				"input": "bluetooth",
+				"play_queue_type": "system",
+				"playback": "stop",
+				"repeat": "off",
+				"shuffle": "off",
+				"play_time": -60000,
+				"total_time": 0,
+				"artist": "",
+				"album": "",
+				"track": "",
+				"albumart_url": "",
+				"albumart_id": 3102,
+				"usb_devicetype": "unknown",
+				"auto_stopped": false,
+				"attribute": 16777247,
+				"repeat_available": [ "off", "one", "all" ],
+				"shuffle_available": [ "off", "on" ]
+			},
+			"getPresetInfo": {
+				"response_code": 0,
+				"preset_info": [
+					{ "input": "net_radio", "text": "Bayern 1 - Mainfranken (Würzburg/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "Jan Van Veen's Candlelight (Hilversum/Dutch)", "attribute": 0 },
+					{ "input": "net_radio", "text": "SmoothJazz.com Global Radio (Salinas/English)", "attribute": 0 },
+					{ "input": "net_radio", "text": "Miled Music - Blues (Mexico/Spanish)", "attribute": 0 },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" }
+				],
+				"func_list": [ "clear", "move" ]
+			},
+			"getSettings": {
+				"response_code": 0,
+				"qobuz": {
+					"quality": {
+						"value": "hr_192_24",
+						"value_list": [
+							{ "value": "mp3_320", "attribute": 1 },
+							{ "value": "cd_44_16", "attribute": 1 },
+							{ "value": "hr_96_24", "attribute": 0 },
+							{ "value": "hr_192_24", "attribute": 0 }
+						]
+					}
+				}
+			},
+			"getRecentInfo": {
+				"response_code": 0,
+				"recent_info": [
+					{
+						"input": "net_radio",
+						"text": "BAYERN 1 Mainfranken (Würzburg/German)",
+						"albumart_url": "http://static.airable.io:80/94/58/280987.png",
+						"play_count": 2,
+						"attribute": 0
+					},
+					{
+						"input": "server",
+						"text": "This Island Earth",
+						"albumart_url": "http://192.168.0.6:32469/proxy/cffcf2070170c4430dba/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "That’s How Strong My Love Is",
+						"albumart_url": "http://192.168.0.6:32469/proxy/cffcf2070170c4430dba/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Carrickfergus",
+						"albumart_url": "http://192.168.0.6:32469/proxy/cffcf2070170c4430dba/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "What Goes On",
+						"albumart_url": "http://192.168.0.6:32469/proxy/cffcf2070170c4430dba/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Take Me to the River",
+						"albumart_url": "http://192.168.0.6:32469/proxy/cffcf2070170c4430dba/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "When She Walks in the Room",
+						"albumart_url": "http://192.168.0.6:32469/proxy/cffcf2070170c4430dba/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "The Same Old Blues",
+						"albumart_url": "http://192.168.0.6:32469/proxy/cffcf2070170c4430dba/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Hold On (I’m Coming)",
+						"albumart_url": "http://192.168.0.6:32469/proxy/cffcf2070170c4430dba/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Can’t Let Go",
+						"albumart_url": "http://192.168.0.6:32469/proxy/cffcf2070170c4430dba/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Sign of the Times",
+						"albumart_url": "http://192.168.0.6:32469/proxy/cffcf2070170c4430dba/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "If It Doesn't Come Naturally, Leave It",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Merlin's Time",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Time Passages",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Running Man",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Princess Olivia",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Delia's Gone",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Indian Summer",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Pandora",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Here in Angola",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Year of the Cat",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Clarence Frogman Henry",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Valentina Way",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "On the Border",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Soho (Needless to Say)",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Nostradamus",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Roads to Moscow",
+						"albumart_url": "http://192.168.0.6:32469/proxy/e0bddf7316169fca65c0/albumart.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Little Guitar.mp3",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Journey To Ixtlan.mp3",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Genevieve.mp3",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Shine For Me.mp3",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Be A Good Friend Of Mine.mp3",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Anyone Can Light A Candle.mp3",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Is It Love.mp3",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Garden Of Senses.mp3",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Jazzy Box.mp3",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{ "input": "server", "text": "Money.mp3", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{
+						"input": "server",
+						"text": "Page Of Life.mp3",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Wisdom Chain.mp3",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Outside Of This (Inside Of That).mp3",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					}
+				]
+			}
+		},
+		"main": {
+			"getStatus": {
+				"response_code": 0,
+				"power": "standby",
+				"volume": 44,
+				"mute": false,
+				"max_volume": 100,
+				"input": "analog",
+				"distribution_enable": true,
+				"sound_program": "stereo",
+				"clear_voice": true,
+				"subwoofer_volume": -1,
+				"bass_extension": false,
+				"link_control": "speed",
+				"link_audio_delay": "audio_sync",
+				"link_audio_quality": "compressed",
+				"disable_flags": 0
+			},
+			"getSoundProgramList": {
+				"response_code": 0,
+				"sound_program_list": [ "sports", "game", "music", "tv_program", "movie", "stereo" ]
+			},
+			"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "", "fs": "" } }
+		}
+	}
+}

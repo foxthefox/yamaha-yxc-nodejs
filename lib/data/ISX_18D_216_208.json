@@ -1,0 +1,916 @@
+{
+	"ISX-18D": {
+		"system": {
+			"getDeviceInfo": {
+				"response_code": 0,
+				"model_name": "ISX-18D",
+				"destination": "BG",
+				"device_id": "00A0DEF6C221",
+				"system_id": "03715C73",
+				"system_version": 2.16,
+				"api_version": 2.08,
+				"netmodule_generation": 1,
+				"netmodule_version": "1925 ",
+				"netmodule_checksum": "F73506B6",
+				"operation_mode": "normal",
+				"update_error_code": "00000000"
+			},
+			"getNetworkStatus": {
+				"response_code": 0,
+				"network_name": "MC-Bad",
+				"connection": "extend_1",
+				"dhcp": true,
+				"ip_address": "192.168.178.210",
+				"subnet_mask": "255.255.255.0",
+				"default_gateway": "192.168.178.1",
+				"dns_server_1": "192.168.178.1",
+				"dns_server_2": "0.0.0.0",
+				"wireless_lan": {
+					"ssid": "Ethernet-1989?",
+					"type": "wpa2-psk(aes)",
+					"key": "",
+					"ch": 0,
+					"strength": 0
+				},
+				"wireless_direct": {
+					"ssid": "ISX-18D F6C221",
+					"type": "none",
+					"key": ""
+				},
+				"musiccast_network": {
+					"ready": true,
+					"device_type": "root",
+					"child_num": 0,
+					"ch": 6,
+					"initial_join_running": false
+				},
+				"mac_address": {
+					"wired_lan": "00A0DEF6C221",
+					"wireless_lan": "5CF821AB57FC",
+					"wireless_direct": "5CF821AB57FD"
+				},
+				"airplay_pin": ""
+			},
+			"getFuncStatus": {
+				"response_code": 0,
+				"auto_power_standby": true,
+				"dimmer": 1
+			},
+			"getLocationInfo": {
+				"response_code": 0,
+				"id": "4fdd1bd86a4147aa8e14d97380d3bbd3",
+				"name": "1.OG",
+				"zone_list": {
+					"main": true
+				}
+			},
+			"getFeatures": {
+				"response_code": 0,
+				"system": {
+					"func_list": [
+						"wired_lan",
+						"wireless_lan",
+						"wireless_direct",
+						"network_standby",
+						"auto_power_standby",
+						"bluetooth_tx_setting",
+						"dimmer",
+						"airplay",
+						"network_reboot"
+					],
+					"zone_num": 1,
+					"input_list": [
+						{
+							"id": "napster",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "spotify",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "juke",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "qobuz",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "tidal",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "deezer",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "airplay",
+							"distribution_enable": false,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "mc_link",
+							"distribution_enable": false,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "server",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "net_radio",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "bluetooth",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "tuner",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "tuner"
+						}
+					],
+					"range_step": [
+						{
+							"id": "dimmer",
+							"min": -1,
+							"max": 2,
+							"step": 1
+						}
+					]
+				},
+				"zone": [
+					{
+						"id": "main",
+						"func_list": [
+							"power",
+							"sleep",
+							"volume",
+							"mute",
+							"equalizer",
+							"signal_info",
+							"prepare_input_change",
+							"link_control",
+							"link_audio_delay",
+							"link_audio_quality"
+						],
+						"input_list": [
+							"napster",
+							"spotify",
+							"juke",
+							"qobuz",
+							"tidal",
+							"deezer",
+							"airplay",
+							"mc_link",
+							"server",
+							"net_radio",
+							"bluetooth",
+							"tuner"
+						],
+						"equalizer_mode_list": [ "manual" ],
+						"link_control_list": [ "speed", "standard", "stability" ],
+						"link_audio_delay_list": [ "audio_sync_on", "audio_sync_off" ],
+						"link_audio_quality_list": [ "compressed", "uncompressed" ],
+						"range_step": [
+							{
+								"id": "volume",
+								"min": 0,
+								"max": 60,
+								"step": 1
+							},
+							{
+								"id": "equalizer",
+								"min": -10,
+								"max": 10,
+								"step": 1
+							}
+						]
+					}
+				],
+				"tuner": {
+					"func_list": [ "fm", "dab", "fm_auto_preset", "dab_initial_scan", "dab_tune_aid" ],
+					"range_step": [
+						{
+							"id": "fm",
+							"min": 87500,
+							"max": 108000,
+							"step": 50
+						}
+					],
+					"preset": {
+						"type": "separate",
+						"num": 30
+					}
+				},
+				"netusb": {
+					"func_list": [ "recent_info", "play_queue", "mc_playlist", "streaming_service_use" ],
+					"preset": {
+						"num": 40
+					},
+					"recent_info": {
+						"num": 40
+					},
+					"play_queue": {
+						"size": 200
+					},
+					"mc_playlist": {
+						"size": 200,
+						"num": 5
+					},
+					"net_radio_type": "airable",
+					"pandora": {
+						"sort_option_list": [ "date", "alphabet" ]
+					},
+					"siriusxm": {
+						"api_type": "everest"
+					}
+				},
+				"distribution": {
+					"version": 2,
+					"compatible_client": [ 2 ],
+					"client_max": 9,
+					"server_zone_list": [ "main" ]
+				},
+				"clock": {
+					"func_list": [ "date_and_time", "alarm", "format" ],
+					"range_step": [
+						{
+							"id": "alarm_volume",
+							"min": 5,
+							"max": 60,
+							"step": 1
+						},
+						{
+							"id": "alarm_fade",
+							"min": 180,
+							"max": 180,
+							"step": 1
+						}
+					],
+					"alarm_fade_type_num": 1,
+					"alarm_mode_list": [ "oneday" ],
+					"alarm_input_list": [
+						"none",
+						"tuner",
+						"server",
+						"net_radio",
+						"napster",
+						"spotify",
+						"juke",
+						"qobuz",
+						"tidal",
+						"deezer"
+					],
+					"alarm_preset_list": [ "netusb", "fm", "dab" ]
+				},
+				"ccs": {
+					"supported": true
+				}
+			}
+		},
+		"dist": {
+			"getFeatures": {
+				"response_code": 0,
+				"group_id": "00000000000000000000000000000000",
+				"group_name": "(Linked) MC-Bad",
+				"role": "none",
+				"server_zone": "main",
+				"client_list": []
+			}
+		},
+		"netusb": {
+			"getPlayInfo": {
+				"response_code": 0,
+				"input": "net_radio",
+				"play_queue_type": "system",
+				"playback": "stop",
+				"repeat": "off",
+				"shuffle": "off",
+				"play_time": 0,
+				"total_time": 0,
+				"artist": "80s80s Deutsch (Berlin/German)",
+				"album": "",
+				"track": "Herbert Grönemeyer - Alkohol",
+				"albumart_url": "",
+				"albumart_id": 3213,
+				"usb_devicetype": "unknown",
+				"auto_stopped": false,
+				"attribute": 16785411,
+				"repeat_available": [],
+				"shuffle_available": []
+			},
+			"getPresetInfo": {
+				"response_code": 0,
+				"preset_info": [
+					{
+						"input": "net_radio",
+						"text": "hr3 (Frankfurt am Main/German)",
+						"attribute": 0
+					},
+					{
+						"input": "server",
+						"text": "hr3 Stream",
+						"attribute": 30
+					},
+					{
+						"input": "net_radio",
+						"text": "80s80s DAB+ (Berlin/German)",
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "80s80s Deutsch (Berlin/German)",
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					},
+					{
+						"input": "unknown",
+						"text": ""
+					}
+				],
+				"func_list": [ "clear", "move" ]
+			},
+			"getSettings": {
+				"response_code": 0,
+				"qobuz": {
+					"quality": {
+						"value": "hr_192_24",
+						"value_list": [
+							{
+								"value": "mp3_320",
+								"attribute": 1
+							},
+							{
+								"value": "cd_44_16",
+								"attribute": 1
+							},
+							{
+								"value": "hr_96_24",
+								"attribute": 0
+							},
+							{
+								"value": "hr_192_24",
+								"attribute": 0
+							}
+						]
+					}
+				}
+			},
+			"getRecentInfo": {
+				"response_code": 0,
+				"recent_info": [
+					{
+						"input": "net_radio",
+						"text": "80s80s Deutsch (Berlin/German)",
+						"albumart_url": "http://static.airable.io:80/41/75/616921.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "80s80s DAB+ (Berlin/German)",
+						"albumart_url": "http://static.airable.io:80/63/60/924420.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "hr3 (Frankfurt am Main/German)",
+						"albumart_url": "http://static.airable.io:80/09/60/656536.png",
+						"play_count": 5,
+						"attribute": 0
+					},
+					{
+						"input": "server",
+						"text": "Der Dino Park",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaa/A/O0I39440.jpg?scale=org",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "net_radio",
+						"text": "80s80s MV (Plate/German)",
+						"albumart_url": "http://static.airable.io:80/44/88/222997.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "server",
+						"text": "1a",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNPNG_TN-OP01-CI1-FLAGS00d00000/defaa/A/O0I132366.png?scale=org",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Take On Me (Dj Mau Mau Remix)",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I25601.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "01 Ein Hilferuf",
+						"albumart_url": "http://192.168.178.11:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I207617.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Hold On My Heart",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I421121.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Your Own Special Way",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I420865.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Throwing It All Away",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I420609.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Many Too Many",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I420353.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Misunderstanding",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I420097.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "In Too Deep",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I419841.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Jesus He Knows Me",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I419585.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Man On The Corner",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I419329.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Land Of Confusion",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I419073.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "No Son Of Mine",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I418817.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Invisible Touch",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I418561.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "I Can't Dance",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I418305.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Mama",
+						"albumart_url": "http://192.168.178.10:9000/disk/DLNA-PNJPEG_TN-OP01-CI1-FLAGS00d00000/defaultalbumart/a_u_d_i_o.jpg/O0$1$8I418049.jpg?scale=160x160",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "hr3 Stream",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "hr3 Stream",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					},
+					{
+						"input": "unknown",
+						"text": "",
+						"albumart_url": "",
+						"play_count": 0,
+						"attribute": 0
+					}
+				]
+			}
+		},
+		"tuner": {
+			"getPlayInfo": {
+				"response_code": 0,
+				"band": "dab",
+				"auto_scan": false,
+				"auto_preset": false,
+				"fm": {
+					"preset": 0,
+					"freq": 107950,
+					"tuned": false,
+					"audio_mode": "mono"
+				},
+				"dab": {
+					"preset": 1,
+					"id": 0,
+					"status": "not_ready",
+					"freq": 0,
+					"category": "primary",
+					"audio_mode": "mono",
+					"bit_rate": 0,
+					"quality": 0,
+					"tune_aid": 0,
+					"off_air": true,
+					"dab_plus": false,
+					"program_type": "",
+					"ch_label": "",
+					"service_label": "",
+					"dls": "",
+					"ensemble_label": "",
+					"initial_scan_progress": 0,
+					"total_station_num": 0
+				}
+			},
+			"getPresetInfo": {
+				"response_code": 4
+			}
+		},
+		"clock": {
+			"getSettings": {
+				"response_code": 0,
+				"auto_sync": true,
+				"format": "24h",
+				"alarm": {
+					"alarm_on": false,
+					"volume": 25,
+					"fade_interval": 180,
+					"fade_type": 1,
+					"mode": "oneday",
+					"repeat": false,
+					"oneday": {
+						"enable": false,
+						"time": "0800",
+						"beep": true,
+						"playback_type": "resume",
+						"resume": {
+							"input": "tuner"
+						}
+					}
+				}
+			}
+		},
+		"main": {
+			"getStatus": {
+				"response_code": 0,
+				"power": "standby",
+				"sleep": 0,
+				"volume": 26,
+				"mute": false,
+				"max_volume": 60,
+				"input": "net_radio",
+				"distribution_enable": true,
+				"equalizer": {
+					"mode": "manual",
+					"low": 10,
+					"mid": 7,
+					"high": 10
+				},
+				"link_control": "standard",
+				"link_audio_delay": "audio_sync_on",
+				"link_audio_quality": "compressed",
+				"disable_flags": 0
+			},
+			"getSoundProgramList": {
+				"response_code": 0,
+				"sound_program_list": []
+			},
+			"getSignalInfo": {
+				"response_code": 0,
+				"audio": {
+					"error": 0,
+					"format": "",
+					"fs": ""
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1035 @@
+{
+	"RX_A2070": {
+		"system": {
+			"getDeviceInfo": {
+				"response_code": 0,
+				"model_name": "RX-A2070",
+				"destination": "BG",
+				"device_id": "AC44F241D7D9",
+				"system_id": "0B23E7D3",
+				"system_version": 2.87,
+				"api_version": 2.08,
+				"netmodule_generation": 1,
+				"netmodule_version": "1923 ",
+				"netmodule_checksum": "A7E6476F",
+				"operation_mode": "normal",
+				"update_error_code": "00000000"
+			},
+			"getNetworkStatus": {
+				"response_code": 0,
+				"network_name": "Wohnzimmer",
+				"connection": "wired_lan",
+				"dhcp": false,
+				"ip_address": "10.0.0.5",
+				"subnet_mask": "255.255.255.0",
+				"default_gateway": "10.0.0.1",
+				"dns_server_1": "10.0.0.1",
+				"dns_server_2": "8.8.8.8",
+				"wireless_lan": { "ssid": "", "type": "none", "key": "", "ch": 0, "strength": 0 },
+				"wireless_direct": { "ssid": "RX-A2070 41D7D9", "type": "none", "key": "" },
+				"musiccast_network": {
+					"ready": true,
+					"device_type": "standard",
+					"child_num": 0,
+					"ch": 0,
+					"initial_join_running": false
+				},
+				"mac_address": {
+					"wired_lan": "AC44F241D7D9",
+					"wireless_lan": "94E36D8E80CF",
+					"wireless_direct": "94E36D8E80D0"
+				},
+				"airplay_pin": ""
+			},
+			"getFuncStatus": {
+				"response_code": 0,
+				"hdmi_out_1": true,
+				"hdmi_out_2": true,
+				"party_mode": false,
+				"speaker_pattern": 1
+			},
+			"getLocationInfo": {
+				"response_code": 0,
+				"id": "5d5c1b0f78dd41d293d8b1dccef50e9c",
+				"name": "Zuhause",
+				"zone_list": { "main": true, "zone2": false, "zone3": false, "zone4": false }
+			},
+			"getFeatures": {
+				"response_code": 0,
+				"system": {
+					"func_list": [
+						"wired_lan",
+						"wireless_lan",
+						"wireless_direct",
+						"network_standby",
+						"network_standby_auto",
+						"bluetooth_standby",
+						"bluetooth_tx_setting",
+						"hdmi_out_1",
+						"hdmi_out_2",
+						"airplay",
+						"disklavier_settings",
+						"remote_info",
+						"network_reboot",
+						"party_mode",
+						"speaker_pattern"
+					],
+					"zone_num": 4,
+					"input_list": [
+						{
+							"id": "napster",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "spotify",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "juke",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "qobuz",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "tidal",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "deezer",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "airplay",
+							"distribution_enable": false,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "mc_link",
+							"distribution_enable": false,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "server",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "net_radio",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "bluetooth",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "usb",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "tuner",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "tuner"
+						},
+						{
+							"id": "av1",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "av2",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "av3",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "av4",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "av5",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "av6",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "av7",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "audio1",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "audio2",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "audio3",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "phono",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "v_aux",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "main_sync",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						}
+					],
+					"speaker_pattern_num": 2
+				},
+				"zone": [
+					{
+						"id": "main",
+						"func_list": [
+							"power",
+							"sleep",
+							"volume",
+							"mute",
+							"sound_program",
+							"pure_direct",
+							"enhancer",
+							"tone_control",
+							"dialogue_level",
+							"signal_info",
+							"prepare_input_change",
+							"link_control",
+							"link_audio_delay",
+							"link_audio_quality",
+							"scene",
+							"audio_select",
+							"cursor",
+							"menu",
+							"surr_decoder_type",
+							"contents_display",
+							"actual_volume"
+						],
+						"input_list": [
+							"napster",
+							"spotify",
+							"juke",
+							"qobuz",
+							"tidal",
+							"deezer",
+							"airplay",
+							"mc_link",
+							"server",
+							"net_radio",
+							"bluetooth",
+							"usb",
+							"tuner",
+							"av1",
+							"av2",
+							"av3",
+							"av4",
+							"av5",
+							"av6",
+							"av7",
+							"audio1",
+							"audio2",
+							"audio3",
+							"phono",
+							"v_aux"
+						],
+						"sound_program_list": [
+							"munich",
+							"vienna",
+							"amsterdam",
+							"freiburg",
+							"royaumont",
+							"chamber",
+							"village_vanguard",
+							"warehouse_loft",
+							"cellar_club",
+							"roxy_theatre",
+							"bottom_line",
+							"sports",
+							"action_game",
+							"roleplaying_game",
+							"music_video",
+							"recital_opera",
+							"standard",
+							"spectacle",
+							"sci-fi",
+							"adventure",
+							"drama",
+							"mono_movie",
+							"enhanced",
+							"2ch_stereo",
+							"9ch_stereo",
+							"surr_decoder",
+							"straight"
+						],
+						"surr_decoder_type_list": [
+							"toggle",
+							"auto",
+							"dolby_surround",
+							"dts_neural_x",
+							"dts_neo6_cinema",
+							"dts_neo6_music"
+						],
+						"tone_control_mode_list": [ "manual" ],
+						"link_control_list": [ "speed", "standard", "stability" ],
+						"link_audio_delay_list": [ "audio_sync", "lip_sync" ],
+						"link_audio_quality_list": [ "compressed", "uncompressed" ],
+						"range_step": [
+							{ "id": "volume", "min": 0, "max": 161, "step": 1 },
+							{ "id": "tone_control", "min": -12, "max": 12, "step": 1 },
+							{ "id": "dialogue_level", "min": 0, "max": 3, "step": 1 },
+							{ "id": "actual_volume_db", "min": -80.5, "max": 16.5, "step": 0.5 }
+						],
+						"scene_num": 12,
+						"cursor_list": [ "up", "down", "left", "right", "select", "return" ],
+						"menu_list": [
+							"on_screen",
+							"top_menu",
+							"menu",
+							"option",
+							"display",
+							"red",
+							"green",
+							"yellow",
+							"blue"
+						],
+						"actual_volume_mode_list": [ "db" ],
+						"audio_select_list": [ "auto", "hdmi", "coax_opt", "analog", "unavailable" ]
+					},
+					{
+						"id": "zone2",
+						"zone_b": false,
+						"func_list": [
+							"power",
+							"sleep",
+							"volume",
+							"mute",
+							"enhancer",
+							"tone_control",
+							"prepare_input_change",
+							"link_control",
+							"link_audio_quality",
+							"scene",
+							"cursor",
+							"contents_display",
+							"actual_volume"
+						],
+						"input_list": [
+							"napster",
+							"spotify",
+							"juke",
+							"qobuz",
+							"tidal",
+							"deezer",
+							"airplay",
+							"mc_link",
+							"server",
+							"net_radio",
+							"bluetooth",
+							"usb",
+							"tuner",
+							"av1",
+							"av2",
+							"av3",
+							"av4",
+							"av5",
+							"av6",
+							"av7",
+							"audio1",
+							"audio2",
+							"audio3",
+							"phono",
+							"v_aux",
+							"main_sync"
+						],
+						"tone_control_mode_list": [ "manual", "auto", "bypass" ],
+						"link_control_list": [ "speed", "standard", "stability" ],
+						"link_audio_quality_list": [ "compressed", "uncompressed" ],
+						"range_step": [
+							{ "id": "volume", "min": 0, "max": 161, "step": 1 },
+							{ "id": "tone_control", "min": -12, "max": 12, "step": 1 },
+							{ "id": "actual_volume_db", "min": -80.5, "max": 16.5, "step": 0.5 }
+						],
+						"scene_num": 4,
+						"cursor_list": [ "up", "down", "left", "right", "select", "return" ],
+						"actual_volume_mode_list": [ "db" ]
+					},
+					{
+						"id": "zone3",
+						"func_list": [
+							"power",
+							"sleep",
+							"volume",
+							"mute",
+							"enhancer",
+							"tone_control",
+							"prepare_input_change",
+							"scene",
+							"actual_volume"
+						],
+						"input_list": [
+							"napster",
+							"spotify",
+							"juke",
+							"qobuz",
+							"tidal",
+							"deezer",
+							"airplay",
+							"mc_link",
+							"server",
+							"net_radio",
+							"bluetooth",
+							"usb",
+							"tuner",
+							"av1",
+							"av2",
+							"av3",
+							"av4",
+							"audio1",
+							"audio2",
+							"audio3",
+							"phono",
+							"v_aux",
+							"main_sync"
+						],
+						"tone_control_mode_list": [ "manual", "auto", "bypass" ],
+						"range_step": [
+							{ "id": "volume", "min": 0, "max": 161, "step": 1 },
+							{ "id": "tone_control", "min": -12, "max": 12, "step": 1 },
+							{ "id": "actual_volume_db", "min": -80.5, "max": 16.5, "step": 0.5 }
+						],
+						"scene_num": 4,
+						"actual_volume_mode_list": [ "db" ]
+					},
+					{
+						"id": "zone4",
+						"func_list": [ "power", "sleep", "prepare_input_change", "scene" ],
+						"input_list": [ "av1", "av2", "av3", "av4", "av5", "av6", "av7", "v_aux" ],
+						"scene_num": 4
+					}
+				],
+				"tuner": {
+					"func_list": [ "fm", "rds", "dab" ],
+					"range_step": [ { "id": "fm", "min": 87500, "max": 108000, "step": 50 } ],
+					"preset": { "type": "separate", "num": 40 }
+				},
+				"netusb": {
+					"func_list": [ "recent_info", "play_queue", "mc_playlist", "streaming_service_use" ],
+					"preset": { "num": 40 },
+					"recent_info": { "num": 40 },
+					"play_queue": { "size": 200 },
+					"mc_playlist": { "size": 200, "num": 5 },
+					"net_radio_type": "airable",
+					"pandora": { "sort_option_list": [ "recent", "alphabet" ] },
+					"siriusxm": { "api_type": "everest" }
+				},
+				"distribution": {
+					"version": 2,
+					"compatible_client": [ 2 ],
+					"client_max": 9,
+					"server_zone_list": [ "main", "zone2" ]
+				},
+				"ccs": { "supported": true }
+			}
+		},
+		"dist": {
+			"getFeatures": {
+				"response_code": 0,
+				"group_id": "00000000000000000000000000000000",
+				"group_name": "(Linked) Wohnzimmer",
+				"role": "none",
+				"server_zone": "main",
+				"client_list": []
+			}
+		},
+		"netusb": {
+			"getPlayInfo": {
+				"response_code": 0,
+				"input": "server",
+				"play_queue_type": "system",
+				"playback": "play",
+				"repeat": "off",
+				"shuffle": "off",
+				"play_time": 9,
+				"total_time": 0,
+				"artist": "Hammock",
+				"album": "Silencia",
+				"track": "When It Hurts to Remember",
+				"albumart_url": "/YamahaRemoteControl/AlbumART/AlbumART5272.jpg",
+				"albumart_id": 5272,
+				"usb_devicetype": "unknown",
+				"auto_stopped": false,
+				"attribute": 83886591,
+				"repeat_available": [ "off", "one", "all" ],
+				"shuffle_available": [ "off", "on" ]
+			},
+			"getPresetInfo": {
+				"response_code": 0,
+				"preset_info": [
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" }
+				],
+				"func_list": [ "clear", "move" ]
+			},
+			"getSettings": {
+				"response_code": 0,
+				"qobuz": {
+					"quality": {
+						"value": "hr_192_24",
+						"value_list": [
+							{ "value": "mp3_320", "attribute": 1 },
+							{ "value": "cd_44_16", "attribute": 1 },
+							{ "value": "hr_96_24", "attribute": 0 },
+							{ "value": "hr_192_24", "attribute": 0 }
+						]
+					}
+				}
+			},
+			"getRecentInfo": {
+				"response_code": 0,
+				"recent_info": [
+					{
+						"input": "server",
+						"text": "When It Hurts to Remember",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Silencia*20(2019)/03*20When*20It*20Hurts*20to*20Remember.flac/$!picture-1323-36584.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Silencia",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Silencia*20(2019)/02*20Silencia.flac/$!picture-1306-36584.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Circular as Our Way",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Silencia*20(2019)/01*20Circular*20as*20Our*20Way.flac/$!picture-1317-36584.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Undercurrent 6 (Hypostatic)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Undercurrents*20(2019)/06*20Undercurrent*206*20(Hypostatic).flac/$!picture-1309-21333.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Undercurrent 5 (Calion Pills)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Undercurrents*20(2019)/05*20Undercurrent*205*20(Calion*20Pills).flac/$!picture-1314-21333.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Undercurrent 4 (Holotropic Disclosure)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Undercurrents*20(2019)/04*20Undercurrent*204*20(Holotropic*20Disclosure).flac/$!picture-1323-21333.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Undercurrent 3 (Grounded in Space)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Undercurrents*20(2019)/03*20Undercurrent*203*20(Grounded*20in*20Space).flac/$!picture-1312-21333.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Undercurrent 2 (Jesus Bombed a Baritone)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Undercurrents*20(2019)/02*20Undercurrent*202*20(Jesus*20Bombed*20a*20Baritone).flac/$!picture-1327-21333.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Undercurrent 1 (Morphic Resonance)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Undercurrents*20(2019)/01*20Undercurrent*201*20(Morphic*20Resonance).flac/$!picture-1321-21333.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Without Form and Void",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Silencia*20(2019)/11*20Without*20Form*20and*20Void.flac/$!picture-1320-36584.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Life Is Life",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Silencia*20(2019)/10*20Life*20Is*20Life.flac/$!picture-1307-36584.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Fascinans",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Silencia*20(2019)/09*20Fascinans.flac/$!picture-1303-36584.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Slowly You Dissolve",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Silencia*20(2019)/08*20Slowly*20You*20Dissolve.flac/$!picture-1321-36584.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "We Try to Make Sense of It All",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Silencia*20(2019)/07*20We*20Try*20to*20Make*20Sense*20of*20It*20All.flac/$!picture-1328-36584.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "In the Shattering of Things",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Silencia*20(2019)/06*20In*20the*20Shattering*20of*20Things.flac/$!picture-1325-36584.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Saudade",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Silencia*20(2019)/05*20Saudade.flac/$!picture-1305-36584.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Afraid to Forget",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Silencia*20(2019)/04*20Afraid*20to*20Forget.flac/$!picture-1318-36584.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Future Past",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Elsewhere*20(2021)/12*20Future*20Past.flac/$!picture-1585-27529.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Ineffable",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Elsewhere*20(2021)/11*20Ineffable.flac/$!picture-1511-27529.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Take Another Drink From My Hands (For Bella)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Elsewhere*20(2021)/10*20Take*20Another*20Drink*20From*20My*20Hands*20(For*20Bella).flac/$!picture-1582-27529.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "On the Way Out of No Way",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Elsewhere*20(2021)/09*20On*20the*20Way*20Out*20of*20No*20Way.flac/$!picture-1435-27529.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "What You Need Isn't There",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Elsewhere*20(2021)/08*20What*20You*20Need*20Isn*27t*20There.flac/$!picture-1616-27529.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Elsewhere",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Elsewhere*20(2021)/07*20Elsewhere.flac/$!picture-1600-27529.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Someday",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Elsewhere*20(2021)/06*20Someday.flac/$!picture-1490-27529.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "In the Empty Space You Used to Breathe",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Elsewhere*20(2021)/05*20In*20the*20Empty*20Space*20You*20Used*20to*20Breathe.flac/$!picture-1503-27529.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Dying Alone",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Elsewhere*20(2021)/04*20Dying*20Alone.flac/$!picture-1602-27529.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Afraid to Go Home",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Elsewhere*20(2021)/03*20Afraid*20to*20Go*20Home.flac/$!picture-1608-27529.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Heavy Laden",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Elsewhere*20(2021)/02*20Heavy*20Laden.flac/$!picture-1800-27529.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Before",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Post*20Rock/Hammock/Elsewhere*20(2021)/01*20Before.flac/$!picture-1543-27529.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Up in Smoke (extended mix)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20House/Dusky/Pressure*20(2022)/01*20Dusky*20-*20Up*20in*20Smoke*20(extended*20mix).flac/$!picture-1613-109356.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "OnlyL",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20Future*20Bass,*20PopHouse,*20Chilltrap/TSHA/Capricorn*20Sun*20(2022)/03*20TSHA*20feat.*20Nimmo*20-*20OnlyL.flac/$!picture-1836-57863.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "The Light",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20Future*20Bass,*20PopHouse,*20Chilltrap/TSHA/Capricorn*20Sun*20(2022)/02*20TSHA*20-*20The*20Light.flac/$!picture-1699-57863.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Where Am I",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic/!Serie/Kompakt*20Total/Total*2022*20*5b2022*5d/1-08*20Jonathan*20Kaspar*20-*20Where*20Am*20I.flac/$!picture-1535-302458.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "All Or Nothing (Michael Mayer Remix)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic/!Serie/Kompakt*20Total/Total*2022*20*5b2022*5d/1-07*20eee*20gee*20-*20All*20Or*20Nothing*20(Michael*20Mayer*20Remix).flac/$!picture-1527-302458.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "The Sharper Image",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic/!Serie/Kompakt*20Total/Total*2022*20*5b2022*5d/1-06*20Rebolledo*20-*20The*20Sharper*20Image.flac/$!picture-1350-302458.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "The Hills",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic/!Serie/Kompakt*20Total/Total*2022*20*5b2022*5d/1-05*20Perel*20-*20The*20Hills.flac/$!picture-1226-302458.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Why",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic/!Serie/Kompakt*20Total/Total*2022*20*5b2022*5d/1-04*20Voigt*20*26*20Voigt*20-*20Why.flac/$!picture-1218-302458.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Cinco Y Rojo",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic/!Serie/Kompakt*20Total/Total*2022*20*5b2022*5d/1-03*20Matias*20Aguayo*20-*20Cinco*20Y*20Rojo.flac/$!picture-1335-302458.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Le Monde A Changé",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic/!Serie/Kompakt*20Total/Total*2022*20*5b2022*5d/1-02*20J*c3*bcrgen*20Paape*20-*20Le*20Monde*20A*20Chang*c3*a9.flac/$!picture-1125-302458.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Crawling Up That Hill (Instrumental Version)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic/!Serie/Kompakt*20Total/Total*2022*20*5b2022*5d/1-01*20J*c3*b6rg*20Burger*20-*20Crawling*20Up*20That*20Hill*20(Instrumental*20Version).flac/$!picture-1257-302458.jpg",
+						"play_count": 1,
+						"attribute": 30
+					}
+				]
+			}
+		},
+		"tuner": {
+			"getPlayInfo": {
+				"response_code": 0,
+				"band": "fm",
+				"auto_scan": false,
+				"fm": { "preset": 0, "freq": 98100, "tuned": false, "audio_mode": "mono" },
+				"rds": { "program_type": "", "program_service": "", "radio_text_a": "", "radio_text_b": "" },
+				"dab": {
+					"preset": 0,
+					"id": 65535,
+					"status": "ready",
+					"freq": 0,
+					"category": "primary",
+					"audio_mode": "mono",
+					"bit_rate": 0,
+					"quality": 0,
+					"tune_aid": 0,
+					"off_air": false,
+					"dab_plus": false,
+					"program_type": "",
+					"ch_label": "",
+					"service_label": "",
+					"dls": "",
+					"ensemble_label": ""
+				}
+			},
+			"getPresetInfo": { "response_code": 4 }
+		},
+		"main": {
+			"getStatus": {
+				"response_code": 0,
+				"power": "on",
+				"sleep": 0,
+				"volume": 26,
+				"mute": false,
+				"max_volume": 161,
+				"input": "server",
+				"distribution_enable": true,
+				"sound_program": "straight",
+				"surr_decoder_type": "auto",
+				"pure_direct": false,
+				"enhancer": true,
+				"tone_control": { "mode": "auto", "bass": 0, "treble": 0 },
+				"dialogue_level": 3,
+				"link_control": "standard",
+				"link_audio_delay": "audio_sync",
+				"link_audio_quality": "uncompressed",
+				"disable_flags": 0,
+				"actual_volume": { "mode": "db", "value": -67.5, "unit": "dB" },
+				"contents_display": true,
+				"audio_select": "unavailable",
+				"party_enable": false
+			},
+			"getSoundProgramList": {
+				"response_code": 0,
+				"sound_program_list": [
+					"munich",
+					"vienna",
+					"amsterdam",
+					"freiburg",
+					"royaumont",
+					"chamber",
+					"village_vanguard",
+					"warehouse_loft",
+					"cellar_club",
+					"roxy_theatre",
+					"bottom_line",
+					"sports",
+					"action_game",
+					"roleplaying_game",
+					"music_video",
+					"recital_opera",
+					"standard",
+					"spectacle",
+					"sci-fi",
+					"adventure",
+					"drama",
+					"mono_movie",
+					"enhanced",
+					"2ch_stereo",
+					"9ch_stereo",
+					"surr_decoder",
+					"straight"
+				]
+			},
+			"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "FLAC", "fs": "44.1 kHz" } }
+		},
+		"zone2": {
+			"getStatus": {
+				"response_code": 0,
+				"power": "standby",
+				"sleep": 0,
+				"volume": 81,
+				"mute": false,
+				"max_volume": 161,
+				"input": "av1",
+				"distribution_enable": true,
+				"enhancer": true,
+				"tone_control": { "mode": "auto", "bass": 0, "treble": 0 },
+				"link_control": "standard",
+				"link_audio_quality": "uncompressed",
+				"disable_flags": 0,
+				"actual_volume": { "mode": "db", "value": -40, "unit": "dB" },
+				"contents_display": false,
+				"party_enable": false
+			},
+			"getSoundProgramList": { "response_code": 0, "sound_program_list": [] },
+			"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "FLAC", "fs": "" } }
+		},
+		"zone3": {
+			"getStatus": {
+				"response_code": 0,
+				"power": "standby",
+				"sleep": 0,
+				"volume": 81,
+				"mute": false,
+				"max_volume": 161,
+				"input": "av1",
+				"distribution_enable": false,
+				"enhancer": true,
+				"tone_control": { "mode": "auto", "bass": 0, "treble": 0 },
+				"disable_flags": 0,
+				"actual_volume": { "mode": "db", "value": -40, "unit": "dB" },
+				"party_enable": false
+			},
+			"getSoundProgramList": { "response_code": 0, "sound_program_list": [] },
+			"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "FLAC", "fs": "" } }
+		},
+		"zone4": {
+			"getStatus": {
+				"response_code": 0,
+				"power": "standby",
+				"sleep": 0,
+				"input": "av1",
+				"distribution_enable": false,
+				"disable_flags": 0,
+				"party_enable": false
+			},
+			"getSoundProgramList": { "response_code": 0, "sound_program_list": [] },
+			"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "FLAC", "fs": "" } }
+		}
+	}
+}

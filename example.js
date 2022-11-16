@@ -1,12 +1,14 @@
-var YamahaYXC = require('./yxc_api_cmd.js');
+import { YamahaYXC } from './index.js';
+
+let example_ip_address = '192.168.178.22';
 
 async function discover() {
 	var yamaha = new YamahaYXC();
 	try {
-		const result = await yamaha.discover(2000);
+		const result = await yamaha.discover(5000);
 		console.log(result);
 		console.log('IP' + result[0].ip);
-		yamaha.getXML('http://192.168.178.26:49154/MediaRenderer/desc.xml').then((result) => {
+		yamaha.getXML('http://' + example_ip_address + ':49154/MediaRenderer/desc.xml').then((result) => {
 			console.log('getXML', result);
 		});
 	} catch (error) {
@@ -14,9 +16,9 @@ async function discover() {
 	}
 }
 
-//var yamaha1 = new YamahaYXC('192.168.178.26');
-//var yamaha1 = new YamahaYXC();
-var yamaha1 = new YamahaYXC('localhost:3311');
+var yamaha1 = new YamahaYXC(example_ip_address);
+
+//var yamaha1 = new YamahaYXC('localhost:3311');
 
 async function test() {
 	try {
@@ -47,5 +49,8 @@ async function test() {
 		return Promise.reject(error);
 	}
 }
-test();
-//discover();
+console.log('discovering');
+await discover();
+console.log('fixed address');
+await test();
+console.log('end');

@@ -1,0 +1,2698 @@
+[
+	[
+		{
+			"Küche": {
+				"system": {
+					"getDeviceInfo": {
+						"response_code": 0,
+						"model_name": "WX-010",
+						"destination": "BG",
+						"device_id": "AC44F24D7428",
+						"system_id": "0794E473",
+						"system_version": 2.16,
+						"api_version": 2.08,
+						"netmodule_generation": 1,
+						"netmodule_version": "1925 ",
+						"netmodule_checksum": "F73506B6",
+						"operation_mode": "normal",
+						"update_error_code": "00000000"
+					},
+					"getNetworkStatus": {
+						"response_code": 0,
+						"network_name": "Küche",
+						"connection": "wireless_lan",
+						"dhcp": true,
+						"ip_address": "192.168.178.58",
+						"subnet_mask": "255.255.255.0",
+						"default_gateway": "192.168.178.1",
+						"dns_server_1": "192.168.178.1",
+						"dns_server_2": "0.0.0.0",
+						"wireless_lan": {
+							"ssid": "FRITZ!Box 6360 Cable",
+							"type": "wpa2-psk(aes)",
+							"key": "",
+							"ch": 13,
+							"strength": 72
+						},
+						"wireless_direct": { "ssid": "WX-010 4D7428", "type": "none", "key": "" },
+						"musiccast_network": {
+							"ready": true,
+							"device_type": "standard",
+							"child_num": 0,
+							"ch": 0,
+							"initial_join_running": false
+						},
+						"mac_address": {
+							"wired_lan": "AC44F24D7428",
+							"wireless_lan": "7C010A583734",
+							"wireless_direct": "7C010A583735"
+						},
+						"airplay_pin": ""
+					},
+					"getFuncStatus": { "response_code": 0, "auto_power_standby": true },
+					"getLocationInfo": {
+						"response_code": 0,
+						"id": "2d9b71bfef844ce8a68645e147984a31",
+						"name": "Home1",
+						"stereo_pair_status": "none",
+						"zone_list": { "main": true }
+					},
+					"getFeatures": {
+						"response_code": 0,
+						"system": {
+							"func_list": [
+								"wired_lan",
+								"wireless_lan",
+								"wireless_direct",
+								"network_standby",
+								"auto_power_standby",
+								"bluetooth_tx_setting",
+								"airplay",
+								"stereo_pair",
+								"network_reboot"
+							],
+							"zone_num": 1,
+							"input_list": [
+								{
+									"id": "napster",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "spotify",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "juke",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "qobuz",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "tidal",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "deezer",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "airplay",
+									"distribution_enable": false,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "mc_link",
+									"distribution_enable": false,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "server",
+									"distribution_enable": true,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "net_radio",
+									"distribution_enable": true,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "bluetooth",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								}
+							]
+						},
+						"zone": [
+							{
+								"id": "main",
+								"func_list": [
+									"power",
+									"sleep",
+									"volume",
+									"mute",
+									"equalizer",
+									"signal_info",
+									"prepare_input_change",
+									"link_control",
+									"link_audio_quality"
+								],
+								"input_list": [
+									"napster",
+									"spotify",
+									"juke",
+									"qobuz",
+									"tidal",
+									"deezer",
+									"airplay",
+									"mc_link",
+									"server",
+									"net_radio",
+									"bluetooth"
+								],
+								"equalizer_mode_list": [ "manual" ],
+								"link_control_list": [ "speed", "standard", "stability" ],
+								"link_audio_quality_list": [ "compressed", "uncompressed" ],
+								"range_step": [
+									{ "id": "volume", "min": 0, "max": 60, "step": 1 },
+									{ "id": "equalizer", "min": -10, "max": 10, "step": 1 }
+								]
+							}
+						],
+						"netusb": {
+							"func_list": [ "recent_info", "play_queue", "mc_playlist", "streaming_service_use" ],
+							"preset": { "num": 40 },
+							"recent_info": { "num": 40 },
+							"play_queue": { "size": 200 },
+							"mc_playlist": { "size": 200, "num": 5 },
+							"net_radio_type": "airable",
+							"pandora": { "sort_option_list": [ "date", "alphabet" ] },
+							"siriusxm": { "api_type": "everest" }
+						},
+						"distribution": {
+							"version": 2,
+							"compatible_client": [ 2 ],
+							"client_max": 9,
+							"server_zone_list": [ "main" ]
+						},
+						"ccs": { "supported": true }
+					}
+				},
+				"dist": {
+					"getFeatures": {
+						"response_code": 0,
+						"group_id": "00000000000000000000000000000000",
+						"group_name": "(Linked) Küche",
+						"role": "none",
+						"server_zone": "main",
+						"client_list": []
+					}
+				},
+				"netusb": {
+					"getPlayInfo": {
+						"response_code": 0,
+						"input": "airplay",
+						"play_queue_type": "system",
+						"playback": "stop",
+						"repeat": "off",
+						"shuffle": "off",
+						"play_time": -60000,
+						"total_time": 0,
+						"artist": "",
+						"album": "",
+						"track": "",
+						"albumart_url": "",
+						"albumart_id": 4765,
+						"usb_devicetype": "unknown",
+						"auto_stopped": false,
+						"attribute": 31,
+						"repeat_available": [],
+						"shuffle_available": []
+					},
+					"getPresetInfo": {
+						"response_code": 0,
+						"preset_info": [
+							{
+								"input": "net_radio",
+								"text": "ANTENNE BAYERN Oldies but Goldies (Ismaning/German)",
+								"attribute": 0
+							},
+							{
+								"input": "net_radio",
+								"text": "WDR 2 Ostwestfalen-Lippe (Bielefeld/German)",
+								"attribute": 0
+							},
+							{ "input": "net_radio", "text": "Radio Bielefeld (Bielefeld/German)", "attribute": 0 },
+							{ "input": "net_radio", "text": "WDR 4 (Cologne/German)", "attribute": 0 },
+							{ "input": "net_radio", "text": "WDR 5 (Cologne/German)", "attribute": 0 },
+							{ "input": "net_radio", "text": "WDR 5 (Cologne/German)", "attribute": 0 },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" }
+						],
+						"func_list": [ "clear", "move" ]
+					},
+					"getSettings": {
+						"response_code": 0,
+						"qobuz": {
+							"quality": {
+								"value": "hr_192_24",
+								"value_list": [
+									{ "value": "mp3_320", "attribute": 1 },
+									{ "value": "cd_44_16", "attribute": 1 },
+									{ "value": "hr_96_24", "attribute": 0 },
+									{ "value": "hr_192_24", "attribute": 0 }
+								]
+							}
+						}
+					},
+					"getRecentInfo": {
+						"response_code": 0,
+						"recent_info": [
+							{
+								"input": "server",
+								"text": "B1-De La Soul The Bizness (Remix)",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/212154.jpg",
+								"play_count": 26,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "What A Feelin'",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/114785.jpg",
+								"play_count": 403,
+								"attribute": 30
+							},
+							{
+								"input": "net_radio",
+								"text": "WDR 4 (Cologne/German)",
+								"albumart_url": "http://static.airable.io:80/87/60/135559.png",
+								"play_count": 8,
+								"attribute": 0
+							},
+							{
+								"input": "net_radio",
+								"text": "Radio Bielefeld (Bielefeld/German)",
+								"albumart_url": "http://static.airable.io:80/72/17/256052.png",
+								"play_count": 328,
+								"attribute": 0
+							},
+							{
+								"input": "server",
+								"text": "The Start Of Your Ending (41st Side)",
+								"albumart_url": "",
+								"play_count": 74,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Memory Lane (Sittin' In Da Park) [Prod. DJ Premier]",
+								"albumart_url": "",
+								"play_count": 97,
+								"attribute": 30
+							},
+							{
+								"input": "net_radio",
+								"text": "WDR 2 Ostwestfalen-Lippe (Bielefeld/German)",
+								"albumart_url": "http://static.airable.io:80/18/01/468927.png",
+								"play_count": 17,
+								"attribute": 0
+							},
+							{
+								"input": "server",
+								"text": "Ruff Ryders' Anthem",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/131325.jpg",
+								"play_count": 84,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "The Rza_ Sunshower Instrumental",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/211676.jpg",
+								"play_count": 8,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Track 11",
+								"albumart_url": "",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Underground",
+								"albumart_url": "",
+								"play_count": 8,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Party And Bullshit",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/116893.jpg",
+								"play_count": 87,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Intellectual Dons [Feat Call o da Wild]",
+								"albumart_url": "",
+								"play_count": 8,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der Perfekte Fleck [Explicit]",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/131255.jpg",
+								"play_count": 68,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Survival Of The Fittest",
+								"albumart_url": "",
+								"play_count": 85,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Loungin",
+								"albumart_url": "",
+								"play_count": 103,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Funkorama",
+								"albumart_url": "",
+								"play_count": 35,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Stretch & Bobbito '95 Pt 2 Fre",
+								"albumart_url": "",
+								"play_count": 4,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Never Fakin The Funk COMPTON G",
+								"albumart_url": "",
+								"play_count": 98,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Rock On",
+								"albumart_url": "",
+								"play_count": 6,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Hip 2 Da Game",
+								"albumart_url": "",
+								"play_count": 33,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Gangsta Rap Made Me Do It",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/130919.jpg",
+								"play_count": 81,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Stretch & Bobbito '95 Freestyl",
+								"albumart_url": "",
+								"play_count": 50,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Planned Attack",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/117939.jpg",
+								"play_count": 36,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Independent",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/131143.jpg",
+								"play_count": 73,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "The Rhyme",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/114782.jpg",
+								"play_count": 24,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Rap ist nicht tot, er riecht nur modisch [Explicit]",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/131223.jpg",
+								"play_count": 94,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Track 03",
+								"albumart_url": "",
+								"play_count": 5,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "goldenboy_03",
+								"albumart_url": "",
+								"play_count": 70,
+								"attribute": 30
+							},
+							{
+								"input": "net_radio",
+								"text": "ANTENNE BAYERN Oldies but Goldies (Ismaning/German)",
+								"albumart_url": "http://static.airable.io:80/18/68/820107.png",
+								"play_count": 6,
+								"attribute": 0
+							},
+							{
+								"input": "server",
+								"text": "Azad & Afrob - Was geht bei Dir",
+								"albumart_url": "",
+								"play_count": 14,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "The Start Of Your Ending (41st Side)",
+								"albumart_url": "",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Diamantenschmuggel",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/113429.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "und die Poker-Hölle",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/113511.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "C - Der Fluch der Gräber",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/113466.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Das Riff der Haie",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/113394.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Zwillinge der Finsternis",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/113512.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Affenliebe in Brandenburg",
+								"albumart_url": "",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der rasende Löwe",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/113379.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Eye For A Eye (Your Beef Is Mines)",
+								"albumart_url": "",
+								"play_count": 1,
+								"attribute": 30
+							}
+						]
+					}
+				},
+				"main": {
+					"getStatus": {
+						"response_code": 0,
+						"power": "standby",
+						"sleep": 0,
+						"volume": 30,
+						"mute": false,
+						"max_volume": 60,
+						"input": "airplay",
+						"distribution_enable": false,
+						"equalizer": { "mode": "manual", "low": 0, "mid": 0, "high": 0 },
+						"link_control": "standard",
+						"link_audio_quality": "uncompressed",
+						"disable_flags": 0
+					},
+					"getSoundProgramList": { "response_code": 0, "sound_program_list": [] },
+					"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "", "fs": "" } }
+				}
+			}
+		},
+		{
+			"Wohnzimmer": {
+				"system": {
+					"getDeviceInfo": {
+						"response_code": 0,
+						"model_name": "YAS-408",
+						"destination": "G",
+						"device_id": "BC30D9672588",
+						"system_id": "04843D43",
+						"system_version": 4.5,
+						"api_version": 2.11,
+						"netmodule_generation": 2,
+						"netmodule_version": "1107 ",
+						"netmodule_checksum": "79DE0042",
+						"serial_number": "Z060488TV",
+						"category_code": 2,
+						"operation_mode": "normal",
+						"update_error_code": "00000000",
+						"update_data_type": 0
+					},
+					"getNetworkStatus": {
+						"response_code": 0,
+						"network_name": "Wohnzimmer",
+						"connection": "wired_lan",
+						"dhcp": true,
+						"ip_address": "192.168.178.55",
+						"subnet_mask": "255.255.255.0",
+						"default_gateway": "192.168.178.1",
+						"dns_server_1": "192.168.178.1",
+						"dns_server_2": "0.0.0.0",
+						"wireless_lan": {
+							"enable": true,
+							"ssid": "FRITZ!Box 6360 Cable",
+							"type": "wpa2-psk(aes)",
+							"key": "",
+							"ch": 0,
+							"strength": 0
+						},
+						"musiccast_network": {
+							"ready": true,
+							"device_type": "standard",
+							"child_num": 0,
+							"ch": 0,
+							"initial_join_running": false,
+							"wlan1_ch": 0,
+							"dfs": { "option": false, "radar_ch": 0 }
+						},
+						"mac_address": {
+							"wired_lan": "BC30D9672588",
+							"wireless_lan": "BC30D9672589",
+							"wireless_direct": "BC30D9672589"
+						},
+						"airplay_pin": "",
+						"ipv6": { "enable": true, "address": "fe80::be30:d9ff:fe67:2588" }
+					},
+					"getFuncStatus": { "response_code": 0, "auto_power_standby": false },
+					"getLocationInfo": {
+						"response_code": 0,
+						"id": "2d9b71bfef844ce8a68645e147984a31",
+						"name": "Home1",
+						"zone_list": { "main": true }
+					},
+					"getFeatures": {
+						"response_code": 0,
+						"system": {
+							"func_list": [
+								"wired_lan",
+								"wireless_lan",
+								"network_standby",
+								"bluetooth_tx_setting",
+								"bluetooth_tx_connectivity_type",
+								"dfs_option",
+								"auto_power_standby",
+								"airplay",
+								"background_download",
+								"remote_info",
+								"network_reboot",
+								"system_reboot",
+								"analytics"
+							],
+							"zone_num": 1,
+							"input_list": [
+								{
+									"id": "napster",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "spotify",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "qobuz",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "tidal",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "deezer",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "amazon_music",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "alexa",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "airplay",
+									"distribution_enable": false,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "mc_link",
+									"distribution_enable": false,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "server",
+									"distribution_enable": true,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "net_radio",
+									"distribution_enable": true,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "bluetooth",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "hdmi",
+									"distribution_enable": true,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "none"
+								},
+								{
+									"id": "tv",
+									"distribution_enable": true,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "none"
+								},
+								{
+									"id": "analog",
+									"distribution_enable": true,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "none"
+								}
+							],
+							"bluetooth": { "update_cancelable": true, "tx_connectivity_type_max": 2 }
+						},
+						"zone": [
+							{
+								"id": "main",
+								"func_list": [
+									"power",
+									"volume",
+									"mute",
+									"sound_program",
+									"surround_3d",
+									"clear_voice",
+									"subwoofer_volume",
+									"bass_extension",
+									"signal_info",
+									"prepare_input_change",
+									"link_control",
+									"link_audio_delay"
+								],
+								"input_list": [
+									"napster",
+									"spotify",
+									"qobuz",
+									"tidal",
+									"deezer",
+									"amazon_music",
+									"alexa",
+									"airplay",
+									"mc_link",
+									"server",
+									"net_radio",
+									"bluetooth",
+									"hdmi",
+									"tv",
+									"analog"
+								],
+								"sound_program_list": [ "sports", "game", "music", "tv_program", "movie", "stereo" ],
+								"link_control_list": [ "speed", "standard", "stability" ],
+								"link_audio_delay_list": [ "audio_sync", "balanced", "lip_sync" ],
+								"range_step": [
+									{ "id": "volume", "min": 0, "max": 100, "step": 1 },
+									{ "id": "subwoofer_volume", "min": -10, "max": 10, "step": 1 }
+								],
+								"ccs_supported": [ "connected_speaker" ]
+							}
+						],
+						"netusb": {
+							"func_list": [ "recent_info", "play_queue", "mc_playlist", "streaming_service_use" ],
+							"preset": { "num": 40 },
+							"recent_info": { "num": 40 },
+							"play_queue": { "size": 200 },
+							"mc_playlist": { "size": 200, "num": 5 },
+							"net_radio_type": "airable"
+						},
+						"distribution": {
+							"version": 2,
+							"compatible_client": [ 2 ],
+							"client_max": 19,
+							"server_zone_list": [ "main" ],
+							"mc_surround": {
+								"version": 1,
+								"func_list": [ "mc_speaker_settings", "mcss_error_info" ],
+								"master_role": { "surround_pair": true, "stereo_pair": false, "subwoofer_pair": false },
+								"slave_role": {
+									"surround_pair_l_or_r": false,
+									"surround_pair_lr": false,
+									"subwoofer_pair": false
+								},
+								"mc_speaker_settings": {
+									"common": { "attribute": 1 },
+									"surr_l": {
+										"attribute": 17,
+										"range_step": [
+											{ "id": "level", "min": -20, "max": 20, "step": 1 },
+											{ "id": "distance", "min": 30, "max": 500, "step": 10 }
+										]
+									},
+									"surr_r": {
+										"attribute": 17,
+										"range_step": [
+											{ "id": "level", "min": -20, "max": 20, "step": 1 },
+											{ "id": "distance", "min": 30, "max": 500, "step": 10 }
+										]
+									},
+									"swfr": {
+										"attribute": 17,
+										"range_step": [
+											{ "id": "level", "min": -20, "max": 20, "step": 1 },
+											{ "id": "distance", "min": 30, "max": 500, "step": 10 }
+										]
+									},
+									"front": {
+										"attribute": 16,
+										"range_step": [ { "id": "distance", "min": 30, "max": 500, "step": 10 } ]
+									},
+									"surr": {
+										"attribute": 17,
+										"range_step": [
+											{ "id": "level", "min": -20, "max": 20, "step": 1 },
+											{ "id": "distance", "min": 30, "max": 500, "step": 10 }
+										]
+									}
+								}
+							}
+						},
+						"ccs": { "supported": true }
+					}
+				},
+				"dist": {
+					"getFeatures": {
+						"response_code": 0,
+						"group_id": "00000000000000000000000000000000",
+						"group_name": "(Linked) Wohnzimmer",
+						"role": "none",
+						"server_zone": "main",
+						"client_list": [],
+						"build_disable": [],
+						"audio_dropout": false,
+						"mc_surround": {
+							"id": 0,
+							"role": "none",
+							"status": "none",
+							"build_disable": [ { "role": "slave", "reasons": [ "unknown" ] } ]
+						}
+					}
+				},
+				"netusb": {
+					"getPlayInfo": {
+						"response_code": 0,
+						"input": "server",
+						"play_queue_type": "system",
+						"playback": "stop",
+						"repeat": "all",
+						"shuffle": "on",
+						"play_time": 0,
+						"total_time": 0,
+						"artist": "",
+						"album": "",
+						"track": "",
+						"albumart_url": "",
+						"albumart_id": 3363,
+						"usb_devicetype": "unknown",
+						"auto_stopped": false,
+						"attribute": 83886591,
+						"repeat_available": [ "off", "one", "all" ],
+						"shuffle_available": [ "off", "on" ]
+					},
+					"getPresetInfo": {
+						"response_code": 0,
+						"preset_info": [
+							{
+								"input": "net_radio",
+								"text": "ANTENNE BAYERN Oldies but Goldies (Ismaning/German)",
+								"attribute": 0
+							},
+							{ "input": "net_radio", "text": "WDR 5 (Cologne/German)", "attribute": 0 },
+							{ "input": "server", "text": "Movin' On Your Weak Productions", "attribute": 30 },
+							{ "input": "net_radio", "text": "Radio Bielefeld (Bielefeld/German)", "attribute": 0 },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" }
+						],
+						"func_list": [ "clear", "move" ]
+					},
+					"getSettings": {
+						"response_code": 0,
+						"qobuz": {
+							"quality": {
+								"value": "hr_192_24",
+								"value_list": [
+									{ "value": "mp3_320", "attribute": 1 },
+									{ "value": "cd_44_16", "attribute": 1 },
+									{ "value": "hr_96_24", "attribute": 0 },
+									{ "value": "hr_192_24", "attribute": 0 }
+								]
+							}
+						}
+					},
+					"getRecentInfo": {
+						"response_code": 0,
+						"recent_info": [
+							{
+								"input": "server",
+								"text": "23 - Der Bitcoin-Standard",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/212253.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "27 - Der Bitcoin-Standard",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/212257.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "26 - Der Bitcoin-Standard",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/212256.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Rap ist nicht tot, er riecht nur modisch [Explicit]",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/131223.jpg",
+								"play_count": 9,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Hip 2 Da Game",
+								"albumart_url": "",
+								"play_count": 6,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Stretch & Bobbito '95 Pt 2 Fre",
+								"albumart_url": "",
+								"play_count": 6,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Stretch & Bobbito '95 Freestyl",
+								"albumart_url": "",
+								"play_count": 7,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "B1-De La Soul The Bizness (Remix)",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/212154.jpg",
+								"play_count": 9,
+								"attribute": 30
+							},
+							{
+								"input": "net_radio",
+								"text": "ANTENNE BAYERN Oldies but Goldies (Ismaning/German)",
+								"albumart_url": "http://static.airable.io:80/18/68/820107.png",
+								"play_count": 1,
+								"attribute": 0
+							},
+							{
+								"input": "server",
+								"text": "Die Zauberlimonade",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/164693.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Gangsta Rap Made Me Do It",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/130919.jpg",
+								"play_count": 6,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "12-Jungle Music",
+								"albumart_url": "",
+								"play_count": 7,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "205 - 2Pac- Changes - (alben-dreams.dl.am).ogg",
+								"albumart_url": "",
+								"play_count": 6,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Never Fakin The Funk COMPTON G",
+								"albumart_url": "",
+								"play_count": 7,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Loungin",
+								"albumart_url": "",
+								"play_count": 7,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "goldenboy_03",
+								"albumart_url": "",
+								"play_count": 7,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Rap ist nicht tot, er riecht nur modisch [Explicit]",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/131223.jpg",
+								"play_count": 7,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Independent",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/131143.jpg",
+								"play_count": 7,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Intellectual Dons [Feat Call o da Wild]",
+								"albumart_url": "",
+								"play_count": 7,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der Perfekte Fleck [Explicit]",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/131255.jpg",
+								"play_count": 7,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Track 04",
+								"albumart_url": "",
+								"play_count": 6,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "In Baltimore",
+								"albumart_url": "",
+								"play_count": 5,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Freestyle (Doo Wop)",
+								"albumart_url": "",
+								"play_count": 5,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Track 11",
+								"albumart_url": "",
+								"play_count": 5,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Underground",
+								"albumart_url": "",
+								"play_count": 5,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Track 03",
+								"albumart_url": "",
+								"play_count": 5,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Rock On",
+								"albumart_url": "",
+								"play_count": 6,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Hip 2 Da Game",
+								"albumart_url": "",
+								"play_count": 5,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Planned Attack",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/117939.jpg",
+								"play_count": 6,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Stretch & Bobbito '95 Pt 2 Fre",
+								"albumart_url": "",
+								"play_count": 7,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Folge 5: Leo Lausemaus will nicht zum Arzt - Teil 5",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/179971.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Folge 5: Leo Lausemaus will nicht zum Arzt - Teil 4",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/179970.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Folge 5: Leo Lausemaus will nicht zum Arzt - Teil 3",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/179969.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Folge 5: Leo Lausemaus will nicht zum Arzt - Teil 2",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/179968.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Folge 5: Leo Lausemaus will nicht zum Arzt - Teil 1",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/179967.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Folge 5: Lied 3",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/179966.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Folge 5: Leo Lausemaus lernt Gärtnern - Teil 6",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/179965.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Folge 5: Leo Lausemaus lernt Gärtnern - Teil 5",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/179964.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Folge 5: Leo Lausemaus lernt Gärtnern - Teil 4",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/179963.jpg",
+								"play_count": 1,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Folge 5: Leo Lausemaus lernt Gärtnern - Teil 3",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/179962.jpg",
+								"play_count": 1,
+								"attribute": 30
+							}
+						]
+					}
+				},
+				"main": {
+					"getStatus": {
+						"response_code": 0,
+						"power": "on",
+						"volume": 49,
+						"mute": false,
+						"max_volume": 100,
+						"input": "hdmi",
+						"input_text": "HDMI",
+						"distribution_enable": true,
+						"sound_program": "tv_program",
+						"surround_3d": true,
+						"clear_voice": true,
+						"subwoofer_volume": 4,
+						"bass_extension": true,
+						"link_control": "standard",
+						"link_audio_delay": "balanced",
+						"disable_flags": 0
+					},
+					"getSoundProgramList": {
+						"response_code": 0,
+						"sound_program_list": [ "stereo", "movie", "tv_program", "music", "sports", "game" ]
+					},
+					"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "", "fs": "" } }
+				}
+			}
+		},
+		{
+			"Büro": {
+				"system": {
+					"getDeviceInfo": {
+						"response_code": 0,
+						"model_name": "WX-021",
+						"destination": "G",
+						"device_id": "64CC22DACB98",
+						"system_id": "08E47C33",
+						"system_version": 1.92,
+						"api_version": 2.11,
+						"netmodule_generation": 2,
+						"netmodule_version": "1107 ",
+						"netmodule_checksum": "79DE0042",
+						"serial_number": "Z026209UW",
+						"category_code": 6,
+						"operation_mode": "normal",
+						"update_error_code": "00000000",
+						"update_data_type": 0
+					},
+					"getNetworkStatus": {
+						"response_code": 0,
+						"network_name": "Büro",
+						"connection": "wireless_lan",
+						"dhcp": true,
+						"ip_address": "192.168.178.56",
+						"subnet_mask": "255.255.255.0",
+						"default_gateway": "192.168.178.1",
+						"dns_server_1": "192.168.178.1",
+						"dns_server_2": "0.0.0.0",
+						"wireless_lan": {
+							"enable": true,
+							"ssid": "FRITZ!Box 6360 Cable",
+							"type": "wpa2-psk(aes)",
+							"key": "",
+							"ch": 120,
+							"strength": 100
+						},
+						"musiccast_network": {
+							"ready": true,
+							"device_type": "standard",
+							"child_num": 0,
+							"ch": 0,
+							"initial_join_running": false,
+							"wlan1_ch": 0,
+							"dfs": { "option": false, "radar_ch": 0 }
+						},
+						"mac_address": {
+							"wired_lan": "64CC22DACB98",
+							"wireless_lan": "64CC22DACB99",
+							"wireless_direct": "64CC22DACB99"
+						},
+						"airplay_pin": "",
+						"ipv6": { "enable": true, "address": "fe80::66cc:22ff:feda:cb99" }
+					},
+					"getFuncStatus": { "response_code": 0, "auto_power_standby": true, "dimmer": 2 },
+					"getLocationInfo": {
+						"response_code": 0,
+						"id": "2d9b71bfef844ce8a68645e147984a31",
+						"name": "Home1",
+						"zone_list": { "main": true }
+					},
+					"getFeatures": {
+						"response_code": 0,
+						"system": {
+							"func_list": [
+								"wired_lan",
+								"wireless_lan",
+								"network_standby",
+								"bluetooth_tx_setting",
+								"bluetooth_tx_connectivity_type",
+								"dfs_option",
+								"auto_power_standby",
+								"dimmer",
+								"airplay",
+								"background_download",
+								"remote_info",
+								"network_reboot",
+								"system_reboot",
+								"analytics"
+							],
+							"zone_num": 1,
+							"input_list": [
+								{
+									"id": "napster",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "spotify",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "qobuz",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "tidal",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "deezer",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "amazon_music",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "alexa",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "airplay",
+									"distribution_enable": false,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "mc_link",
+									"distribution_enable": false,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "server",
+									"distribution_enable": true,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "net_radio",
+									"distribution_enable": true,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "bluetooth",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								}
+							],
+							"range_step": [ { "id": "dimmer", "min": 0, "max": 2, "step": 1 } ],
+							"bluetooth": { "update_cancelable": true, "tx_connectivity_type_max": 2 }
+						},
+						"zone": [
+							{
+								"id": "main",
+								"func_list": [
+									"power",
+									"sleep",
+									"volume",
+									"mute",
+									"sound_program",
+									"equalizer",
+									"signal_info",
+									"prepare_input_change",
+									"link_control",
+									"link_audio_delay"
+								],
+								"input_list": [
+									"napster",
+									"spotify",
+									"qobuz",
+									"tidal",
+									"deezer",
+									"amazon_music",
+									"alexa",
+									"airplay",
+									"mc_link",
+									"server",
+									"net_radio",
+									"bluetooth"
+								],
+								"sound_program_list": [ "standard", "bass_booster" ],
+								"equalizer_mode_list": [ "manual" ],
+								"link_control_list": [ "speed", "standard", "stability" ],
+								"link_audio_delay_list": [ "audio_sync_on", "balanced", "audio_sync_off" ],
+								"range_step": [
+									{ "id": "volume", "min": 0, "max": 60, "step": 1 },
+									{ "id": "equalizer", "min": -10, "max": 10, "step": 1 }
+								],
+								"ccs_supported": [ "connected_speaker" ]
+							}
+						],
+						"netusb": {
+							"func_list": [ "recent_info", "play_queue", "mc_playlist", "streaming_service_use" ],
+							"preset": { "num": 40 },
+							"recent_info": { "num": 40 },
+							"play_queue": { "size": 200 },
+							"mc_playlist": { "size": 200, "num": 5 },
+							"net_radio_type": "airable"
+						},
+						"distribution": {
+							"version": 2,
+							"compatible_client": [ 2 ],
+							"client_max": 19,
+							"server_zone_list": [ "main" ],
+							"mc_surround": {
+								"version": 1,
+								"func_list": [ "mcss_error_info" ],
+								"master_role": { "surround_pair": false, "stereo_pair": true, "subwoofer_pair": true },
+								"slave_role": {
+									"surround_pair_l_or_r": true,
+									"surround_pair_lr": false,
+									"subwoofer_pair": false
+								}
+							}
+						},
+						"clock": {
+							"func_list": [ "date_and_time", "alarm", "snooze" ],
+							"range_step": [
+								{ "id": "alarm_volume", "min": 5, "max": 60, "step": 1 },
+								{ "id": "alarm_fade", "min": 180, "max": 180, "step": 1 }
+							],
+							"alarm_fade_type_num": 1,
+							"alarm_mode_list": [ "oneday" ],
+							"alarm_input_list": [
+								"none",
+								"server",
+								"net_radio",
+								"napster",
+								"spotify",
+								"qobuz",
+								"tidal",
+								"deezer",
+								"amazon_music"
+							],
+							"alarm_preset_list": [ "netusb" ]
+						},
+						"ccs": { "supported": true }
+					}
+				},
+				"dist": {
+					"getFeatures": {
+						"response_code": 0,
+						"group_id": "00000000000000000000000000000000",
+						"group_name": "(Linked) Büro",
+						"role": "none",
+						"server_zone": "main",
+						"client_list": [],
+						"build_disable": [],
+						"audio_dropout": false,
+						"mc_surround": { "id": 0, "role": "none", "status": "none", "build_disable": [] }
+					}
+				},
+				"netusb": {
+					"getPlayInfo": {
+						"response_code": 0,
+						"input": "server",
+						"play_queue_type": "system",
+						"playback": "stop",
+						"repeat": "off",
+						"shuffle": "off",
+						"play_time": 0,
+						"total_time": 0,
+						"artist": "",
+						"album": "",
+						"track": "",
+						"albumart_url": "",
+						"albumart_id": 5064,
+						"usb_devicetype": "unknown",
+						"auto_stopped": false,
+						"attribute": 83886591,
+						"repeat_available": [ "off", "one", "all" ],
+						"shuffle_available": [ "off", "on" ]
+					},
+					"getPresetInfo": {
+						"response_code": 0,
+						"preset_info": [
+							{ "input": "net_radio", "text": "WDR 5 (Cologne/German)", "attribute": 0 },
+							{ "input": "server", "text": "Funkorama", "attribute": 30 },
+							{
+								"input": "net_radio",
+								"text": "WDR 2 Ostwestfalen-Lippe (Bielefeld/German)",
+								"attribute": 0
+							},
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" }
+						],
+						"func_list": [ "clear", "move" ]
+					},
+					"getSettings": {
+						"response_code": 0,
+						"qobuz": {
+							"quality": {
+								"value": "hr_192_24",
+								"value_list": [
+									{ "value": "mp3_320", "attribute": 1 },
+									{ "value": "cd_44_16", "attribute": 1 },
+									{ "value": "hr_96_24", "attribute": 0 },
+									{ "value": "hr_192_24", "attribute": 0 }
+								]
+							}
+						}
+					},
+					"getRecentInfo": {
+						"response_code": 0,
+						"recent_info": [
+							{
+								"input": "server",
+								"text": "Kapitel 20 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222350.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 19 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222349.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 18 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222348.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 17 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222347.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 16 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222346.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 15 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222345.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 14 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222344.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 13 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222343.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 12 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222342.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 11 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222341.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 10 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222340.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 9 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222339.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 8 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222338.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 7 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222337.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 6 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222336.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 5 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222335.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 4 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222334.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 3 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222333.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 2 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222332.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Kapitel 1 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222331.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Das Fußballspiel - Track 1",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222756.jpg",
+								"play_count": 4,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der verlorene Zahn - Track 9",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222790.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der verlorene Zahn - Track 8",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222789.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der verlorene Zahn - Track 7",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222788.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der verlorene Zahn - Track 6",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222787.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der verlorene Zahn - Track 5",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222786.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der verlorene Zahn - Track 4",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222785.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der verlorene Zahn - Track 3",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222784.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der verlorene Zahn - Track 2",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222783.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der verlorene Zahn - Track 1",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222782.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Die Mini-Patrol - Track 9",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222781.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Die Mini-Patrol - Track 8",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222780.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Die Mini-Patrol - Track 7",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222779.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Die Mini-Patrol - Track 6",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222778.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Die Mini-Patrol - Track 5",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222777.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Die Mini-Patrol - Track 4",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222776.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Die Mini-Patrol - Track 3",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222775.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Die Mini-Patrol - Track 2",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222774.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Die Mini-Patrol - Track 1",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222773.jpg",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Das Glückshalsband - Track 8",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222772.jpg",
+								"play_count": 3,
+								"attribute": 30
+							}
+						]
+					}
+				},
+				"clock": {
+					"getSettings": {
+						"response_code": 0,
+						"auto_sync": true,
+						"alarm": {
+							"alarm_on": false,
+							"volume": 25,
+							"fade_interval": 180,
+							"fade_type": 1,
+							"mode": "oneday",
+							"repeat": false,
+							"oneday": {
+								"enable": false,
+								"time": "0800",
+								"beep": true,
+								"playback_type": "resume",
+								"resume": { "input": "none" },
+								"snooze": false
+							}
+						}
+					}
+				},
+				"main": {
+					"getStatus": {
+						"response_code": 0,
+						"power": "standby",
+						"sleep": 0,
+						"volume": 23,
+						"mute": false,
+						"max_volume": 60,
+						"input": "server",
+						"input_text": "Server",
+						"distribution_enable": true,
+						"sound_program": "bass_booster",
+						"equalizer": { "mode": "manual", "low": 4, "mid": -1, "high": 2 },
+						"link_control": "standard",
+						"link_audio_delay": "balanced",
+						"disable_flags": 0
+					},
+					"getSoundProgramList": { "response_code": 0, "sound_program_list": [ "bass_booster", "standard" ] },
+					"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "", "fs": "" } }
+				}
+			}
+		},
+		{
+			"Badezimmer": {
+				"system": {
+					"getDeviceInfo": {
+						"response_code": 0,
+						"model_name": "WX-021",
+						"destination": "G",
+						"device_id": "946AB0D0052C",
+						"system_id": "0F8A7F73",
+						"system_version": 1.92,
+						"api_version": 2.11,
+						"netmodule_generation": 2,
+						"netmodule_version": "1107 ",
+						"netmodule_checksum": "79DE0042",
+						"serial_number": "Z261358TV",
+						"category_code": 6,
+						"operation_mode": "normal",
+						"update_error_code": "00000000",
+						"update_data_type": 0
+					},
+					"getNetworkStatus": {
+						"response_code": 0,
+						"network_name": "Badezimmer",
+						"connection": "wireless_lan",
+						"dhcp": true,
+						"ip_address": "192.168.178.51",
+						"subnet_mask": "255.255.255.0",
+						"default_gateway": "192.168.178.1",
+						"dns_server_1": "192.168.178.1",
+						"dns_server_2": "0.0.0.0",
+						"wireless_lan": {
+							"enable": true,
+							"ssid": "FRITZ!Box 6360 Cable",
+							"type": "wpa2-psk(aes)",
+							"key": "",
+							"ch": 13,
+							"strength": 50
+						},
+						"musiccast_network": {
+							"ready": true,
+							"device_type": "standard",
+							"child_num": 0,
+							"ch": 0,
+							"initial_join_running": false,
+							"wlan1_ch": 0,
+							"dfs": { "option": false, "radar_ch": 0 }
+						},
+						"mac_address": {
+							"wired_lan": "946AB0D0052C",
+							"wireless_lan": "946AB0D0052D",
+							"wireless_direct": "946AB0D0052D"
+						},
+						"airplay_pin": "",
+						"ipv6": { "enable": true, "address": "fe80::966a:b0ff:fed0:52d" }
+					},
+					"getFuncStatus": { "response_code": 0, "auto_power_standby": true, "dimmer": 2 },
+					"getLocationInfo": {
+						"response_code": 0,
+						"id": "2d9b71bfef844ce8a68645e147984a31",
+						"name": "Home1",
+						"zone_list": { "main": true }
+					},
+					"getFeatures": {
+						"response_code": 0,
+						"system": {
+							"func_list": [
+								"wired_lan",
+								"wireless_lan",
+								"network_standby",
+								"bluetooth_tx_setting",
+								"bluetooth_tx_connectivity_type",
+								"dfs_option",
+								"auto_power_standby",
+								"dimmer",
+								"airplay",
+								"background_download",
+								"remote_info",
+								"network_reboot",
+								"system_reboot",
+								"analytics"
+							],
+							"zone_num": 1,
+							"input_list": [
+								{
+									"id": "napster",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "spotify",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "qobuz",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "tidal",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "deezer",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "amazon_music",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": true,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "alexa",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "airplay",
+									"distribution_enable": false,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "mc_link",
+									"distribution_enable": false,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "server",
+									"distribution_enable": true,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "net_radio",
+									"distribution_enable": true,
+									"rename_enable": true,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								},
+								{
+									"id": "bluetooth",
+									"distribution_enable": true,
+									"rename_enable": false,
+									"account_enable": false,
+									"play_info_type": "netusb"
+								}
+							],
+							"range_step": [ { "id": "dimmer", "min": 0, "max": 2, "step": 1 } ],
+							"bluetooth": { "update_cancelable": true, "tx_connectivity_type_max": 2 }
+						},
+						"zone": [
+							{
+								"id": "main",
+								"func_list": [
+									"power",
+									"sleep",
+									"volume",
+									"mute",
+									"sound_program",
+									"equalizer",
+									"signal_info",
+									"prepare_input_change",
+									"link_control",
+									"link_audio_delay"
+								],
+								"input_list": [
+									"napster",
+									"spotify",
+									"qobuz",
+									"tidal",
+									"deezer",
+									"amazon_music",
+									"alexa",
+									"airplay",
+									"mc_link",
+									"server",
+									"net_radio",
+									"bluetooth"
+								],
+								"sound_program_list": [ "standard", "bass_booster" ],
+								"equalizer_mode_list": [ "manual" ],
+								"link_control_list": [ "speed", "standard", "stability" ],
+								"link_audio_delay_list": [ "audio_sync_on", "balanced", "audio_sync_off" ],
+								"range_step": [
+									{ "id": "volume", "min": 0, "max": 60, "step": 1 },
+									{ "id": "equalizer", "min": -10, "max": 10, "step": 1 }
+								],
+								"ccs_supported": [ "connected_speaker" ]
+							}
+						],
+						"netusb": {
+							"func_list": [ "recent_info", "play_queue", "mc_playlist", "streaming_service_use" ],
+							"preset": { "num": 40 },
+							"recent_info": { "num": 40 },
+							"play_queue": { "size": 200 },
+							"mc_playlist": { "size": 200, "num": 5 },
+							"net_radio_type": "airable"
+						},
+						"distribution": {
+							"version": 2,
+							"compatible_client": [ 2 ],
+							"client_max": 19,
+							"server_zone_list": [ "main" ],
+							"mc_surround": {
+								"version": 1,
+								"func_list": [ "mcss_error_info" ],
+								"master_role": { "surround_pair": false, "stereo_pair": true, "subwoofer_pair": true },
+								"slave_role": {
+									"surround_pair_l_or_r": true,
+									"surround_pair_lr": false,
+									"subwoofer_pair": false
+								}
+							}
+						},
+						"clock": {
+							"func_list": [ "date_and_time", "alarm", "snooze" ],
+							"range_step": [
+								{ "id": "alarm_volume", "min": 5, "max": 60, "step": 1 },
+								{ "id": "alarm_fade", "min": 180, "max": 180, "step": 1 }
+							],
+							"alarm_fade_type_num": 1,
+							"alarm_mode_list": [ "oneday" ],
+							"alarm_input_list": [
+								"none",
+								"server",
+								"net_radio",
+								"napster",
+								"spotify",
+								"qobuz",
+								"tidal",
+								"deezer",
+								"amazon_music"
+							],
+							"alarm_preset_list": [ "netusb" ]
+						},
+						"ccs": { "supported": true }
+					}
+				},
+				"dist": {
+					"getFeatures": {
+						"response_code": 0,
+						"group_id": "00000000000000000000000000000000",
+						"group_name": "(Linked) Badezimmer",
+						"role": "none",
+						"server_zone": "main",
+						"client_list": [],
+						"build_disable": [],
+						"audio_dropout": false,
+						"mc_surround": { "id": 0, "role": "none", "status": "none", "build_disable": [] }
+					}
+				},
+				"netusb": {
+					"getPlayInfo": {
+						"response_code": 0,
+						"input": "server",
+						"play_queue_type": "system",
+						"playback": "stop",
+						"repeat": "all",
+						"shuffle": "on",
+						"play_time": 0,
+						"total_time": 0,
+						"artist": "Lord Finesse",
+						"album": "The Awakening",
+						"track": "Hip 2 Da Game",
+						"albumart_url": "",
+						"albumart_id": 2717,
+						"usb_devicetype": "unknown",
+						"auto_stopped": false,
+						"attribute": 83886591,
+						"repeat_available": [ "off", "one", "all" ],
+						"shuffle_available": [ "off", "on" ]
+					},
+					"getPresetInfo": {
+						"response_code": 0,
+						"preset_info": [
+							{ "input": "unknown", "text": "" },
+							{ "input": "server", "text": "Movin' On Your Weak Productions", "attribute": 30 },
+							{ "input": "net_radio", "text": "Radio Bielefeld (Bielefeld/German)", "attribute": 0 },
+							{ "input": "net_radio", "text": "WDR 4 (Cologne/German)", "attribute": 0 },
+							{ "input": "net_radio", "text": "WDR 5 (Cologne/German)", "attribute": 0 },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" },
+							{ "input": "unknown", "text": "" }
+						],
+						"func_list": [ "clear", "move" ]
+					},
+					"getSettings": {
+						"response_code": 0,
+						"qobuz": {
+							"quality": {
+								"value": "hr_192_24",
+								"value_list": [
+									{ "value": "mp3_320", "attribute": 1 },
+									{ "value": "cd_44_16", "attribute": 1 },
+									{ "value": "hr_96_24", "attribute": 0 },
+									{ "value": "hr_192_24", "attribute": 0 }
+								]
+							}
+						}
+					},
+					"getRecentInfo": {
+						"response_code": 0,
+						"recent_info": [
+							{
+								"input": "server",
+								"text": "Hip 2 Da Game",
+								"albumart_url": "",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Never Fakin The Funk COMPTON G",
+								"albumart_url": "",
+								"play_count": 3,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Track 03",
+								"albumart_url": "",
+								"play_count": 29,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Intellectual Dons [Feat Call o da Wild]",
+								"albumart_url": "",
+								"play_count": 21,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "What A Feelin'",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/114785.jpg",
+								"play_count": 182,
+								"attribute": 30
+							},
+							{
+								"input": "net_radio",
+								"text": "Radio Bielefeld (Bielefeld/German)",
+								"albumart_url": "http://static.airable.io:80/72/17/256052.png",
+								"play_count": 190,
+								"attribute": 0
+							},
+							{
+								"input": "server",
+								"text": "Party And Bullshit",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/116893.jpg",
+								"play_count": 30,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "goldenboy_03",
+								"albumart_url": "",
+								"play_count": 32,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Underground",
+								"albumart_url": "",
+								"play_count": 18,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Track 04",
+								"albumart_url": "",
+								"play_count": 6,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Track 11",
+								"albumart_url": "",
+								"play_count": 9,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Azad & Afrob - Was geht bei Dir",
+								"albumart_url": "",
+								"play_count": 2,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Loungin",
+								"albumart_url": "",
+								"play_count": 19,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "The Rza_ Sunshower Instrumental",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/211676.jpg",
+								"play_count": 2,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Der Perfekte Fleck [Explicit]",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/131255.jpg",
+								"play_count": 22,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "B1-De La Soul The Bizness (Remix)",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/212154.jpg",
+								"play_count": 35,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "AruAkksion-50",
+								"albumart_url": "",
+								"play_count": 33,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "The Rhyme",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/114782.jpg",
+								"play_count": 25,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Stretch & Bobbito '95 Pt 2 Fre",
+								"albumart_url": "",
+								"play_count": 18,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Ruff Ryders' Anthem",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/131325.jpg",
+								"play_count": 23,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Semi-Automatic: Full Rap Metal",
+								"albumart_url": "",
+								"play_count": 4,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Freestyle (Doo Wop)",
+								"albumart_url": "",
+								"play_count": 9,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Funkorama",
+								"albumart_url": "",
+								"play_count": 30,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "It's A Shame",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/212170.jpg",
+								"play_count": 7,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "The Start Of Your Ending (41st Side)",
+								"albumart_url": "",
+								"play_count": 27,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Memory Lane (Sittin' In Da Park) [Prod. DJ Premier]",
+								"albumart_url": "",
+								"play_count": 38,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Survival Of The Fittest",
+								"albumart_url": "",
+								"play_count": 32,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Planned Attack",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/117939.jpg",
+								"play_count": 26,
+								"attribute": 30
+							},
+							{
+								"input": "net_radio",
+								"text": "WDR 4 (Cologne/German)",
+								"albumart_url": "http://static.airable.io:80/87/60/135559.png",
+								"play_count": 10,
+								"attribute": 0
+							},
+							{
+								"input": "server",
+								"text": "Stretch & Bobbito '95 Freestyl",
+								"albumart_url": "",
+								"play_count": 33,
+								"attribute": 30
+							},
+							{
+								"input": "net_radio",
+								"text": "NRG Bob Marley (Nicosia/Turkish)",
+								"albumart_url": "http://static.airable.io:80/15/40/571431.png",
+								"play_count": 1,
+								"attribute": 0
+							},
+							{
+								"input": "net_radio",
+								"text": "ENERGY Reggae (Berlin/German)",
+								"albumart_url": "http://static.airable.io:80/38/96/531900.png",
+								"play_count": 2,
+								"attribute": 0
+							},
+							{
+								"input": "server",
+								"text": "Gangsta Rap Made Me Do It",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/130919.jpg",
+								"play_count": 31,
+								"attribute": 30
+							},
+							{
+								"input": "server",
+								"text": "Independent",
+								"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/131143.jpg",
+								"play_count": 21,
+								"attribute": 30
+							},
+							{
+								"input": "net_radio",
+								"text": "NRJ REGGAE (Paris/French)",
+								"albumart_url": "http://static.airable.io:80/11/75/572706.png",
+								"play_count": 1,
+								"attribute": 0
+							},
+							{
+								"input": "net_radio",
+								"text": "Reggae Mix Station (France/French)",
+								"albumart_url": "http://static.airable.io:80/65/96/479645.png",
+								"play_count": 1,
+								"attribute": 0
+							},
+							{
+								"input": "net_radio",
+								"text": "Spreeradio - Oldies (Berlin/German)",
+								"albumart_url": "http://static.airable.io:80/25/81/183003.png",
+								"play_count": 1,
+								"attribute": 0
+							},
+							{
+								"input": "net_radio",
+								"text": "NDR 1 Welle Nord Hits & Oldies (Kiel/German)",
+								"albumart_url": "http://static.airable.io:80/92/86/537268.png",
+								"play_count": 1,
+								"attribute": 0
+							},
+							{
+								"input": "net_radio",
+								"text": "Oldies 1079 WOLD (Edison/English)",
+								"albumart_url": "http://static.airable.io:80/10/04/125601.png",
+								"play_count": 1,
+								"attribute": 0
+							},
+							{
+								"input": "net_radio",
+								"text": "Oldies 97.7 (Lubbock/English)",
+								"albumart_url": "http://static.airable.io:80/62/57/411146.png",
+								"play_count": 1,
+								"attribute": 0
+							}
+						]
+					}
+				},
+				"clock": {
+					"getSettings": {
+						"response_code": 0,
+						"auto_sync": true,
+						"alarm": {
+							"alarm_on": false,
+							"volume": 25,
+							"fade_interval": 180,
+							"fade_type": 1,
+							"mode": "oneday",
+							"repeat": false,
+							"oneday": {
+								"enable": false,
+								"time": "0800",
+								"beep": true,
+								"playback_type": "resume",
+								"resume": { "input": "none" },
+								"snooze": false
+							}
+						}
+					}
+				},
+				"main": {
+					"getStatus": {
+						"response_code": 0,
+						"power": "standby",
+						"sleep": 0,
+						"volume": 33,
+						"mute": false,
+						"max_volume": 60,
+						"input": "server",
+						"input_text": "Server",
+						"distribution_enable": true,
+						"sound_program": "bass_booster",
+						"equalizer": { "mode": "manual", "low": -2, "mid": 4, "high": 6 },
+						"link_control": "standard",
+						"link_audio_delay": "balanced",
+						"disable_flags": 0
+					},
+					"getSoundProgramList": { "response_code": 0, "sound_program_list": [ "bass_booster", "standard" ] },
+					"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "", "fs": "" } }
+				}
+			}
+		}
+	]
+]
