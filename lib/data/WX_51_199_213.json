@@ -1,0 +1,725 @@
+{
+	"WX-51": {
+		"system": {
+			"getDeviceInfo": {
+				"response_code": 0,
+				"model_name": "WX-051",
+				"destination": "G",
+				"device_id": "44FE3BF29060",
+				"system_id": "0D555663",
+				"system_version": 1.99,
+				"api_version": 2.13,
+				"netmodule_generation": 2,
+				"netmodule_version": "1412 ",
+				"netmodule_checksum": "BBFEA75D",
+				"serial_number": "T350779WY",
+				"category_code": 6,
+				"operation_mode": "normal",
+				"update_error_code": "00000000",
+				"update_data_type": 0
+			},
+			"getNetworkStatus": {
+				"response_code": 0,
+				"network_name": "Schlafzimmer",
+				"connection": "wireless_lan",
+				"dhcp": true,
+				"ip_address": "10.0.0.9",
+				"subnet_mask": "255.255.255.0",
+				"default_gateway": "10.0.0.1",
+				"dns_server_1": "10.0.0.1",
+				"dns_server_2": "0.0.0.0",
+				"wireless_lan": {
+					"enable": true,
+					"ssid": "W20KHPWaX5G",
+					"type": "wpa2-psk(aes)",
+					"key": "",
+					"ch": 56,
+					"strength": 64
+				},
+				"musiccast_network": {
+					"ready": true,
+					"device_type": "standard",
+					"child_num": 0,
+					"ch": 0,
+					"initial_join_running": false,
+					"wlan1_ch": 0,
+					"dfs": { "option": true, "radar_ch": 0 }
+				},
+				"mac_address": {
+					"wired_lan": "44FE3BF29060",
+					"wireless_lan": "44FE3BF29061",
+					"wireless_direct": "44FE3BF29061"
+				},
+				"airplay_pin": "",
+				"ipv6": { "enable": true, "address": "fe80::46fe:3bff:fef2:9061" }
+			},
+			"getFuncStatus": { "response_code": 0, "auto_power_standby": true, "dimmer": 1 },
+			"getLocationInfo": {
+				"response_code": 0,
+				"id": "5d5c1b0f78dd41d293d8b1dccef50e9c",
+				"name": "Zuhause",
+				"zone_list": { "main": true }
+			},
+			"getFeatures": {
+				"response_code": 0,
+				"system": {
+					"func_list": [
+						"wired_lan",
+						"wireless_lan",
+						"network_standby",
+						"bluetooth_tx_setting",
+						"bluetooth_tx_connectivity_type",
+						"dfs_option",
+						"auto_power_standby",
+						"dimmer",
+						"airplay",
+						"disklavier_settings",
+						"background_download",
+						"remote_info",
+						"network_reboot",
+						"system_reboot",
+						"analytics"
+					],
+					"zone_num": 1,
+					"input_list": [
+						{
+							"id": "napster",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "spotify",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "qobuz",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "tidal",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "deezer",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "amazon_music",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "alexa",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "airplay",
+							"distribution_enable": false,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "mc_link",
+							"distribution_enable": false,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "server",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "net_radio",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "bluetooth",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "digital",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "aux1",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "aux2",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						}
+					],
+					"range_step": [ { "id": "dimmer", "min": 0, "max": 2, "step": 1 } ],
+					"bluetooth": { "update_cancelable": true, "tx_connectivity_type_max": 3 }
+				},
+				"zone": [
+					{
+						"id": "main",
+						"func_list": [
+							"power",
+							"sleep",
+							"volume",
+							"mute",
+							"sound_program",
+							"equalizer",
+							"signal_info",
+							"prepare_input_change",
+							"link_control",
+							"link_audio_delay"
+						],
+						"input_list": [
+							"napster",
+							"spotify",
+							"qobuz",
+							"tidal",
+							"deezer",
+							"amazon_music",
+							"alexa",
+							"airplay",
+							"mc_link",
+							"server",
+							"net_radio",
+							"bluetooth",
+							"digital",
+							"aux1",
+							"aux2"
+						],
+						"sound_program_list": [ "standard", "bass_booster" ],
+						"equalizer_mode_list": [ "manual" ],
+						"link_control_list": [ "speed", "standard", "stability" ],
+						"link_audio_delay_list": [ "audio_sync_on", "balanced", "audio_sync_off" ],
+						"range_step": [
+							{ "id": "volume", "min": 0, "max": 60, "step": 1 },
+							{ "id": "equalizer", "min": -10, "max": 10, "step": 1 }
+						],
+						"ccs_supported": [ "connected_speaker" ]
+					}
+				],
+				"netusb": {
+					"func_list": [
+						"recent_info",
+						"play_queue",
+						"mc_playlist",
+						"streaming_service_use",
+						"previous_force"
+					],
+					"preset": { "num": 40 },
+					"recent_info": { "num": 40 },
+					"play_queue": { "size": 200 },
+					"mc_playlist": { "size": 200, "num": 5 },
+					"net_radio_type": "airable"
+				},
+				"distribution": {
+					"version": 2,
+					"compatible_client": [ 2 ],
+					"client_max": 19,
+					"server_zone_list": [ "main" ],
+					"mc_surround": {
+						"version": 1,
+						"func_list": [ "mcss_error_info" ],
+						"master_role": { "surround_pair": false, "stereo_pair": true, "subwoofer_pair": true },
+						"slave_role": {
+							"surround_pair_l_or_r": true,
+							"surround_pair_lr": true,
+							"subwoofer_pair": false
+						}
+					}
+				},
+				"clock": {
+					"func_list": [ "date_and_time", "alarm", "snooze" ],
+					"range_step": [
+						{ "id": "alarm_volume", "min": 5, "max": 60, "step": 1 },
+						{ "id": "alarm_fade", "min": 180, "max": 180, "step": 1 }
+					],
+					"alarm_fade_type_num": 1,
+					"alarm_mode_list": [ "oneday" ],
+					"alarm_input_list": [
+						"none",
+						"server",
+						"net_radio",
+						"napster",
+						"spotify",
+						"qobuz",
+						"tidal",
+						"deezer",
+						"amazon_music"
+					],
+					"alarm_preset_list": [ "netusb" ]
+				},
+				"ccs": { "supported": true }
+			}
+		},
+		"dist": {
+			"getFeatures": {
+				"response_code": 0,
+				"group_id": "00000000000000000000000000000000",
+				"group_name": "(Linked) Schlafzimmer",
+				"role": "client",
+				"server_zone": "main",
+				"client_list": [],
+				"build_disable": [],
+				"audio_dropout": false,
+				"mc_surround": { "id": 0, "role": "none", "status": "none", "build_disable": [] }
+			}
+		},
+		"netusb": {
+			"getPlayInfo": {
+				"response_code": 0,
+				"input": "mc_link",
+				"play_queue_type": "system",
+				"playback": "stop",
+				"repeat": "off",
+				"shuffle": "off",
+				"play_time": 0,
+				"total_time": 0,
+				"artist": "",
+				"album": "",
+				"track": "",
+				"albumart_url": "",
+				"albumart_id": 431,
+				"usb_devicetype": "unknown",
+				"auto_stopped": false,
+				"attribute": 0,
+				"repeat_available": [],
+				"shuffle_available": []
+			},
+			"getPresetInfo": {
+				"response_code": 0,
+				"preset_info": [
+					{ "input": "amazon_music", "text": "Hurricane", "attribute": 30 },
+					{ "input": "amazon_music", "text": "Entspannte Klassik", "attribute": 0 },
+					{ "input": "amazon_music", "text": "Meditation & Entspannung", "attribute": 0 },
+					{ "input": "server", "text": "The Amber Field", "attribute": 30 },
+					{ "input": "amazon_music", "text": "Neo-Klassik", "attribute": 0 },
+					{
+						"input": "amazon_music",
+						"text": "Gregorianische Gesänge & Musik des Mittelalters",
+						"attribute": 0
+					},
+					{ "input": "amazon_music", "text": "Klassik-Pop", "attribute": 0 },
+					{ "input": "amazon_music", "text": "Klassik für ein entspanntes Bad", "attribute": 0 },
+					{ "input": "amazon_music", "text": "Deuter", "attribute": 0 },
+					{ "input": "amazon_music", "text": "Meditation & Entspannung", "attribute": 0 },
+					{ "input": "server", "text": "Wait There", "attribute": 30 },
+					{ "input": "server", "text": "Sapientia (Solo Piano by Marcus Loeber)", "attribute": 30 },
+					{ "input": "server", "text": "Silent Morning Joy", "attribute": 30 },
+					{ "input": "server", "text": "Fjarlægur", "attribute": 30 },
+					{
+						"input": "server",
+						"text": "Warm Weather (Norderney version) / Speck of Gold",
+						"attribute": 30
+					},
+					{ "input": "server", "text": "From N'Ney With Love", "attribute": 30 },
+					{ "input": "server", "text": "Sonnenuntergang", "attribute": 30 },
+					{ "input": "server", "text": "Days Go By", "attribute": 30 },
+					{ "input": "server", "text": "Entspannt", "attribute": 30 },
+					{ "input": "server", "text": "Milchbar 10:00 AM", "attribute": 30 },
+					{ "input": "server", "text": "Eyes (extended version)", "attribute": 30 },
+					{ "input": "server", "text": "My Island", "attribute": 30 },
+					{ "input": "server", "text": "Flowing", "attribute": 30 },
+					{ "input": "server", "text": "Sweet Spot", "attribute": 30 },
+					{ "input": "server", "text": "Breezin'", "attribute": 30 },
+					{ "input": "server", "text": "Continuous Mix", "attribute": 30 },
+					{ "input": "server", "text": "All Roads Lead to Rome - Jerusalem", "attribute": 30 },
+					{ "input": "server", "text": "A Call to Prayer", "attribute": 30 },
+					{ "input": "server", "text": "Arrival", "attribute": 30 },
+					{ "input": "server", "text": "My Side", "attribute": 30 },
+					{ "input": "server", "text": "Whispers Around the Lake Shore", "attribute": 30 },
+					{ "input": "server", "text": "Out Of The Blue", "attribute": 30 },
+					{ "input": "server", "text": "They Will Remember Us (Intro)", "attribute": 30 },
+					{ "input": "server", "text": "Ambrosia", "attribute": 30 },
+					{ "input": "server", "text": "Time", "attribute": 30 },
+					{ "input": "server", "text": "Intro", "attribute": 30 },
+					{ "input": "server", "text": "Metrosat 4 (Remastered)", "attribute": 30 },
+					{ "input": "server", "text": "Accede", "attribute": 30 },
+					{ "input": "server", "text": "Euphotic (live version)", "attribute": 30 },
+					{ "input": "server", "text": "Between Us (Direct Remix)", "attribute": 30 }
+				],
+				"func_list": [ "clear", "move" ]
+			},
+			"getSettings": {
+				"response_code": 0,
+				"qobuz": {
+					"quality": {
+						"value": "hr_192_24",
+						"value_list": [
+							{ "value": "mp3_320", "attribute": 1 },
+							{ "value": "cd_44_16", "attribute": 1 },
+							{ "value": "hr_96_24", "attribute": 0 },
+							{ "value": "hr_192_24", "attribute": 0 }
+						]
+					}
+				}
+			},
+			"getRecentInfo": {
+				"response_code": 0,
+				"recent_info": [
+					{
+						"input": "server",
+						"text": "The Amber Field",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Classic*20Music,*20Piano,*20Neo*20Classic/Tim*20Glemser/Painted*20Echoes*20*5b2011*5d/01*20The*20Amber*20Field.mp3/$!picture-unsync-386-290279.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Relax",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Ludvig*20*26*20Stelar/Relax/01*20Relax.mp3/$!picture-unsync-1575-87013.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "amazon_music",
+						"text": "Neo-Klassik",
+						"albumart_url": "https://m.media-amazon.com:443/images/I/41MgAMYqLsL.jpg",
+						"play_count": 2,
+						"attribute": 0
+					},
+					{
+						"input": "amazon_music",
+						"text": "Gregorianische Gesänge & Musik des Mittelalters",
+						"albumart_url": "https://m.media-amazon.com:443/images/I/61VFddhUr-L.jpg",
+						"play_count": 2,
+						"attribute": 0
+					},
+					{
+						"input": "server",
+						"text": "Days Go By",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*205*20(Compiled*20By*20Blank*20*26*20Jones)*20(2013)/01*20Blank*20*26*20Jones*20with*20Coralie*20Cl*c3*a9ment*20-*20Days*20Go*20By.mp3/$!picture-unsync-1761-46401.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "My Side",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20Future*20Garage,*20Post*20Dubstep/Ghosts*20of*20Paraguay/Ember/01*20Ghosts*20of*20Paraguay*20-*20My*20Side.mp3/$!picture-unsync-1658-67484.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Confusion",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic/*26ME,*20Rampa,*20Adam*20Port/Send*20Return/02*20-*20*26ME,*20Rampa,*20Adam*20Port,*20Ali*20Love*20-*20Confusion.flac/$!picture-3179-228130.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Send Return",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic/*26ME,*20Rampa,*20Adam*20Port/Send*20Return/01*20-*20*26ME,*20Rampa,*20Adam*20Port*20-*20Send*20Return.flac/$!picture-1908-228130.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "The Impossible Silence",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/!Serie/Cafe*20del*20Mar/Caf*c3*a9*20del*20Mar*20-*2027*20Veintisiete*20(2021)/1-01*20Eric*20Hilton*20-*20The*20Impossible*20Silence.flac/$!picture-866-84060.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "It's Alright",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/!Serie/Cafe*20del*20Mar/Caf*c3*a9*20Del*20Mar*20-*20Dreams*204/1-01*20Gary*20B*20-*20It*27s*20Alright.mp3/$!picture-unsync-1649-61937.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "A Call to Prayer",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Instrumental,Touching/Estas*20Tonne/Mother*20of*20Souls/02*20A*20Call*20to*20Prayer.flac/$!picture-1439-22402.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Lies",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20Future*20Garage,*20Post*20Dubstep/Ghosts*20of*20Paraguay/Ember/10*20Ghosts*20of*20Paraguay*20feat.*20Farisha*20-*20Lies.mp3/$!picture-unsync-1703-67484.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Lost Souls",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20Future*20Garage,*20Post*20Dubstep/Ghosts*20of*20Paraguay/Ember/09*20Ghosts*20of*20Paraguay*20-*20Lost*20Souls.mp3/$!picture-unsync-1661-67484.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Wait for You",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20Future*20Garage,*20Post*20Dubstep/Ghosts*20of*20Paraguay/Ember/08*20Ghosts*20of*20Paraguay*20feat.*20Aidan*20Dullaghan*20-*20Wait*20for*20You.mp3/$!picture-unsync-1735-67484.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Falling Off the Edge",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20Future*20Garage,*20Post*20Dubstep/Ghosts*20of*20Paraguay/Ember/07*20Ghosts*20of*20Paraguay*20feat.*20Tahli*20Elsner*20-*20Falling*20Off*20the*20Edge.mp3/$!picture-unsync-1759-67484.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "When the Rains Came Down (Ambient Mix)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20Future*20Garage,*20Post*20Dubstep/Ghosts*20of*20Paraguay/Ember/06*20Ghosts*20of*20Paraguay*20feat.*20Plutonic*20-*20When*20the*20Rains*20Came*20Down*20(Ambient*20Mix).mp3/$!picture-unsync-1765-67484.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "When the Rains Came Down",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20Future*20Garage,*20Post*20Dubstep/Ghosts*20of*20Paraguay/Ember/05*20Ghosts*20of*20Paraguay*20feat.*20Plutonic*20-*20When*20the*20Rains*20Came*20Down.mp3/$!picture-unsync-1751-67484.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Titles",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20Future*20Garage,*20Post*20Dubstep/Ghosts*20of*20Paraguay/Ember/04*20Ghosts*20of*20Paraguay*20feat.*20Tahli*20Elsner*20-*20Titles.mp3/$!picture-unsync-1745-67484.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Love Is Gone",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20Future*20Garage,*20Post*20Dubstep/Ghosts*20of*20Paraguay/Ember/03*20Ghosts*20of*20Paraguay*20-*20Love*20Is*20Gone.mp3/$!picture-unsync-1663-67484.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Ember",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Electronic,*20Future*20Garage,*20Post*20Dubstep/Ghosts*20of*20Paraguay/Ember/02*20Ghosts*20of*20Paraguay*20-*20Ember.mp3/$!picture-unsync-1656-67484.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Crosswinds",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*2012*20(Compiled*20By*20Blank*20*26*20Jones)*20(2020)/01*20Blank*20*26*20Jones*20-*20Crosswinds.flac/$!picture-1772-34485.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "My Island",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*209*20(Compiled*20By*20Blank*20*26*20Jones)*20(2017)/01*20Blank*20*26*20Jones*20-*20My*20Island.mp3/$!picture-unsync-1747-45943.jpg",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Porqué",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*201*20(Compiled*20By*20Blank*20*26*20Jones)*20(2009)/02*20Pochill*20-*20Porqu*c3*a9.flac/$!picture-1754-51515.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Die Blaue Stunde",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*201*20(Compiled*20By*20Blank*20*26*20Jones)*20(2009)/01*20Blank*20*26*20Jones*20-*20Die*20Blaue*20Stunde.flac/$!picture-1911-51515.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "amazon_music",
+						"text": "Klassik für ein entspanntes Bad",
+						"albumart_url": "https://m.media-amazon.com:443/images/I/61LsRCW3ywL.jpg",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "server",
+						"text": "Milchbar 10:00 AM",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/01*20Blank*20*26*20Jones*20-*20Milchbar*2010_00*20AM.mp3/$!picture-unsync-1726-57374.jpg",
+						"play_count": 4,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Entspannt",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*206*20*5bCompiled*20By*20Blank*20*26*20Jones*5d*20(2014)/01*20Blank*20*26*20Jones*20-*20Entspannt.mp3/$!picture-unsync-1715-44650.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Premiere Classe (Beat mix)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/18*20The*20Kenneth*20Bager*20Experience*20-*20Premiere*20Classe*20(Beat*20mix).mp3/$!picture-unsync-1743-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Got to Be Loved",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/17*20Satin*20Jackets*20-*20Got*20to*20Be*20Loved.mp3/$!picture-unsync-1699-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Peninsula",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/16*20Darko*20Kustura*20-*20Peninsula.mp3/$!picture-unsync-1678-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Shining Star",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/15*20Blank*20*26*20Jones*20-*20Shining*20Star.mp3/$!picture-unsync-1722-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Sunkissed",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/14*20Blank*20*26*20Jones*20-*20Sunkissed.mp3/$!picture-unsync-1719-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "It's Over",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/13*20Ben*20Macklin*20feat.*20Emma*20Brammer*20-*20It*27s*20Over.mp3/$!picture-unsync-1762-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Sunkissed (interlude)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/12*20Blank*20*26*20Jones*20-*20Sunkissed*20(interlude).mp3/$!picture-unsync-1731-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "The Sunset Over Hobro",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/11*20The*20Kenneth*20Bager*20Experience*20-*20The*20Sunset*20Over*20Hobro.mp3/$!picture-unsync-1738-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "What I Feel Like (original mix)",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/10*20Moe*20Turk*20-*20What*20I*20Feel*20Like*20(original*20mix).mp3/$!picture-unsync-1685-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Feelings",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/09*20Trumpet*20Thing*20-*20Feelings.mp3/$!picture-unsync-1688-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Solo Un Delay",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/08*20Tuccinelli*20-*20Solo*20Un*20Delay.mp3/$!picture-unsync-1676-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Love Rocks",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/07*20N_*20Grandjean*20-*20Love*20Rocks.mp3/$!picture-unsync-1687-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Brisas de Verano",
+						"albumart_url": "http://10.0.0.10:9790/minimserver/*/Mp3s/Chillout,*20Balearic/Blank*20*26*20Jones/Milchbar*20Seaside*20Season*207*20(Compiled*20By*20Blank*20*26*20Jones)*20(2015)/06*20Micko*20Roche*20-*20Brisas*20de*20Verano.mp3/$!picture-unsync-1678-57374.jpg",
+						"play_count": 1,
+						"attribute": 30
+					}
+				]
+			}
+		},
+		"clock": {
+			"getSettings": {
+				"response_code": 0,
+				"auto_sync": true,
+				"alarm": {
+					"alarm_on": false,
+					"volume": 26,
+					"fade_interval": 180,
+					"fade_type": 1,
+					"mode": "oneday",
+					"repeat": false,
+					"oneday": {
+						"enable": true,
+						"time": "1000",
+						"beep": false,
+						"playback_type": "resume",
+						"resume": { "input": "server" },
+						"snooze": true
+					}
+				}
+			}
+		},
+		"main": {
+			"getStatus": {
+				"response_code": 0,
+				"power": "on",
+				"sleep": 0,
+				"volume": 10,
+				"mute": false,
+				"max_volume": 60,
+				"input": "mc_link",
+				"input_text": "MC Link",
+				"distribution_enable": false,
+				"sound_program": "bass_booster",
+				"equalizer": { "mode": "manual", "low": 0, "mid": 0, "high": 0 },
+				"link_control": "standard",
+				"link_audio_delay": "balanced",
+				"disable_flags": 0
+			},
+			"getSoundProgramList": { "response_code": 0, "sound_program_list": [ "bass_booster", "standard" ] },
+			"getSignalInfo": {
+				"response_code": 0,
+				"audio": { "error": 0, "format": "", "fs": "", "bit": "", "bitrate": 0 }
+			}
+		}
+	}
+}

@@ -1,0 +1,913 @@
+{
+	"RX-V685": {
+		"system": {
+			"getDeviceInfo": {
+				"response_code": 0,
+				"model_name": "RX-V685",
+				"destination": "G",
+				"device_id": "4C1B86A6CBF5",
+				"system_id": "03E88CF3",
+				"system_version": 1.96,
+				"api_version": 2.11,
+				"netmodule_generation": 2,
+				"netmodule_version": "1107 ",
+				"netmodule_checksum": "79DE0042",
+				"serial_number": "Y459229YO",
+				"category_code": 1,
+				"operation_mode": "normal",
+				"update_error_code": "00000000",
+				"net_module_num": 1,
+				"update_data_type": 0
+			},
+			"getNetworkStatus": {
+				"response_code": 0,
+				"network_name": "Yamaha_RX-V685",
+				"connection": "wireless_lan",
+				"dhcp": false,
+				"ip_address": "192.168.243.200",
+				"subnet_mask": "255.255.255.0",
+				"default_gateway": "192.168.243.1",
+				"dns_server_1": "192.168.243.1",
+				"dns_server_2": "0.0.0.0",
+				"wireless_lan": {
+					"enable": true,
+					"ssid": "Mueller",
+					"type": "wpa2-psk(aes)",
+					"key": "",
+					"ch": 124,
+					"strength": 90
+				},
+				"musiccast_network": {
+					"ready": true,
+					"device_type": "standard",
+					"child_num": 0,
+					"ch": 0,
+					"initial_join_running": false,
+					"wlan1_ch": 0,
+					"dfs": { "option": false, "radar_ch": 0 }
+				},
+				"mac_address": {
+					"wired_lan": "4C1B86A6CBF5",
+					"wireless_lan": "4C1B86A6CBF6",
+					"wireless_direct": "4C1B86A6CBF6"
+				},
+				"airplay_pin": "",
+				"ipv6": { "enable": true, "address": "fe80::4e1b:86ff:fea6:cbf6" },
+				"each_module_ip_list": [ "192.168.243.200" ]
+			},
+			"getFuncStatus": {
+				"response_code": 0,
+				"headphone": false,
+				"hdmi_out_1": true,
+				"hdmi_out_2": false,
+				"party_mode": false,
+				"hdmi_standby_through": "on"
+			},
+			"getLocationInfo": {
+				"response_code": 0,
+				"id": "d109f76962134c09bd7957dc8f07e1ea",
+				"name": "MusicCast",
+				"zone_list": { "main": true, "zone2": false }
+			},
+			"getFeatures": {
+				"response_code": 0,
+				"system": {
+					"func_list": [
+						"wired_lan",
+						"wireless_lan",
+						"network_standby",
+						"network_standby_auto",
+						"bluetooth_standby",
+						"bluetooth_tx_setting",
+						"bluetooth_tx_connectivity_type",
+						"dfs_option",
+						"headphone",
+						"hdmi_out_1",
+						"hdmi_out_2",
+						"airplay",
+						"disklavier_settings",
+						"background_download",
+						"remote_info",
+						"network_reboot",
+						"system_reboot",
+						"ypao_volume",
+						"party_mode",
+						"party_volume",
+						"party_mute",
+						"name_text_avr",
+						"hdmi_standby_through",
+						"analytics"
+					],
+					"zone_num": 2,
+					"input_list": [
+						{
+							"id": "napster",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "spotify",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "qobuz",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "tidal",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "deezer",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "amazon_music",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": true,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "alexa",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "airplay",
+							"distribution_enable": false,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "mc_link",
+							"distribution_enable": false,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "server",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "net_radio",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "bluetooth",
+							"distribution_enable": true,
+							"rename_enable": false,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "usb",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "netusb"
+						},
+						{
+							"id": "tuner",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "tuner"
+						},
+						{
+							"id": "hdmi1",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "hdmi2",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "hdmi3",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "hdmi4",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "hdmi5",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "av1",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "av2",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "audio1",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "audio2",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "audio3",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "audio4",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "audio5",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "phono",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "aux",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						},
+						{
+							"id": "main_sync",
+							"distribution_enable": true,
+							"rename_enable": true,
+							"account_enable": false,
+							"play_info_type": "none"
+						}
+					],
+					"bluetooth": { "update_cancelable": true, "tx_connectivity_type_max": 2 },
+					"web_control_url": "/AdvancedSettings.html?mc=true",
+					"party_volume_list": [ "up", "down" ],
+					"hdmi_standby_through_list": [ "off", "on", "auto" ]
+				},
+				"zone": [
+					{
+						"id": "main",
+						"func_list": [
+							"power",
+							"sleep",
+							"volume",
+							"mute",
+							"sound_program",
+							"pure_direct",
+							"enhancer",
+							"tone_control",
+							"dialogue_level",
+							"dialogue_lift",
+							"subwoofer_volume",
+							"signal_info",
+							"prepare_input_change",
+							"link_control",
+							"link_audio_delay",
+							"scene",
+							"contents_display",
+							"cursor",
+							"menu",
+							"actual_volume",
+							"surr_decoder_type",
+							"extra_bass",
+							"adaptive_drc",
+							"dts_dialogue_control",
+							"adaptive_dsp_level"
+						],
+						"input_list": [
+							"napster",
+							"spotify",
+							"qobuz",
+							"tidal",
+							"deezer",
+							"amazon_music",
+							"alexa",
+							"airplay",
+							"mc_link",
+							"server",
+							"net_radio",
+							"bluetooth",
+							"usb",
+							"tuner",
+							"hdmi1",
+							"hdmi2",
+							"hdmi3",
+							"hdmi4",
+							"hdmi5",
+							"av1",
+							"av2",
+							"audio1",
+							"audio2",
+							"audio3",
+							"audio4",
+							"audio5",
+							"phono",
+							"aux"
+						],
+						"sound_program_list": [
+							"munich",
+							"vienna",
+							"chamber",
+							"cellar_club",
+							"roxy_theatre",
+							"bottom_line",
+							"sports",
+							"action_game",
+							"roleplaying_game",
+							"music_video",
+							"standard",
+							"spectacle",
+							"sci-fi",
+							"adventure",
+							"drama",
+							"mono_movie",
+							"2ch_stereo",
+							"7ch_stereo",
+							"surr_decoder",
+							"straight"
+						],
+						"surr_decoder_type_list": [
+							"toggle",
+							"auto",
+							"dolby_surround",
+							"dts_neural_x",
+							"dts_neo6_cinema",
+							"dts_neo6_music"
+						],
+						"tone_control_mode_list": [ "manual" ],
+						"link_control_list": [ "speed", "standard", "stability" ],
+						"link_audio_delay_list": [ "audio_sync", "balanced", "lip_sync" ],
+						"range_step": [
+							{ "id": "volume", "min": 0, "max": 161, "step": 1 },
+							{ "id": "tone_control", "min": -12, "max": 12, "step": 1 },
+							{ "id": "dialogue_level", "min": 0, "max": 3, "step": 1 },
+							{ "id": "dialogue_lift", "min": 0, "max": 5, "step": 1 },
+							{ "id": "subwoofer_volume", "min": -12, "max": 12, "step": 1 },
+							{ "id": "actual_volume_db", "min": -80.5, "max": 16.5, "step": 0.5 },
+							{ "id": "actual_volume_numeric", "min": 0, "max": 97, "step": 0.5 },
+							{ "id": "dts_dialogue_control", "min": 0, "max": 6, "step": 1 }
+						],
+						"scene_num": 8,
+						"cursor_list": [ "up", "down", "left", "right", "select", "return" ],
+						"menu_list": [
+							"on_screen",
+							"top_menu",
+							"menu",
+							"option",
+							"display",
+							"help",
+							"home",
+							"mode",
+							"red",
+							"green",
+							"yellow",
+							"blue"
+						],
+						"actual_volume_mode_list": [ "db", "numeric" ],
+						"ccs_supported": [ "connected_speaker" ]
+					},
+					{
+						"id": "zone2",
+						"zone_b": false,
+						"func_list": [
+							"power",
+							"sleep",
+							"volume",
+							"mute",
+							"enhancer",
+							"tone_control",
+							"balance",
+							"prepare_input_change",
+							"link_control",
+							"scene",
+							"actual_volume",
+							"extra_bass",
+							"mono"
+						],
+						"input_list": [
+							"napster",
+							"spotify",
+							"qobuz",
+							"tidal",
+							"deezer",
+							"amazon_music",
+							"alexa",
+							"airplay",
+							"mc_link",
+							"server",
+							"net_radio",
+							"bluetooth",
+							"usb",
+							"tuner",
+							"av1",
+							"av2",
+							"audio1",
+							"audio2",
+							"audio3",
+							"audio4",
+							"audio5",
+							"phono",
+							"aux",
+							"main_sync"
+						],
+						"tone_control_mode_list": [ "manual", "auto", "bypass" ],
+						"link_control_list": [ "speed", "standard", "stability" ],
+						"range_step": [
+							{ "id": "volume", "min": 0, "max": 161, "step": 1 },
+							{ "id": "tone_control", "min": -12, "max": 12, "step": 1 },
+							{ "id": "balance", "min": -20, "max": 20, "step": 1 },
+							{ "id": "actual_volume_db", "min": -80.5, "max": 10, "step": 0.5 },
+							{ "id": "actual_volume_numeric", "min": 0, "max": 90.5, "step": 0.5 }
+						],
+						"scene_num": 8,
+						"actual_volume_mode_list": [ "db", "numeric" ]
+					}
+				],
+				"tuner": {
+					"func_list": [ "am", "fm", "rds" ],
+					"range_step": [
+						{ "id": "am", "min": 531, "max": 1611, "step": 9 },
+						{ "id": "fm", "min": 87500, "max": 108000, "step": 50 }
+					],
+					"preset": { "type": "common", "num": 40 }
+				},
+				"netusb": {
+					"func_list": [ "recent_info", "play_queue", "mc_playlist", "streaming_service_use" ],
+					"preset": { "num": 40 },
+					"recent_info": { "num": 40 },
+					"play_queue": { "size": 200 },
+					"mc_playlist": { "size": 200, "num": 5 },
+					"net_radio_type": "airable"
+				},
+				"distribution": {
+					"version": 2,
+					"compatible_client": [ 2 ],
+					"client_max": 19,
+					"server_zone_list": [ "main", "zone2" ],
+					"mc_surround": {
+						"version": 1,
+						"func_list": [ "mcss_error_info" ],
+						"master_role": { "surround_pair": true, "stereo_pair": false, "subwoofer_pair": true },
+						"slave_role": {
+							"surround_pair_l_or_r": false,
+							"surround_pair_lr": false,
+							"subwoofer_pair": false
+						}
+					}
+				},
+				"ccs": { "supported": true }
+			}
+		},
+		"dist": {
+			"getFeatures": {
+				"response_code": 0,
+				"group_id": "00000000000000000000000000000000",
+				"group_name": "(Linked) Wohnzimmer",
+				"role": "none",
+				"server_zone": "main",
+				"client_list": [],
+				"build_disable": [],
+				"audio_dropout": false,
+				"mc_surround": { "id": 0, "role": "none", "status": "none", "build_disable": [] }
+			}
+		},
+		"netusb": {
+			"getPlayInfo": {
+				"response_code": 0,
+				"input": "server",
+				"play_queue_type": "system",
+				"playback": "stop",
+				"repeat": "off",
+				"shuffle": "off",
+				"play_time": 0,
+				"total_time": 0,
+				"artist": "",
+				"album": "",
+				"track": "",
+				"albumart_url": "",
+				"albumart_id": 6678,
+				"usb_devicetype": "unknown",
+				"auto_stopped": false,
+				"attribute": 83886591,
+				"repeat_available": [ "off", "one", "all" ],
+				"shuffle_available": [ "off", "on" ]
+			},
+			"getPresetInfo": {
+				"response_code": 0,
+				"preset_info": [
+					{ "input": "net_radio", "text": "007 laut.fm (Germany/German)", "attribute": 0 },
+					{
+						"input": "net_radio",
+						"text": "100% Helene - von SchlagerPlanet (Munich/German)",
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "100% Schlager - von SchlagerPlanet (Munich/German)",
+						"attribute": 0
+					},
+					{ "input": "net_radio", "text": "1A 80er Hits (Magdeburg/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "1A NDW (Hof/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "ANTENNE BAYERN Chillout (Ismaning/German)", "attribute": 0 },
+					{
+						"input": "net_radio",
+						"text": "ANTENNE BAYERN Oldies but Goldies (Ismaning/German)",
+						"attribute": 0
+					},
+					{ "input": "net_radio", "text": "ANTENNE THÜRINGEN (Weimar/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "Bayern 1 - Mainfranken (Würzburg/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "BAYERN 3 (Munich/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "BR-KLASSIK (Munich/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "HIT RADIO FFH (Bad Vilbel/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "hr-iNFO (Frankfurt am Main/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "hr1 (Frankfurt am Main/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "hr3 (Frankfurt am Main/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "hr4 (Kassel/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "radio B2 Helene Fischer (Berlin/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "RADIO PSR 80er (Leipzig/German)", "attribute": 0 },
+					{ "input": "net_radio", "text": "ROCK ANTENNE (Ismaning/German)", "attribute": 0 },
+					{
+						"input": "net_radio",
+						"text": "RPR1. Neue Deutsche Welle (Ludwigshafen am Rhein/German)",
+						"attribute": 0
+					},
+					{ "input": "net_radio", "text": "SWR 1 Rheinland-Pfalz (Mainz/German)", "attribute": 0 },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" },
+					{ "input": "unknown", "text": "" }
+				],
+				"func_list": [ "clear", "move" ]
+			},
+			"getSettings": {
+				"response_code": 0,
+				"qobuz": {
+					"quality": {
+						"value": "hr_192_24",
+						"value_list": [
+							{ "value": "mp3_320", "attribute": 1 },
+							{ "value": "cd_44_16", "attribute": 1 },
+							{ "value": "hr_96_24", "attribute": 0 },
+							{ "value": "hr_192_24", "attribute": 0 }
+						]
+					}
+				}
+			},
+			"getRecentInfo": {
+				"response_code": 0,
+				"recent_info": [
+					{
+						"input": "server",
+						"text": "Udo Jürgens live 2006_00",
+						"albumart_url": "http://192.168.243.100:5001/get/183/thumbnail0000PNG_LRG_Udo+J%C3%BCrgens+live+2006_00.mp3.png",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "net_radio",
+						"text": "RADIO PSR - 80er (Leipzig/German)",
+						"albumart_url": "http://static.airable.io:80/63/92/340744.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "RPR1. Neue Deutsche Welle (Ludwigshafen am Rhein/German)",
+						"albumart_url": "http://static.airable.io:80/57/01/898267.png",
+						"play_count": 3,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "1A 80er Hits (Magdeburg/German)",
+						"albumart_url": "http://static.airable.io:80/63/43/221760.png",
+						"play_count": 2,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "100% Helene von Schlagerplanet Radio (Munich/German)",
+						"albumart_url": "http://static.airable.io:80/84/15/267092.png",
+						"play_count": 2,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "007 - laut.fm (Germany/German)",
+						"albumart_url": "http://static.airable.io:80/72/64/108511.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "hr4 (Kassel/German)",
+						"albumart_url": "http://static.airable.io:80/30/10/970214.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "hr1 (Frankfurt am Main/German)",
+						"albumart_url": "http://static.airable.io:80/50/28/427095.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "HIT RADIO FFH (Bad Vilbel/German)",
+						"albumart_url": "http://static.airable.io:80/55/41/129183.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "- 1 A - NDW (Neue Deutsche Welle) von 1A Radio (Hof/German)",
+						"albumart_url": "http://static.airable.io:80/57/48/784218.png",
+						"play_count": 2,
+						"attribute": 0
+					},
+					{
+						"input": "net_radio",
+						"text": "ANTENNE BAYERN Oldies but Goldies (Ismaning/German)",
+						"albumart_url": "http://static.airable.io:80/18/68/820107.png",
+						"play_count": 1,
+						"attribute": 0
+					},
+					{
+						"input": "server",
+						"text": "Völlig vernetzt",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Der ganz normale Wahnsinn",
+						"albumart_url": "http://192.168.243.5:50002/transcoder/jpegtnscaler.cgi/ebdart/64003.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Unbekannter Titel",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Unbekannter Titel",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Mamma Mia",
+						"albumart_url": "http://192.168.243.5:50002/transcoder/jpegtnscaler.cgi/ebdart/323.jpg",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "Aint No Mountain High Enough",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{ "input": "server", "text": "Ode To Joy", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Oh Happy Day", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No01", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{
+						"input": "server",
+						"text": "(keep feeling) fascination(extended version)",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{ "input": "server", "text": "Track No03", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No02", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No01", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No03", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No02", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No01", "albumart_url": "", "play_count": 2, "attribute": 30 },
+					{
+						"input": "server",
+						"text": "03. You Got What It Takes",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "02. Under The Moon Of Love",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "1. FC Nürnberg - Iech bin a Glubberer",
+						"albumart_url": "",
+						"play_count": 2,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "1. FC Nürnberg - Die Legende lebt",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{
+						"input": "server",
+						"text": "The Greatest Medley Ever Told",
+						"albumart_url": "",
+						"play_count": 1,
+						"attribute": 30
+					},
+					{ "input": "server", "text": "Track No16", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No15", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No14", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No13", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No12", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No11", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No10", "albumart_url": "", "play_count": 1, "attribute": 30 },
+					{ "input": "server", "text": "Track No09", "albumart_url": "", "play_count": 1, "attribute": 30 }
+				]
+			}
+		},
+		"tuner": {
+			"getPlayInfo": {
+				"response_code": 0,
+				"band": "fm",
+				"auto_scan": false,
+				"am": { "preset": 0, "freq": 1080, "tuned": false },
+				"fm": { "preset": 0, "freq": 100900, "tuned": false, "audio_mode": "mono" },
+				"rds": { "program_type": "", "program_service": "", "radio_text_a": "", "radio_text_b": "" }
+			},
+			"getPresetInfo": { "response_code": 4 }
+		},
+		"main": {
+			"getStatus": {
+				"response_code": 0,
+				"power": "on",
+				"sleep": 0,
+				"volume": 121,
+				"mute": false,
+				"max_volume": 161,
+				"input": "hdmi1",
+				"input_text": "HDMI-Laptop",
+				"distribution_enable": true,
+				"sound_program": "7ch_stereo",
+				"surr_decoder_type": "auto",
+				"pure_direct": false,
+				"enhancer": false,
+				"tone_control": { "mode": "manual", "bass": 0, "treble": 0 },
+				"dialogue_level": 0,
+				"dialogue_lift": 0,
+				"subwoofer_volume": 0,
+				"link_control": "standard",
+				"link_audio_delay": "balanced",
+				"disable_flags": 0,
+				"contents_display": false,
+				"actual_volume": { "mode": "db", "value": -20, "unit": "dB" },
+				"party_enable": false,
+				"extra_bass": true,
+				"adaptive_drc": false,
+				"dts_dialogue_control": 0,
+				"adaptive_dsp_level": true
+			},
+			"getSoundProgramList": {
+				"response_code": 0,
+				"sound_program_list": [
+					"straight",
+					"surr_decoder",
+					"2ch_stereo",
+					"7ch_stereo",
+					"standard",
+					"sci-fi",
+					"adventure",
+					"drama",
+					"spectacle",
+					"mono_movie",
+					"music_video",
+					"sports",
+					"action_game",
+					"roleplaying_game",
+					"munich",
+					"vienna",
+					"chamber",
+					"cellar_club",
+					"roxy_theatre",
+					"bottom_line"
+				]
+			},
+			"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "PCM", "fs": "48 kHz" } }
+		},
+		"zone2": {
+			"getStatus": {
+				"response_code": 0,
+				"power": "standby",
+				"sleep": 0,
+				"volume": 81,
+				"mute": false,
+				"max_volume": 161,
+				"input": "audio1",
+				"input_text": "AUDIO1",
+				"distribution_enable": true,
+				"enhancer": true,
+				"tone_control": { "mode": "auto", "bass": 0, "treble": 0 },
+				"balance": 0,
+				"link_control": "standard",
+				"disable_flags": 0,
+				"actual_volume": { "mode": "db", "value": -40, "unit": "dB" },
+				"party_enable": false,
+				"extra_bass": false,
+				"mono": false
+			},
+			"getSoundProgramList": { "response_code": 0, "sound_program_list": [] },
+			"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "", "fs": "" } }
+		}
+	}
+}

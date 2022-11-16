@@ -21,11 +21,11 @@ Tested with WX-010 and YSP-1600.
 
 ## Methods
 ```javascript
-var YamahaYXC = require('yamaha-yxc-nodejs')
+import { YamahaYXC } from 'yamaha-yxc-nodejs';
 
 //------------Instantiate -------------------
 
-var yamaha = new YamahaYXC("192.168.xxx.yyy")
+const yamaha = new YamahaYXC("192.168.xxx.yyy")
 
 //-------------Zone related comands----------
 
@@ -172,6 +172,11 @@ It returns an object for each device { ip, model, name, systemId, deviceId } in 
 It is not ensured that all devices are detected in this period, in the applicatian a merge of a second run might be necessary.
 
 ## Changelog
+## 3.0.0 BREAKING
+* API is now an ES6 module
+* chalk 5.x
+* skip node12 (no longer LTS)
+
 ### 2.0.4
 * (scrounger) recallRecentItem added
 

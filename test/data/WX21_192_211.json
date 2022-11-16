@@ -1,0 +1,689 @@
+{
+	"WX-021": {
+		"Büro": {
+			"system": {
+				"getDeviceInfo": {
+					"response_code": 0,
+					"model_name": "WX-021",
+					"destination": "G",
+					"device_id": "64CC22DACB98",
+					"system_id": "08E47C33",
+					"system_version": 1.92,
+					"api_version": 2.11,
+					"netmodule_generation": 2,
+					"netmodule_version": "1107 ",
+					"netmodule_checksum": "79DE0042",
+					"serial_number": "Z026209UW",
+					"category_code": 6,
+					"operation_mode": "normal",
+					"update_error_code": "00000000",
+					"update_data_type": 0
+				},
+				"getNetworkStatus": {
+					"response_code": 0,
+					"network_name": "Büro",
+					"connection": "wireless_lan",
+					"dhcp": true,
+					"ip_address": "192.168.178.56",
+					"subnet_mask": "255.255.255.0",
+					"default_gateway": "192.168.178.1",
+					"dns_server_1": "192.168.178.1",
+					"dns_server_2": "0.0.0.0",
+					"wireless_lan": {
+						"enable": true,
+						"ssid": "FRITZ!Box 6360 Cable",
+						"type": "wpa2-psk(aes)",
+						"key": "",
+						"ch": 120,
+						"strength": 100
+					},
+					"musiccast_network": {
+						"ready": true,
+						"device_type": "standard",
+						"child_num": 0,
+						"ch": 0,
+						"initial_join_running": false,
+						"wlan1_ch": 0,
+						"dfs": { "option": false, "radar_ch": 0 }
+					},
+					"mac_address": {
+						"wired_lan": "64CC22DACB98",
+						"wireless_lan": "64CC22DACB99",
+						"wireless_direct": "64CC22DACB99"
+					},
+					"airplay_pin": "",
+					"ipv6": { "enable": true, "address": "fe80::66cc:22ff:feda:cb99" }
+				},
+				"getFuncStatus": { "response_code": 0, "auto_power_standby": true, "dimmer": 2 },
+				"getLocationInfo": {
+					"response_code": 0,
+					"id": "2d9b71bfef844ce8a68645e147984a31",
+					"name": "Home1",
+					"zone_list": { "main": true }
+				},
+				"getFeatures": {
+					"response_code": 0,
+					"system": {
+						"func_list": [
+							"wired_lan",
+							"wireless_lan",
+							"network_standby",
+							"bluetooth_tx_setting",
+							"bluetooth_tx_connectivity_type",
+							"dfs_option",
+							"auto_power_standby",
+							"dimmer",
+							"airplay",
+							"background_download",
+							"remote_info",
+							"network_reboot",
+							"system_reboot",
+							"analytics"
+						],
+						"zone_num": 1,
+						"input_list": [
+							{
+								"id": "napster",
+								"distribution_enable": true,
+								"rename_enable": false,
+								"account_enable": true,
+								"play_info_type": "netusb"
+							},
+							{
+								"id": "spotify",
+								"distribution_enable": true,
+								"rename_enable": false,
+								"account_enable": false,
+								"play_info_type": "netusb"
+							},
+							{
+								"id": "qobuz",
+								"distribution_enable": true,
+								"rename_enable": false,
+								"account_enable": true,
+								"play_info_type": "netusb"
+							},
+							{
+								"id": "tidal",
+								"distribution_enable": true,
+								"rename_enable": false,
+								"account_enable": true,
+								"play_info_type": "netusb"
+							},
+							{
+								"id": "deezer",
+								"distribution_enable": true,
+								"rename_enable": false,
+								"account_enable": true,
+								"play_info_type": "netusb"
+							},
+							{
+								"id": "amazon_music",
+								"distribution_enable": true,
+								"rename_enable": false,
+								"account_enable": true,
+								"play_info_type": "netusb"
+							},
+							{
+								"id": "alexa",
+								"distribution_enable": true,
+								"rename_enable": false,
+								"account_enable": false,
+								"play_info_type": "netusb"
+							},
+							{
+								"id": "airplay",
+								"distribution_enable": false,
+								"rename_enable": false,
+								"account_enable": false,
+								"play_info_type": "netusb"
+							},
+							{
+								"id": "mc_link",
+								"distribution_enable": false,
+								"rename_enable": true,
+								"account_enable": false,
+								"play_info_type": "netusb"
+							},
+							{
+								"id": "server",
+								"distribution_enable": true,
+								"rename_enable": true,
+								"account_enable": false,
+								"play_info_type": "netusb"
+							},
+							{
+								"id": "net_radio",
+								"distribution_enable": true,
+								"rename_enable": true,
+								"account_enable": false,
+								"play_info_type": "netusb"
+							},
+							{
+								"id": "bluetooth",
+								"distribution_enable": true,
+								"rename_enable": false,
+								"account_enable": false,
+								"play_info_type": "netusb"
+							}
+						],
+						"range_step": [ { "id": "dimmer", "min": 0, "max": 2, "step": 1 } ],
+						"bluetooth": { "update_cancelable": true, "tx_connectivity_type_max": 2 }
+					},
+					"zone": [
+						{
+							"id": "main",
+							"func_list": [
+								"power",
+								"sleep",
+								"volume",
+								"mute",
+								"sound_program",
+								"equalizer",
+								"signal_info",
+								"prepare_input_change",
+								"link_control",
+								"link_audio_delay"
+							],
+							"input_list": [
+								"napster",
+								"spotify",
+								"qobuz",
+								"tidal",
+								"deezer",
+								"amazon_music",
+								"alexa",
+								"airplay",
+								"mc_link",
+								"server",
+								"net_radio",
+								"bluetooth"
+							],
+							"sound_program_list": [ "standard", "bass_booster" ],
+							"equalizer_mode_list": [ "manual" ],
+							"link_control_list": [ "speed", "standard", "stability" ],
+							"link_audio_delay_list": [ "audio_sync_on", "balanced", "audio_sync_off" ],
+							"range_step": [
+								{ "id": "volume", "min": 0, "max": 60, "step": 1 },
+								{ "id": "equalizer", "min": -10, "max": 10, "step": 1 }
+							],
+							"ccs_supported": [ "connected_speaker" ]
+						}
+					],
+					"netusb": {
+						"func_list": [ "recent_info", "play_queue", "mc_playlist", "streaming_service_use" ],
+						"preset": { "num": 40 },
+						"recent_info": { "num": 40 },
+						"play_queue": { "size": 200 },
+						"mc_playlist": { "size": 200, "num": 5 },
+						"net_radio_type": "airable"
+					},
+					"distribution": {
+						"version": 2,
+						"compatible_client": [ 2 ],
+						"client_max": 19,
+						"server_zone_list": [ "main" ],
+						"mc_surround": {
+							"version": 1,
+							"func_list": [ "mcss_error_info" ],
+							"master_role": { "surround_pair": false, "stereo_pair": true, "subwoofer_pair": true },
+							"slave_role": {
+								"surround_pair_l_or_r": true,
+								"surround_pair_lr": false,
+								"subwoofer_pair": false
+							}
+						}
+					},
+					"clock": {
+						"func_list": [ "date_and_time", "alarm", "snooze" ],
+						"range_step": [
+							{ "id": "alarm_volume", "min": 5, "max": 60, "step": 1 },
+							{ "id": "alarm_fade", "min": 180, "max": 180, "step": 1 }
+						],
+						"alarm_fade_type_num": 1,
+						"alarm_mode_list": [ "oneday" ],
+						"alarm_input_list": [
+							"none",
+							"server",
+							"net_radio",
+							"napster",
+							"spotify",
+							"qobuz",
+							"tidal",
+							"deezer",
+							"amazon_music"
+						],
+						"alarm_preset_list": [ "netusb" ]
+					},
+					"ccs": { "supported": true }
+				}
+			},
+			"dist": {
+				"getFeatures": {
+					"response_code": 0,
+					"group_id": "00000000000000000000000000000000",
+					"group_name": "(Linked) Büro",
+					"role": "none",
+					"server_zone": "main",
+					"client_list": [],
+					"build_disable": [],
+					"audio_dropout": false,
+					"mc_surround": { "id": 0, "role": "none", "status": "none", "build_disable": [] }
+				}
+			},
+			"netusb": {
+				"getPlayInfo": {
+					"response_code": 0,
+					"input": "server",
+					"play_queue_type": "system",
+					"playback": "stop",
+					"repeat": "off",
+					"shuffle": "off",
+					"play_time": 0,
+					"total_time": 0,
+					"artist": "",
+					"album": "",
+					"track": "",
+					"albumart_url": "",
+					"albumart_id": 5064,
+					"usb_devicetype": "unknown",
+					"auto_stopped": false,
+					"attribute": 83886591,
+					"repeat_available": [ "off", "one", "all" ],
+					"shuffle_available": [ "off", "on" ]
+				},
+				"getPresetInfo": {
+					"response_code": 0,
+					"preset_info": [
+						{ "input": "net_radio", "text": "WDR 5 (Cologne/German)", "attribute": 0 },
+						{ "input": "server", "text": "Funkorama", "attribute": 30 },
+						{
+							"input": "net_radio",
+							"text": "WDR 2 Ostwestfalen-Lippe (Bielefeld/German)",
+							"attribute": 0
+						},
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" },
+						{ "input": "unknown", "text": "" }
+					],
+					"func_list": [ "clear", "move" ]
+				},
+				"getSettings": {
+					"response_code": 0,
+					"qobuz": {
+						"quality": {
+							"value": "hr_192_24",
+							"value_list": [
+								{ "value": "mp3_320", "attribute": 1 },
+								{ "value": "cd_44_16", "attribute": 1 },
+								{ "value": "hr_96_24", "attribute": 0 },
+								{ "value": "hr_192_24", "attribute": 0 }
+							]
+						}
+					}
+				},
+				"getRecentInfo": {
+					"response_code": 0,
+					"recent_info": [
+						{
+							"input": "server",
+							"text": "Kapitel 20 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222350.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 19 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222349.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 18 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222348.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 17 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222347.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 16 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222346.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 15 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222345.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 14 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222344.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 13 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222343.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 12 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222342.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 11 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222341.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 10 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222340.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 9 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222339.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 8 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222338.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 7 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222337.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 6 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222336.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 5 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222335.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 4 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222334.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 3 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222333.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 2 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222332.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Kapitel 1 - Paw Patrol Folgen 13-16: Schneller als die Feuerwehr",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222331.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Das Fußballspiel - Track 1",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222756.jpg",
+							"play_count": 4,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Der verlorene Zahn - Track 9",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222790.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Der verlorene Zahn - Track 8",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222789.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Der verlorene Zahn - Track 7",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222788.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Der verlorene Zahn - Track 6",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222787.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Der verlorene Zahn - Track 5",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222786.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Der verlorene Zahn - Track 4",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222785.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Der verlorene Zahn - Track 3",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222784.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Der verlorene Zahn - Track 2",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222783.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Der verlorene Zahn - Track 1",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222782.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Die Mini-Patrol - Track 9",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222781.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Die Mini-Patrol - Track 8",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222780.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Die Mini-Patrol - Track 7",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222779.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Die Mini-Patrol - Track 6",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222778.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Die Mini-Patrol - Track 5",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222777.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Die Mini-Patrol - Track 4",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222776.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Die Mini-Patrol - Track 3",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222775.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Die Mini-Patrol - Track 2",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222774.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Die Mini-Patrol - Track 1",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222773.jpg",
+							"play_count": 3,
+							"attribute": 30
+						},
+						{
+							"input": "server",
+							"text": "Das Glückshalsband - Track 8",
+							"albumart_url": "http://192.168.178.61:50002/transcoder/jpegtnscaler.cgi/ebdart/222772.jpg",
+							"play_count": 3,
+							"attribute": 30
+						}
+					]
+				}
+			},
+			"clock": {
+				"getSettings": {
+					"response_code": 0,
+					"auto_sync": true,
+					"alarm": {
+						"alarm_on": false,
+						"volume": 25,
+						"fade_interval": 180,
+						"fade_type": 1,
+						"mode": "oneday",
+						"repeat": false,
+						"oneday": {
+							"enable": false,
+							"time": "0800",
+							"beep": true,
+							"playback_type": "resume",
+							"resume": { "input": "none" },
+							"snooze": false
+						}
+					}
+				}
+			},
+			"main": {
+				"getStatus": {
+					"response_code": 0,
+					"power": "standby",
+					"sleep": 0,
+					"volume": 23,
+					"mute": false,
+					"max_volume": 60,
+					"input": "server",
+					"input_text": "Server",
+					"distribution_enable": true,
+					"sound_program": "bass_booster",
+					"equalizer": { "mode": "manual", "low": 4, "mid": -1, "high": 2 },
+					"link_control": "standard",
+					"link_audio_delay": "balanced",
+					"disable_flags": 0
+				},
+				"getSoundProgramList": { "response_code": 0, "sound_program_list": [ "bass_booster", "standard" ] },
+				"getSignalInfo": { "response_code": 0, "audio": { "error": 0, "format": "", "fs": "" } }
+			}
+		}
+	}
+}

@@ -1,21 +1,24 @@
-var assert = require('assert');
-var expect = require('chai').expect;
-var YXC = require('../yxc_api_cmd.js');
-const server = require('./musiccastserver.js');
+// import assert from 'assert';
+import { expect } from 'chai';
+import { YamahaYXC, YamahaYXCEmu } from '../index.js';
 
 /*Tests*/
-describe('Musiccast-API', () => {
+describe('Integration Test of Musiccast-API', () => {
+	let port = 3311;
+	let testfile = 'YSP1600_312_208.json';
+	let testdevice = 'YSP-1600';
 	before('start the Musiccast emulation', () => {
-		server.setupHttpServer(function() {});
+		const emulation = new YamahaYXCEmu(testfile, testdevice, port, false);
+		emulation.setupHttpServer(function() {});
 	});
-	var yamaha;
 	// if promise is returned = success
+	var yamaha;
 	it('should create a new yxc musiccast instance', function() {
-		yamaha = new YXC('localhost:3311', null);
+		yamaha = new YamahaYXC('localhost:' + port, null);
 	});
 	it('read deviceinfo', async () => {
 		const result = await yamaha.getDeviceInfo();
-		//console.log('result', result);
+		// console.log('result', result);
 		expect(result.response_code).to.equal(0);
 		expect(result.model_name).to.equal('YSP-1600');
 		expect(result.destination).to.equal('BG');
@@ -31,7 +34,7 @@ describe('Musiccast-API', () => {
 	});
 	it('check something stupid', async () => {
 		const result = await yamaha.getSignalInfo(5);
-		console.log('result', result);
+		// console.log('result', result);
 		expect(result.response_code).to.equal(3);
 	});
 });
