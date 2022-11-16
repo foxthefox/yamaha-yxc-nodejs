@@ -23,7 +23,12 @@
 		"type": "git",
 		"url": "https://github.com/foxthefox/yamaha-yxc-nodejs.git"
 	},
-	"keywords": [ "yamaha", "api", "nodejs", "musiccast" ],
+	"keywords": [
+		"yamaha",
+		"api",
+		"nodejs",
+		"musiccast"
+	],
 	"author": {
 		"name": "foxthefox"
 	},
