@@ -1,6 +1,8 @@
 // import assert from 'assert';
-import { expect } from 'chai';
-import { YamahaYXC, YamahaYXCEmu } from '../index.js';
+const expect = require('chai').expect;
+
+const YamahaYXC = require('../index.js').YamahaYXC;
+const YamahaYXCEmu = require('../index.js').YamahaYXCEmu;
 
 /*Tests*/
 describe('Integration Test of Musiccast-API', () => {

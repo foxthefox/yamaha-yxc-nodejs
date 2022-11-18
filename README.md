@@ -21,7 +21,7 @@ Tested with WX-010 and YSP-1600.
 
 ## Methods
 ```javascript
-import { YamahaYXC } from 'yamaha-yxc-nodejs';
+const YamahaYXC = require('yamaha-yxc-nodejs').YamahaYXC;
 
 //------------Instantiate -------------------
 
@@ -172,9 +172,15 @@ It returns an object for each device { ip, model, name, systemId, deviceId } in 
 It is not ensured that all devices are detected in this period, in the applicatian a merge of a second run might be necessary.
 
 ## Changelog
+## 3.1.0 a BREAK in the Break
+* API exposes two classes the API and the Emulation, the import/require has to be changed
+* no longer ES module
+
+# 3.0.1
+* move figlet, chalk to dependencies, instead devDep
+
 ## 3.0.0 BREAKING
-* API is now an ES6 module
-* chalk 5.x
+* created as ES module
 * skip node12 (no longer LTS)
 
 ### 2.0.4
