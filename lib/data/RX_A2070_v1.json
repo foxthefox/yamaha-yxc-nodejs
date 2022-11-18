@@ -1,0 +1,566 @@
+[
+	{
+		"device": "RX-A2070_0B23E7D3",
+		"request": "/system/getFeatures",
+		"responses": {
+			"response_code": 0,
+			"system": {
+				"func_list": [
+					"wired_lan",
+					"wireless_lan",
+					"wireless_direct",
+					"network_standby",
+					"network_standby_auto",
+					"bluetooth_standby",
+					"bluetooth_tx_setting",
+					"hdmi_out_1",
+					"hdmi_out_2",
+					"airplay",
+					"disklavier_settings",
+					"remote_info",
+					"network_reboot",
+					"party_mode",
+					"speaker_pattern"
+				],
+				"zone_num": 4,
+				"input_list": [
+					{
+						"id": "napster",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "spotify",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "juke",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "qobuz",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "tidal",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "deezer",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "airplay",
+						"distribution_enable": false,
+						"rename_enable": false,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "mc_link",
+						"distribution_enable": false,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "server",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "net_radio",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "bluetooth",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "usb",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "tuner",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "tuner"
+					},
+					{
+						"id": "av1",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "av2",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "av3",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "av4",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "av5",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "av6",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "av7",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "audio1",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "audio2",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "audio3",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "phono",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "v_aux",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "main_sync",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					}
+				],
+				"speaker_pattern_num": 2
+			},
+			"zone": [
+				{
+					"id": "main",
+					"func_list": [
+						"power",
+						"sleep",
+						"volume",
+						"mute",
+						"sound_program",
+						"pure_direct",
+						"enhancer",
+						"tone_control",
+						"dialogue_level",
+						"signal_info",
+						"prepare_input_change",
+						"link_control",
+						"link_audio_delay",
+						"link_audio_quality",
+						"scene",
+						"audio_select",
+						"cursor",
+						"menu",
+						"surr_decoder_type",
+						"contents_display",
+						"actual_volume"
+					],
+					"input_list": [
+						"napster",
+						"spotify",
+						"juke",
+						"qobuz",
+						"tidal",
+						"deezer",
+						"airplay",
+						"mc_link",
+						"server",
+						"net_radio",
+						"bluetooth",
+						"usb",
+						"tuner",
+						"av1",
+						"av2",
+						"av3",
+						"av4",
+						"av5",
+						"av6",
+						"av7",
+						"audio1",
+						"audio2",
+						"audio3",
+						"phono",
+						"v_aux"
+					],
+					"sound_program_list": [
+						"munich",
+						"vienna",
+						"amsterdam",
+						"freiburg",
+						"royaumont",
+						"chamber",
+						"village_vanguard",
+						"warehouse_loft",
+						"cellar_club",
+						"roxy_theatre",
+						"bottom_line",
+						"sports",
+						"action_game",
+						"roleplaying_game",
+						"music_video",
+						"recital_opera",
+						"standard",
+						"spectacle",
+						"sci-fi",
+						"adventure",
+						"drama",
+						"mono_movie",
+						"enhanced",
+						"2ch_stereo",
+						"9ch_stereo",
+						"surr_decoder",
+						"straight"
+					],
+					"surr_decoder_type_list": [
+						"toggle",
+						"auto",
+						"dolby_surround",
+						"dts_neural_x",
+						"dts_neo6_cinema",
+						"dts_neo6_music"
+					],
+					"tone_control_mode_list": [ "manual" ],
+					"link_control_list": [ "speed", "standard", "stability" ],
+					"link_audio_delay_list": [ "audio_sync", "lip_sync" ],
+					"link_audio_quality_list": [ "compressed", "uncompressed" ],
+					"range_step": [
+						{ "id": "volume", "min": 0, "max": 161, "step": 1 },
+						{ "id": "tone_control", "min": -12, "max": 12, "step": 1 },
+						{ "id": "dialogue_level", "min": 0, "max": 3, "step": 1 },
+						{ "id": "actual_volume_db", "min": -80.5, "max": 16.5, "step": 0.5 }
+					],
+					"scene_num": 12,
+					"cursor_list": [ "up", "down", "left", "right", "select", "return" ],
+					"menu_list": [
+						"on_screen",
+						"top_menu",
+						"menu",
+						"option",
+						"display",
+						"red",
+						"green",
+						"yellow",
+						"blue"
+					],
+					"actual_volume_mode_list": [ "db" ],
+					"audio_select_list": [ "auto", "hdmi", "coax_opt", "analog", "unavailable" ]
+				},
+				{
+					"id": "zone2",
+					"zone_b": false,
+					"func_list": [
+						"power",
+						"sleep",
+						"volume",
+						"mute",
+						"enhancer",
+						"tone_control",
+						"prepare_input_change",
+						"link_control",
+						"link_audio_quality",
+						"scene",
+						"cursor",
+						"contents_display",
+						"actual_volume"
+					],
+					"input_list": [
+						"napster",
+						"spotify",
+						"juke",
+						"qobuz",
+						"tidal",
+						"deezer",
+						"airplay",
+						"mc_link",
+						"server",
+						"net_radio",
+						"bluetooth",
+						"usb",
+						"tuner",
+						"av1",
+						"av2",
+						"av3",
+						"av4",
+						"av5",
+						"av6",
+						"av7",
+						"audio1",
+						"audio2",
+						"audio3",
+						"phono",
+						"v_aux",
+						"main_sync"
+					],
+					"tone_control_mode_list": [ "manual", "auto", "bypass" ],
+					"link_control_list": [ "speed", "standard", "stability" ],
+					"link_audio_quality_list": [ "compressed", "uncompressed" ],
+					"range_step": [
+						{ "id": "volume", "min": 0, "max": 161, "step": 1 },
+						{ "id": "tone_control", "min": -12, "max": 12, "step": 1 },
+						{ "id": "actual_volume_db", "min": -80.5, "max": 16.5, "step": 0.5 }
+					],
+					"scene_num": 4,
+					"cursor_list": [ "up", "down", "left", "right", "select", "return" ],
+					"actual_volume_mode_list": [ "db" ]
+				},
+				{
+					"id": "zone3",
+					"func_list": [
+						"power",
+						"sleep",
+						"volume",
+						"mute",
+						"enhancer",
+						"tone_control",
+						"prepare_input_change",
+						"scene",
+						"actual_volume"
+					],
+					"input_list": [
+						"napster",
+						"spotify",
+						"juke",
+						"qobuz",
+						"tidal",
+						"deezer",
+						"airplay",
+						"mc_link",
+						"server",
+						"net_radio",
+						"bluetooth",
+						"usb",
+						"tuner",
+						"av1",
+						"av2",
+						"av3",
+						"av4",
+						"audio1",
+						"audio2",
+						"audio3",
+						"phono",
+						"v_aux",
+						"main_sync"
+					],
+					"tone_control_mode_list": [ "manual", "auto", "bypass" ],
+					"range_step": [
+						{ "id": "volume", "min": 0, "max": 161, "step": 1 },
+						{ "id": "tone_control", "min": -12, "max": 12, "step": 1 },
+						{ "id": "actual_volume_db", "min": -80.5, "max": 16.5, "step": 0.5 }
+					],
+					"scene_num": 4,
+					"actual_volume_mode_list": [ "db" ]
+				},
+				{
+					"id": "zone4",
+					"func_list": [ "power", "sleep", "prepare_input_change", "scene" ],
+					"input_list": [ "av1", "av2", "av3", "av4", "av5", "av6", "av7", "v_aux" ],
+					"scene_num": 4
+				}
+			],
+			"tuner": {
+				"func_list": [ "fm", "rds", "dab" ],
+				"range_step": [ { "id": "fm", "min": 87500, "max": 108000, "step": 50 } ],
+				"preset": { "type": "separate", "num": 40 }
+			},
+			"netusb": {
+				"func_list": [ "recent_info", "play_queue", "mc_playlist", "streaming_service_use" ],
+				"preset": { "num": 40 },
+				"recent_info": { "num": 40 },
+				"play_queue": { "size": 200 },
+				"mc_playlist": { "size": 200, "num": 5 },
+				"net_radio_type": "airable",
+				"pandora": { "sort_option_list": [ "recent", "alphabet" ] },
+				"siriusxm": { "api_type": "everest" }
+			},
+			"distribution": {
+				"version": 2,
+				"compatible_client": [ 2 ],
+				"client_max": 9,
+				"server_zone_list": [ "main", "zone2" ]
+			},
+			"ccs": { "supported": true }
+		}
+	},
+	{
+		"device": "RX-A2070_0B23E7D3",
+		"request": "/system/getDeviceInfo",
+		"responses": {
+			"response_code": 0,
+			"model_name": "RX-A2070",
+			"destination": "BG",
+			"device_id": "AC44F241D7D9",
+			"system_id": "0B23E7D3",
+			"system_version": 2.85,
+			"api_version": 2.08,
+			"netmodule_generation": 1,
+			"netmodule_version": "1920 ",
+			"netmodule_checksum": "6A5BE299",
+			"operation_mode": "normal",
+			"update_error_code": "00000000"
+		}
+	},
+	{
+		"device": "RX-A2070",
+		"request": "/netusb/getPlayInfo",
+		"responses": {
+			"response_code": 0,
+			"input": "server",
+			"play_queue_type": "system",
+			"playback": "stop",
+			"repeat": "off",
+			"shuffle": "off",
+			"play_time": 0,
+			"total_time": 0,
+			"artist": "Max Richter",
+			"album": "Voices",
+			"track": "Mercy (voiceless mix)",
+			"albumart_url": "/YamahaRemoteControl/AlbumART/AlbumART5419.jpg",
+			"albumart_id": 5419,
+			"usb_devicetype": "unknown",
+			"auto_stopped": false,
+			"attribute": 83902583,
+			"repeat_available": [ "off", "one", "all" ],
+			"shuffle_available": [ "off", "on" ]
+		}
+	},
+	{ "request": "GET /YamahaExtendedControl/v1/netusb/getRecentInfo" },
+	{ "request": "GET /YamahaExtendedControl/v1/netusb/getPresetInfo" },
+	{
+		"device": "RX-A2070_0B23E7D3",
+		"request": "/main/getStatus",
+		"responses": {
+			"response_code": 0,
+			"power": "on",
+			"sleep": 0,
+			"volume": 66,
+			"mute": false,
+			"max_volume": 161,
+			"input": "server",
+			"distribution_enable": true,
+			"sound_program": "9ch_stereo",
+			"surr_decoder_type": "auto",
+			"pure_direct": false,
+			"enhancer": true,
+			"tone_control": { "mode": "auto", "bass": 0, "treble": 0 },
+			"dialogue_level": 3,
+			"link_control": "standard",
+			"link_audio_delay": "audio_sync",
+			"link_audio_quality": "uncompressed",
+			"disable_flags": 0,
+			"actual_volume": { "mode": "db", "value": -47.5, "unit": "dB" },
+			"contents_display": true,
+			"audio_select": "unavailable",
+			"party_enable": false
+		}
+	},
+
+	{
+		"device": "RX-A2070_0B23E7D3",
+		"request": "/tuner/getPlayInfo",
+		"responses": {
+			"response_code": 0,
+			"band": "dab",
+			"auto_scan": false,
+			"fm": { "preset": 0, "freq": 99900, "tuned": false, "audio_mode": "mono" },
+			"rds": { "program_type": "", "program_service": "", "radio_text_a": "", "radio_text_b": "" },
+			"dab": {
+				"preset": 1,
+				"id": 8,
+				"status": "ready",
+				"freq": 180064,
+				"category": "primary",
+				"audio_mode": "stereo",
+				"bit_rate": 72,
+				"quality": 95,
+				"tune_aid": 88,
+				"off_air": false,
+				"dab_plus": true,
+				"program_type": "Pop",
+				"ch_label": " 5D",
+				"service_label": "ENERGY ",
+				"dls": "ONAIR: ROBIN SCHULZ FEAT. KIDDO - All We Got - ENERGY - HIT MUSIC ONLY !",
+				"ensemble_label": "DAB+ Austria "
+			}
+		}
+	}
+]
