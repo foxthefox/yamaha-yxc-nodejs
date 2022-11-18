@@ -1,6 +1,6 @@
 {
 	"name": "yamaha-yxc-nodejs",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "NodeJS API to control your YAMAHA Musiccast devices",
 	"main": "index.js",
 	"type": "module",
