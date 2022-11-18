@@ -1,0 +1,514 @@
+[
+	{
+		"request": "GET /YamahaExtendedControl/v1/system/getFeatures",
+		"getFeatures": {
+			"response_code": 0,
+			"system": {
+				"func_list": [
+					"wired_lan",
+					"wireless_lan",
+					"wireless_direct",
+					"network_standby",
+					"network_standby_auto",
+					"bluetooth_standby",
+					"bluetooth_tx_setting",
+					"hdmi_out_1",
+					"hdmi_out_2",
+					"airplay",
+					"disklavier_settings",
+					"network_reboot",
+					"party_mode"
+				],
+				"zone_num": 2,
+				"input_list": [
+					{
+						"id": "napster",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "spotify",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "juke",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "qobuz",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "tidal",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "deezer",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "airplay",
+						"distribution_enable": false,
+						"rename_enable": false,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "mc_link",
+						"distribution_enable": false,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "server",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "net_radio",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "bluetooth",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "usb",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "tuner",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "tuner"
+					},
+					{
+						"id": "hdmi1",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "hdmi2",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "hdmi3",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "hdmi4",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "hdmi5",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "av1",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "av2",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "av3",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "av4",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "av5",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "av6",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "audio1",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "audio2",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "phono",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "v_aux",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "main_sync",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					}
+				],
+				"ymap_list": [ "vtuner" ]
+			},
+			"zone": [
+				{
+					"id": "main",
+					"func_list": [
+						"power",
+						"sleep",
+						"volume",
+						"mute",
+						"sound_program",
+						"pure_direct",
+						"enhancer",
+						"tone_control",
+						"dialogue_level",
+						"signal_info",
+						"prepare_input_change",
+						"link_control",
+						"link_audio_delay",
+						"link_audio_quality",
+						"scene",
+						"cursor",
+						"menu",
+						"surr_decoder_type",
+						"contents_display",
+						"actual_volume"
+					],
+					"input_list": [
+						"napster",
+						"spotify",
+						"juke",
+						"qobuz",
+						"tidal",
+						"deezer",
+						"airplay",
+						"mc_link",
+						"server",
+						"net_radio",
+						"bluetooth",
+						"usb",
+						"tuner",
+						"hdmi1",
+						"hdmi2",
+						"hdmi3",
+						"hdmi4",
+						"hdmi5",
+						"av1",
+						"av2",
+						"av3",
+						"av4",
+						"av5",
+						"av6",
+						"audio1",
+						"audio2",
+						"phono",
+						"v_aux"
+					],
+					"sound_program_list": [
+						"munich",
+						"vienna",
+						"chamber",
+						"cellar_club",
+						"roxy_theatre",
+						"bottom_line",
+						"sports",
+						"action_game",
+						"roleplaying_game",
+						"music_video",
+						"standard",
+						"spectacle",
+						"sci-fi",
+						"adventure",
+						"drama",
+						"mono_movie",
+						"2ch_stereo",
+						"7ch_stereo",
+						"surr_decoder",
+						"straight"
+					],
+					"surr_decoder_type_list": [
+						"toggle",
+						"dolby_surround",
+						"dts_neural_x",
+						"dts_neo6_cinema",
+						"dts_neo6_music"
+					],
+					"tone_control_mode_list": [ "manual" ],
+					"link_control_list": [ "speed", "standard", "stability" ],
+					"link_audio_delay_list": [ "audio_sync", "lip_sync" ],
+					"link_audio_quality_list": [ "compressed", "uncompressed" ],
+					"range_step": [
+						{
+							"id": "volume",
+							"min": 0,
+							"max": 161,
+							"step": 1
+						},
+						{
+							"id": "tone_control",
+							"min": -12,
+							"max": 12,
+							"step": 1
+						},
+						{
+							"id": "dialogue_level",
+							"min": 0,
+							"max": 3,
+							"step": 1
+						},
+						{
+							"id": "actual_volume_db",
+							"min": -80.5,
+							"max": 16.5,
+							"step": 0.5
+						}
+					],
+					"scene_num": 4,
+					"cursor_list": [ "up", "down", "left", "right", "select", "return" ],
+					"menu_list": [ "on_screen", "top_menu", "menu", "option", "display" ],
+					"actual_volume_mode_list": [ "db" ]
+				},
+				{
+					"id": "zone2",
+					"zone_b": false,
+					"func_list": [ "power", "sleep", "volume", "mute", "prepare_input_change", "actual_volume" ],
+					"input_list": [
+						"napster",
+						"spotify",
+						"juke",
+						"qobuz",
+						"tidal",
+						"deezer",
+						"airplay",
+						"mc_link",
+						"server",
+						"net_radio",
+						"bluetooth",
+						"usb",
+						"tuner",
+						"av5",
+						"av6",
+						"audio1",
+						"audio2",
+						"phono",
+						"main_sync"
+					],
+					"range_step": [
+						{
+							"id": "volume",
+							"min": 0,
+							"max": 161,
+							"step": 1
+						},
+						{
+							"id": "actual_volume_db",
+							"min": -80.5,
+							"max": 10.0,
+							"step": 0.5
+						}
+					],
+					"actual_volume_mode_list": [ "db" ]
+				}
+			],
+			"tuner": {
+				"func_list": [ "am", "fm", "rds" ],
+				"range_step": [
+					{
+						"id": "am",
+						"min": 531,
+						"max": 1611,
+						"step": 9
+					},
+					{
+						"id": "fm",
+						"min": 87500,
+						"max": 108000,
+						"step": 50
+					}
+				],
+				"preset": {
+					"type": "common",
+					"num": 40
+				}
+			},
+			"netusb": {
+				"func_list": [ "recent_info", "play_queue", "mc_playlist" ],
+				"preset": {
+					"num": 40
+				},
+				"recent_info": {
+					"num": 40
+				},
+				"play_queue": {
+					"size": 200
+				},
+				"mc_playlist": {
+					"size": 200,
+					"num": 5
+				},
+				"net_radio_type": "vtuner",
+				"vtuner_fver": "A",
+				"pandora": {
+					"sort_option_list": [ "date", "alphabet" ]
+				}
+			},
+			"distribution": {
+				"version": 2.0,
+				"compatible_client": [ 2 ],
+				"client_max": 9,
+				"server_zone_list": [ "main" ]
+			},
+			"ccs": {
+				"supported": true
+			}
+		}
+	},
+	{
+		"request": "GET /YamahaExtendedControl/v1/system/getDeviceInfo",
+		"getDeviceInfo": {
+			"response_code": 0,
+			"model_name": "RX_V781",
+			"destination": "BG",
+			"device_id": "00FFFD4A750",
+			"system_id": "0E23427883",
+			"system_version": 2.38,
+			"api_version": 1.19,
+			"netmodule_version": "1624    ",
+			"netmodule_checksum": "F86C1689",
+			"operation_mode": "normal",
+			"update_error_code": "00000000"
+		}
+	},
+	{
+		"request": "GET /YamahaExtendedControl/v1/main/getStatus",
+		"getStatus": {
+			"response_code": 0,
+			"power": "on",
+			"sleep": 0,
+			"volume": 81,
+			"mute": false,
+			"max_volume": 161,
+			"input": "hdmi2",
+			"distribution_enable": true,
+			"sound_program": "surr_decoder",
+			"surr_decoder_type": "dolby_surround",
+			"pure_direct": false,
+			"enhancer": true,
+			"tone_control": {
+				"mode": "manual",
+				"bass": 0,
+				"treble": 0
+			},
+			"dialogue_level": 3,
+			"link_control": "standard",
+			"link_audio_delay": "audio_sync",
+			"link_audio_quality": "compressed",
+			"disable_flags": 0,
+			"actual_volume": {
+				"mode": "db",
+				"value": -40.0,
+				"unit": "dB"
+			},
+			"contents_display": false,
+			"party_enable": false
+		}
+	},
+	{
+		"request": "GET /YamahaExtendedControl/v1/zon2/getStatus",
+		"getStatus": {
+			"response_code": 0,
+			"power": "standby",
+			"sleep": 0,
+			"volume": 92,
+			"mute": false,
+			"max_volume": 161,
+			"input": "server",
+			"distribution_enable": false,
+			"disable_flags": 0,
+			"actual_volume": {
+				"mode": "db",
+				"value": -34.5,
+				"unit": "dB"
+			},
+			"party_enable": false
+		}
+	}
+]

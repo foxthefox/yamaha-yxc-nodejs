@@ -1,0 +1,689 @@
+[
+	{
+		"request": "/system/getFeatures",
+		"responses": {
+			"response_code": 0,
+			"system": {
+				"func_list": [
+					"wired_lan",
+					"wireless_lan",
+					"wireless_direct",
+					"network_standby",
+					"auto_power_standby",
+					"bluetooth_tx_setting",
+					"airplay",
+					"stereo_pair",
+					"network_reboot"
+				],
+				"zone_num": 1,
+				"input_list": [
+					{
+						"id": "napster",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "spotify",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "juke",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "tidal",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "deezer",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "airplay",
+						"distribution_enable": false,
+						"rename_enable": false,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "mc_link",
+						"distribution_enable": false,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "server",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "net_radio",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "bluetooth",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					}
+				],
+				"ymap_list": [ "vtuner" ]
+			},
+			"zone": [
+				{
+					"id": "main",
+					"func_list": [
+						"power",
+						"sleep",
+						"volume",
+						"mute",
+						"equalizer",
+						"signal_info",
+						"prepare_input_change",
+						"link_control"
+					],
+					"input_list": [
+						"napster",
+						"spotify",
+						"juke",
+						"tidal",
+						"deezer",
+						"airplay",
+						"mc_link",
+						"server",
+						"net_radio",
+						"bluetooth"
+					],
+					"equalizer_mode_list": [ "manual" ],
+					"link_control_list": [ "speed", "standard", "stability" ],
+					"range_step": [
+						{
+							"id": "volume",
+							"min": 0,
+							"max": 60,
+							"step": 1
+						},
+						{
+							"id": "equalizer",
+							"min": -10,
+							"max": 10,
+							"step": 1
+						}
+					]
+				}
+			],
+			"netusb": {
+				"func_list": [ "recent_info", "play_queue", "mc_playlist" ],
+				"preset": {
+					"num": 40
+				},
+				"recent_info": {
+					"num": 40
+				},
+				"play_queue": {
+					"size": 200
+				},
+				"mc_playlist": {
+					"size": 200,
+					"num": 5
+				},
+				"net_radio_type": "vtuner",
+				"vtuner_fver": "A",
+				"pandora": {
+					"sort_option_list": [ "date", "alphabet" ]
+				}
+			},
+			"distribution": {
+				"server_zone_list": [ "main" ]
+			},
+			"ccs": {
+				"supported": true
+			}
+		}
+	},
+	{
+		"request": "/system/getDeviceInfo",
+		"responses": {
+			"response_code": 0,
+			"model_name": "WX-030",
+			"destination": "BG",
+			"device_id": "00A0DED4A750",
+			"system_id": "0E257883",
+			"system_version": 2.38,
+			"api_version": 1.19,
+			"netmodule_version": "1624    ",
+			"netmodule_checksum": "F86C1689",
+			"operation_mode": "normal",
+			"update_error_code": "00000000"
+		}
+	},
+	{
+		"request": "/netusb/getPlayinfo",
+		"responses": {
+			"response_code": 0,
+			"input": "server",
+			"play_queue_type": "system",
+			"playback": "stop",
+			"repeat": "off",
+			"shuffle": "on",
+			"play_time": 0,
+			"total_time": 0,
+			"artist": "Iggy Pop",
+			"album": "Brick by Brick",
+			"track": "I Won't Crap Out",
+			"albumart_url": "/YamahaRemoteControl/AlbumART/AlbumART4006.jpg",
+			"albumart_id": 4006,
+			"usb_devicetype": "unknown",
+			"auto_stopped": false,
+			"attribute": 83886591,
+			"repeat_available": [ "off", "one", "all" ],
+			"shuffle_available": [ "off", "on" ]
+		}
+	},
+	{
+		"request": "/netusb/getRecentInfo",
+		"responses": {
+			"response_code": 0,
+			"recent_info": [
+				{
+					"input": "server",
+					"text": "I Won't Crap Out",
+					"albumart_url": "http://192.168.178.198:32469/proxy/785396dc038de62a6cb8/albumart.jpg",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "Trench Town Rock",
+					"albumart_url": "http://192.168.178.198:32469/proxy/2b56d2531ca047ab47ed/albumart.jpg",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "Could You Be Loved",
+					"albumart_url": "http://192.168.178.198:32469/proxy/2b56d2531ca047ab47ed/albumart.jpg",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "net_radio",
+					"text": "rbb radioeins",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-4716.jpg",
+					"play_count": 88,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "BBC Radio 2",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-3159.jpg",
+					"play_count": 56,
+					"attribute": 0
+				},
+				{
+					"input": "server",
+					"text": "Fly FRITZ! Fly",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "Exodus",
+					"albumart_url": "http://192.168.178.198:32469/proxy/2b56d2531ca047ab47ed/albumart.jpg",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "Space Cowboy",
+					"albumart_url": "http://192.168.178.198:32469/proxy/d500e43fd90602662040/albumart.jpg",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "net_radio",
+					"text": "1LIVE",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-531.jpg",
+					"play_count": 22,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Antenne Thüringen 97.9 FM",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-6813.jpg",
+					"play_count": 16,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Deutschlandfunk",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-987.jpg",
+					"play_count": 7,
+					"attribute": 0
+				},
+				{
+					"input": "server",
+					"text": "   1. hey there delilah",
+					"albumart_url": "",
+					"play_count": 3,
+					"attribute": 30
+				},
+				{
+					"input": "net_radio",
+					"text": "Electronic Beats Berlin laut.fm",
+					"albumart_url": "",
+					"play_count": 4,
+					"attribute": 0
+				},
+				{
+					"input": "server",
+					"text": "   6. friends don't let friends dial drunk",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "   4. hate (i really don't like you)",
+					"albumart_url": "",
+					"play_count": 3,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "   3. come back to me",
+					"albumart_url": "",
+					"play_count": 3,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "   2. our time now",
+					"albumart_url": "",
+					"play_count": 4,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": " A Love Bizarre (Album Version) ",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": " A Love Bizarre (Album Version) ",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": " A Love Bizarre (Album Version) ",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": " 4th Symphony",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "  14. take me away",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "  13. let me take you there",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "  12. figure it out",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "  11. gimme a chance",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "  10. write you a song",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "server",
+					"text": "   9. tearin' us apart",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "net_radio",
+					"text": "ANTENNE THÜRINGEN 80-er Channel",
+					"albumart_url": "",
+					"play_count": 8,
+					"attribute": 0
+				},
+				{
+					"input": "server",
+					"text": "Fly FRITZ! Fly",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 30
+				},
+				{
+					"input": "net_radio",
+					"text": "elektrobude laut.fm",
+					"albumart_url": "",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "unknown",
+					"text": "",
+					"albumart_url": "",
+					"play_count": 0,
+					"attribute": 0
+				},
+				{
+					"input": "unknown",
+					"text": "",
+					"albumart_url": "",
+					"play_count": 0,
+					"attribute": 0
+				},
+				{
+					"input": "unknown",
+					"text": "",
+					"albumart_url": "",
+					"play_count": 0,
+					"attribute": 0
+				},
+				{
+					"input": "unknown",
+					"text": "",
+					"albumart_url": "",
+					"play_count": 0,
+					"attribute": 0
+				},
+				{
+					"input": "unknown",
+					"text": "",
+					"albumart_url": "",
+					"play_count": 0,
+					"attribute": 0
+				},
+				{
+					"input": "unknown",
+					"text": "",
+					"albumart_url": "",
+					"play_count": 0,
+					"attribute": 0
+				},
+				{
+					"input": "unknown",
+					"text": "",
+					"albumart_url": "",
+					"play_count": 0,
+					"attribute": 0
+				},
+				{
+					"input": "unknown",
+					"text": "",
+					"albumart_url": "",
+					"play_count": 0,
+					"attribute": 0
+				},
+				{
+					"input": "unknown",
+					"text": "",
+					"albumart_url": "",
+					"play_count": 0,
+					"attribute": 0
+				},
+				{
+					"input": "unknown",
+					"text": "",
+					"albumart_url": "",
+					"play_count": 0,
+					"attribute": 0
+				}
+			]
+		}
+	},
+	{
+		"request": "/netusb/getPresetInfo",
+		"responses": {
+			"response_code": 0,
+			"preset_info": [
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "net_radio",
+					"text": "rbb radioeins",
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Antenne Thüringen 97.9 FM",
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "ANTENNE THÜRINGEN 80-er Channel",
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "1LIVE",
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "BBC Radio 2",
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Deutschlandfunk",
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Electronic Beats Berlin laut.fm",
+					"attribute": 0
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				},
+				{
+					"input": "unknown",
+					"text": ""
+				}
+			],
+			"func_list": [ "clear", "move" ]
+		}
+	},
+	{
+		"request": "/main/getStatus",
+		"responses": {
+			"response_code": 0,
+			"power": "standby",
+			"sleep": 0,
+			"volume": 11,
+			"mute": false,
+			"max_volume": 60,
+			"input": "server",
+			"distribution_enable": true,
+			"equalizer": {
+				"mode": "manual",
+				"low": -3,
+				"mid": 4,
+				"high": 9
+			},
+			"link_control": "standard",
+			"disable_flags": 0
+		}
+	}
+]

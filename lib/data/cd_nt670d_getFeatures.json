@@ -1,0 +1,216 @@
+[
+	{
+		"device": "CD_NT607D_0123245",
+		"request": "/system/getFeatures",
+		"responses": {
+			"response_code": 0,
+			"system": {
+				"func_list": [
+					"wired_lan",
+					"wireless_lan",
+					"wireless_direct",
+					"network_standby",
+					"auto_power_standby",
+					"bluetooth_tx_setting",
+					"airplay"
+				],
+				"zone_num": 1,
+				"input_list": [
+					{
+						"id": "napster",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "spotify",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "juke",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "qobuz",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "tidal",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "deezer",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": true,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "airplay",
+						"distribution_enable": false,
+						"rename_enable": false,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "mc_link",
+						"distribution_enable": false,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "server",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "net_radio",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "bluetooth",
+						"distribution_enable": true,
+						"rename_enable": false,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "usb",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "netusb"
+					},
+					{
+						"id": "tuner",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "tuner"
+					},
+					{
+						"id": "cd",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "cd"
+					},
+					{
+						"id": "digital",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					},
+					{
+						"id": "aux",
+						"distribution_enable": true,
+						"rename_enable": true,
+						"account_enable": false,
+						"play_info_type": "none"
+					}
+				],
+				"ymap_list": [ "vtuner" ]
+			},
+			"zone": [
+				{
+					"id": "main",
+					"func_list": [
+						"power",
+						"sleep",
+						"volume",
+						"mute",
+						"signal_info",
+						"prepare_input_change",
+						"link_control"
+					],
+					"input_list": [
+						"napster",
+						"spotify",
+						"juke",
+						"qobuz",
+						"tidal",
+						"deezer",
+						"airplay",
+						"mc_link",
+						"server",
+						"net_radio",
+						"bluetooth",
+						"usb",
+						"tuner",
+						"cd",
+						"digital",
+						"aux"
+					],
+					"link_control_list": [ "speed", "standard", "stability" ],
+					"range_step": [
+						{
+							"id": "volume",
+							"min": 0,
+							"max": 63,
+							"step": 1
+						}
+					]
+				}
+			],
+			"tuner": {
+				"func_list": [ "fm", "rds", "dab" ],
+				"range_step": [
+					{
+						"id": "fm",
+						"min": 87500,
+						"max": 108000,
+						"step": 50
+					}
+				],
+				"preset": {
+					"type": "separate",
+					"num": 30
+				}
+			},
+			"netusb": {
+				"func_list": [ "recent_info", "play_queue", "mc_playlist" ],
+				"preset": {
+					"num": 40
+				},
+				"recent_info": {
+					"num": 40
+				},
+				"play_queue": {
+					"size": 200
+				},
+				"mc_playlist": {
+					"size": 200,
+					"num": 5
+				},
+				"net_radio_type": "vtuner",
+				"vtuner_fver": "A",
+				"pandora": {
+					"sort_option_list": [ "date", "alphabet" ]
+				}
+			},
+			"distribution": {
+				"server_zone_list": [ "main" ]
+			}
+		}
+	}
+]

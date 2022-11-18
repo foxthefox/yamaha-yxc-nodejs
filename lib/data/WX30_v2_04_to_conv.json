@@ -1,0 +1,323 @@
+[
+  {
+		"device": "WX-030_0E897553",
+		"request": "/system/getDeviceInfo",
+		"responses": {
+			"response_code": 0,
+			"model_name": "WX-030",
+			"destination": "BG",
+			"device_id": "00A0DED4F504",
+			"system_id": "0E897553",
+			"system_version": 3.14,
+			"api_version": 2.04,
+			"netmodule_generation": 1,
+			"netmodule_version": "1812 ",
+			"netmodule_checksum": "B121D019",
+			"operation_mode": "normal",
+			"update_error_code": "00000000"
+		}
+	},
+	{
+		"device": "WX-030_0E897553",
+		"request": "/main/getStatus",
+		"responses": {
+			"response_code": 0,
+			"power": "standby",
+			"sleep": 0,
+			"volume": 26,
+			"mute": false,
+			"max_volume": 60,
+			"input": "net_radio",
+			"distribution_enable": true,
+			"equalizer": { "mode": "manual", "low": 5, "mid": 6, "high": 5 },
+			"link_control": "standard",
+			"link_audio_quality": "compressed",
+			"disable_flags": 0
+		}
+	},
+	{
+		"device": "WX-030_0E897553",
+		"request": "/netusb/getPlayInfo",
+		"responses": {
+			"response_code": 0,
+			"input": "net_radio",
+			"play_queue_type": "system",
+			"playback": "stop",
+			"repeat": "off",
+			"shuffle": "off",
+			"play_time": 0,
+			"total_time": 0,
+			"artist": "radioeins (Potsdam/German)",
+			"album": "",
+			"track": "\"El Invento\" von José González",
+			"albumart_url": "",
+			"albumart_id": 7537,
+			"usb_devicetype": "unknown",
+			"auto_stopped": false,
+			"attribute": 16785411,
+			"repeat_available": [],
+			"shuffle_available": []
+		}
+	},
+	{
+		"device": "WX-030_0E897553",
+		"request": "/netusb/getRecentInfo",
+		"responses": {
+			"response_code": 0,
+			"recent_info": [
+				{
+					"input": "net_radio",
+					"text": "radioeins (Potsdam/German)",
+					"albumart_url": "http://static.airable.io:80/68/90/672135.png",
+					"play_count": 2,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "BBC Radio 2 (London/English)",
+					"albumart_url": "http://static.airable.io:80/65/65/960794.png",
+					"play_count": 2,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Radio 10 - Top 4000 (Hilversum/Dutch)",
+					"albumart_url": "http://static.airable.io:80/32/56/469557.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Radio 105 - Hip Hop & R&B (Milan/Italian)",
+					"albumart_url": "http://static.airable.io:80/63/75/663105.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Radio 10 (Bern/French)",
+					"albumart_url": "http://static.airable.io:80/76/24/736425.png",
+					"play_count": 2,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Radio 10 (Hilversum/Dutch)",
+					"albumart_url": "http://static.airable.io:80/81/66/768923.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "104.6 RTL - Chill (Berlin/German)",
+					"albumart_url": "http://static.airable.io:80/00/86/531655.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "104.6 RTL - Elektro (Berlin/German)",
+					"albumart_url": "http://static.airable.io:80/53/28/796564.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "0-24 Oldies Pop Rock laut.fm (Germany/German)",
+					"albumart_url": "http://static.airable.io:80/71/89/397794.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Synthpop laut.fm (Germany/German)",
+					"albumart_url": "http://static.airable.io:80/10/09/968230.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Pulp-fm laut.fm (Los Angeles/German)",
+					"albumart_url": "http://static.airable.io:80/06/83/176466.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Beatdownx laut.fm (Germany/German)",
+					"albumart_url": "http://static.airable.io:80/52/58/829299.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Radio 1920 laut.fm (Germany/German)",
+					"albumart_url": "http://static.airable.io:80/43/21/272186.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "54 Funk Soul Dance laut.fm (Germany/English)",
+					"albumart_url": "http://static.airable.io:80/05/32/138633.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "RTL (Paris/French)",
+					"albumart_url": "http://static.airable.io:80/44/50/711574.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Deutschlandfunk Kultur (Berlin/German)",
+					"albumart_url": "http://static.airable.io:80/34/85/214672.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Deutschlandfunk (Cologne/German)",
+					"albumart_url": "http://static.airable.io:80/89/44/218771.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "1LIVE (Cologne/German)",
+					"albumart_url": "http://static.airable.io:80/94/58/127685.png",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "rbb radioeins",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-4716.jpg",
+					"play_count": 10,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Deutschlandfunk",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-987.jpg",
+					"play_count": 2,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "BBC Radio 2",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-3159.jpg",
+					"play_count": 9,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "0-24 Oldies Pop Rock laut.fm",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-81811.jpg",
+					"play_count": 2,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "RTL 102.5 FM",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-1015.jpg",
+					"play_count": 2,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "BBC Radio 5 Live",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-26244.jpg",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Deutschlandfunk Kultur",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-4899.jpg",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{ "input": "server", "text": "Fly FRITZ! Fly", "albumart_url": "", "play_count": 2, "attribute": 30 },
+				{
+					"input": "net_radio",
+					"text": "Radio 10",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-1334.jpg",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{
+					"input": "net_radio",
+					"text": "Solarradio.fm",
+					"albumart_url": "http://item.radio456.com:80/007452/logo/logo-82139.jpg",
+					"play_count": 1,
+					"attribute": 0
+				},
+				{ "input": "server", "text": "Fly FRITZ! Fly", "albumart_url": "", "play_count": 1, "attribute": 30 },
+				{ "input": "server", "text": "Fly FRITZ! Fly", "albumart_url": "", "play_count": 1, "attribute": 30 },
+				{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+				{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+				{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+				{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+				{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+				{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+				{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+				{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+				{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 },
+				{ "input": "unknown", "text": "", "albumart_url": "", "play_count": 0, "attribute": 0 }
+			]
+		}
+	},
+	{
+		"device": "WX-030_0E897553",
+		"request": "/netusb/getPresetInfo",
+		"responses": {
+			"response_code": 0,
+			"preset_info": [
+				{ "input": "unknown", "text": "" },
+				{ "input": "net_radio", "text": "radioeins (Potsdam/German)", "attribute": 0 },
+				{ "input": "net_radio", "text": "BBC Radio 2 (London/English)", "attribute": 0 },
+				{ "input": "net_radio", "text": "1LIVE (Cologne/German)", "attribute": 0 },
+				{ "input": "net_radio", "text": "104.6 RTL - Chill (Berlin/German)", "attribute": 0 },
+				{ "input": "net_radio", "text": "0-24 Oldies Pop Rock laut.fm (Germany/German)", "attribute": 0 },
+				{ "input": "net_radio", "text": "54 Funk Soul Dance laut.fm (Germany/English)", "attribute": 0 },
+				{ "input": "net_radio", "text": "Radio 10 (Hilversum/Dutch)", "attribute": 0 },
+				{ "input": "net_radio", "text": "Deutschlandfunk (Cologne/German)", "attribute": 0 },
+				{ "input": "net_radio", "text": "Deutschlandfunk Kultur (Berlin/German)", "attribute": 0 },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" },
+				{ "input": "unknown", "text": "" }
+			],
+			"func_list": [ "clear", "move" ]
+		}
+	}
+]
