@@ -7,7 +7,7 @@
 		"@root/request": "^1.9.2",
 		"simple-ssdp": "^1.0.2",
 		"figlet": "^1.5.2",
-		"chalk": "^4.1.2"
+		"chalk": "^5.2.0"
 	},
 	"devDependencies": {
 		"chai": "^4.3.7",
