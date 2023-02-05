@@ -172,6 +172,9 @@ It returns an object for each device { ip, model, name, systemId, deviceId } in 
 It is not ensured that all devices are detected in this period, in the applicatian a merge of a second run might be necessary.
 
 ## Changelog
+### 3.1.2
+* skip using chalk, figlet
+
 ### 3.1.1
 * correction of Version in package.json 3.0.1 -> 3.1.1
 
