@@ -4,13 +4,20 @@ const expect = require('chai').expect;
 const YamahaYXC = require('../index.js').YamahaYXC;
 const YamahaYXCEmu = require('../index.js').YamahaYXCEmu;
 
+const fs = require('fs');
+const path = require('path');
+console.log('PATH ist ' + path.join(__dirname, './data/'));
+
+let testfile = 'YSP1600_312_208.json';
+let testdevice = 'YSP-1600';
+const YXCresponses = fs.readFileSync(path.join(__dirname, './data/') + testfile);
+const deviceresp = JSON.parse(String(YXCresponses))[testdevice];
+
 /*Tests*/
 describe('Integration Test of Musiccast-API', () => {
 	let port = 3311;
-	let testfile = 'YSP1600_312_208.json';
-	let testdevice = 'YSP-1600';
 	before('start the Musiccast emulation', () => {
-		const emulation = new YamahaYXCEmu(testfile, testdevice, port, false);
+		const emulation = new YamahaYXCEmu(deviceresp, port, false);
 		emulation.setupHttpServer(function() {});
 	});
 	// if promise is returned = success
