@@ -172,6 +172,9 @@ It returns an object for each device { ip, model, name, systemId, deviceId } in 
 It is not ensured that all devices are detected in this period, in the applicatian a merge of a second run might be necessary.
 
 ## Changelog
+### 3.1.3
+* refactoring of emulation, variable test data injection
+
 ### 3.1.2
 * skip using chalk, figlet
 
