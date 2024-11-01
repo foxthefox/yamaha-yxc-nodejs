@@ -9,7 +9,7 @@
 	},
 	"devDependencies": {
 		"chai": "^4.3.10",
-		"eslint": "^8.57.0",
+		"eslint": "^9.13.0",
 		"mocha": "^10.8.2"
 	},
 	"scripts": {
