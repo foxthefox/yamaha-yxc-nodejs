@@ -9,13 +9,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '14.x'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: "20"
+          registry-url: "https://registry.npmjs.org"
+      - name: Ensure npm 11.5.1 or later for trusted publishing 🔧
+        run: npm install -g npm@latest
       - name: Install dependencies and build 🔧
-        run: npm install
+        run: npm ci
       - name: Publish package on NPM 📦
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
